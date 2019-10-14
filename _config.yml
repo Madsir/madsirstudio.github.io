@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Madsir Studio presents REMOTE AGENT
+title: REMOTE AGENT
 email: madsirstudio@gmail.com
 description: Remote Agent is a colorful and quirky 2D adventure platformer.
 baseurl: "RemoteAgentGame" # the subpath of your site, e.g. /blog
 url: "Madsir.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: Madsir_Studio
+twitter_username: MadsirStudio
 github_username:  madsir
 
 # Build settings
