@@ -1,3 +1,5 @@
 name: Madsir Studio
 	markdown: kramdown
 	permalink: /StayTuned/:year/:month/:day/:title
+	permalink: /about/
+	permalink: /REMOTEAGENT/
