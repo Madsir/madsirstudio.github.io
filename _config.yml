@@ -1,4 +1,4 @@
 name: Madsir Studio
-	markdown: kramdown
-	permalink: /blog/:year/:month/:day/:title
-	permalink: /about/
+markdown: kramdown
+permalink: /about/
+permalink: /StayTuned/:year/:month/:day/:title
