@@ -1,6 +1,6 @@
 body {
     background: url(/Assets/Inside.png) black;
-    margin: 25px auto;
+    margin: 29px auto;
     width: 70%;
 }
 nav ul, footer ul {
@@ -15,7 +15,7 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: #25c793;
 }
 a:hover {
     text-decoration: underline;
@@ -23,22 +23,22 @@ a:hover {
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    color: purple;
+    color: #731d9c;
 }
 h2 {
     font-size: 2.5em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    color: gray;
+    color: #c79325;
 }
 h3 {
     font-size: 2em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    color: green;
+    color: #25c793;
 }
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: gray;
+    color: #c79325;
 }
 footer {
     border-top: 1px solid #d5d5d5;
