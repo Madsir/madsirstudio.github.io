@@ -1,6 +1,5 @@
 name: Madsir Studio
 markdown: kramdown
-permalink: /about/
 permalink: /StayTuned/:year/:month/:day/:title
+permalink: /RemoteAgentGame
 
-theme: jekyll-theme-hacker
