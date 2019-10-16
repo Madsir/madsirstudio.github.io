@@ -1,4 +1,5 @@
 body {
+    background: url(/Assets/Inside.png) black;
     margin: 60px auto;
     width: 70%;
 }
@@ -26,7 +27,7 @@ h1 , h2 {
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
+    color: white;
 }
 footer {
     border-top: 1px solid #d5d5d5;
