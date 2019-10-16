@@ -1,12 +1,7 @@
 body {
     background: url(/Assets/Inside.png) black;
-    margin: 75px auto;
+    margin: 25px auto;
     width: 70%;
-}
-div#banner {
-    background:url(/Assets/top.png);
-    width:100%;
-    min-height:189px;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -33,10 +28,12 @@ h1 {
 h2 {
     font-size: 2.5em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    color: gray;
 }
 h3 {
     font-size: 2em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    color: green;
 }
 p {
     font-size: 1.5em;
