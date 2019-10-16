@@ -1,10 +1,12 @@
-.main-header {
-  text-align: center;
-}
 body {
     background: url(/Assets/Inside.png) black;
     margin: 75px auto;
     width: 70%;
+}
+banner {
+    background:url(/Assets/top.png);
+    width:100%;
+    min-height:189px;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
