@@ -3,6 +3,10 @@ body {
     margin: 29px auto;
     width: 70%;
 }
+ #header-text{
+  height:200px;
+  border:2px solid;     
+ }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 2px;
@@ -21,7 +25,7 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 3em;
+    font-size: 4em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     color: #731d9c;
 }
