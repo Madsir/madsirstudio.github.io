@@ -1,11 +1,11 @@
 body {
     background: url(/Assets/Inside.png) black;
-    margin: 29px auto;
-    width: 70%;
+    margin: 30px auto;
+    width: 90%;
 }
  #header-text{
+  text-align:center;
   height:150px;
-    font-size: 4em;
     font-family:"Impact", 'Charcoal', 'sans-serif';
     color: #3A1D44;
  }
@@ -27,7 +27,7 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 4em;
+    font-size: 4.5em;
     font-family:"Impact", 'Charcoal', 'sans-serif';
     color: #3A1D44;
 }
