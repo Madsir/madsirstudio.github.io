@@ -8,7 +8,7 @@ body {
   border:2px solid;     
  }
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:"Courier New", 'Courier', 'monospace';
     padding: 2px;
     list-style: none;
     font-weight: bold;
@@ -26,17 +26,17 @@ a:hover {
 }
 h1 {
     font-size: 4em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:"Impact", 'Charcoal', 'sans-serif';
     color: #731d9c;
 }
 h2 {
     font-size: 2.5em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #c79325;
 }
 h3 {
     font-size: 2em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #25c793;
 }
 p {
