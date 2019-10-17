@@ -4,8 +4,10 @@ body {
     width: 70%;
 }
  #header-text{
-  height:200px;
-  border:2px solid;     
+  height:175px;
+    font-size: 6em;
+    font-family:"Impact", 'Charcoal', 'sans-serif';
+    color: #3A1D44;
  }
 nav ul, footer ul {
     font-family:"Courier New", 'Courier', 'monospace';
@@ -27,7 +29,7 @@ a:hover {
 h1 {
     font-size: 4em;
     font-family:"Impact", 'Charcoal', 'sans-serif';
-    color: #731d9c;
+    color: #3A1D44;
 }
 h2 {
     font-size: 2.5em;
