@@ -28,7 +28,7 @@ a:hover {
 }
 h1 {
     font-size: 5em;
-    font-family:"Lucida Console", 'Monaco', 'monospace';
+    font-family:"Courier New", 'Courier', 'monospace';
     color: #990099;
 }
 h2 {
@@ -41,10 +41,17 @@ h3 {
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #25c793;
 }
+h4 {
+    font-family:"Courier New", 'Courier', 'monospace';
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #c79325;
+}
 p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #c79325;
+    font-family:"Courier New", 'Courier', 'monospace';
 }
 footer {
     border-top: 1px solid #d5d5d5;
