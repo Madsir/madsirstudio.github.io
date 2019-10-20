@@ -35,6 +35,7 @@ h1 {
     font-size: 5em;
     font-family:"Courier New", 'Courier', 'monospace';
     color: #990099;
+    background: url(/Assets/top.png) width: 100% height: 10%;
 }
 h2 {
     font-size: 2.5em;
