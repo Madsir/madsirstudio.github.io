@@ -12,11 +12,11 @@ nav
 {
     border-top: 1px solid #990099;
     border-bottom: 1px solid #990099;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.2);
 }
 nav ul, footer ul {
     font-family:"Courier New", 'Courier', 'monospace';
-    padding: 2px;
+    padding: 0px;
     list-style: none;
     font-weight: bold;
 }
@@ -35,7 +35,6 @@ h1 {
     font-size: 5em;
     font-family:"Courier New", 'Courier', 'monospace';
     color: #990099;
-    background: url(/Assets/top.png) width: 100% height: 10%;
 }
 h2 {
     font-size: 2.5em;
