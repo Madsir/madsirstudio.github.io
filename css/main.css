@@ -12,7 +12,7 @@ nav
 {
     border-top: 1px solid #990099;
     border-bottom: 1px solid #990099;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
 }
 nav ul, footer ul {
     font-family:"Courier New", 'Courier', 'monospace';
@@ -23,6 +23,7 @@ nav ul, footer ul {
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
+    border-right: 1px solid #990099;
 }
 a {
     text-decoration: none;
