@@ -6,7 +6,7 @@ body {
  #header-text{
   text-align:center;
   height:150px;
-    font-family:"Impact", 'Charcoal', 'sans-serif';
+    font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #8D248D;
  }
 nav ul, footer ul {
@@ -28,26 +28,20 @@ a:hover {
 }
 h1 {
     font-size: 5em;
-    font-family:"Impact", 'Charcoal', 'sans-serif';
-    color: #3A1D44;
+    font-family:"Lucida Console", 'Monaco', 'monospace';
+    color: #990099;
 }
 h2 {
-    border: 2px solid #32263D ;
-    background: #5B5A5C;
     font-size: 2.5em;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #c79325;
 }
 h3 {
-    border: 2px solid #32263D ;
-    background: #5B5A5C;
     font-size: 2em;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #25c793;
 }
 p {
-    border: 2px solid #32263D ;
-    background: #5B5A5C;
     font-size: 1.5em;
     line-height: 1.4em;
     color: #c79325;
