@@ -23,7 +23,6 @@ nav ul, footer ul {
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
-    border-right: 1px solid #990099;
 }
 a {
     text-decoration: none;
