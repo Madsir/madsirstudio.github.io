@@ -1,16 +1,22 @@
 body {
     background: url(/Assets/Inside.png) black;
     margin: 2px;
-    width: 90%;
+    width: 100%;
 }
  #header-text{
   text-align:center;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #8D248D;
  }
+nav
+{
+    border-top: 1px solid #990099;
+    border-bottom: 1px solid #990099;
+    background: rgba(255, 255, 255, 0.1);
+}
 nav ul, footer ul {
     font-family:"Courier New", 'Courier', 'monospace';
-    padding: 2px;
+    padding: 0px;
     list-style: none;
     font-weight: bold;
 }
@@ -54,7 +60,7 @@ p {
     font-family:"Courier New", 'Courier', 'monospace';
 }
 footer {
-    border-top: 1px solid #d5d5d5;
+    border-top: 1px solid #990099;
     font-size: .8em;
 }
 
