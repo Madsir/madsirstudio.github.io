@@ -48,8 +48,8 @@ h3 {
 }
 h4 {
     font-family:"Courier New", 'Courier', 'monospace';
-    font-size: 1.5em;
-    line-height: 1.4em;
+    font-size: 1em;
+    font-weight: bold;
     color: #c79325;
 }
 p {
