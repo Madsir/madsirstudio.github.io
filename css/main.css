@@ -38,19 +38,22 @@ h1 {
 }
 h2 {
     font-size: 2.5em;
+    text-align: justify;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #c79325;
 }
 h3 {
     font-size: 2em;
+    text-align: justify;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #25c793;
 }
 h4 {
     font-family:"Courier New", 'Courier', 'monospace';
-    font-size: 1em;
+    text-align: justify;
+    font-size: 1.5em;
     font-weight: bold;
-    color: #c79325;
+    color: #990099;
 }
 p {
     text-align:center;
