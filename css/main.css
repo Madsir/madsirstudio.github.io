@@ -71,6 +71,7 @@ p {
 }
 footer {
     border-top: 1px solid #990099;
+    border-bottom: 1px solid #990099;
     font-size: .8em;
 }
 
