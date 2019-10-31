@@ -32,31 +32,36 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
+    margin-left: 10%;
     font-size: 3em;
     font-family:"Courier New", 'Courier', 'monospace';
     color: #990099;
 }
 h2 {
+    margin-left: 10%;
     font-size: 2.5em;
-    text-align: justify;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #c79325;
 }
 h3 {
+    margin-left: 10%;
     font-size: 2em;
     text-align: justify;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #25c793;
 }
 h4 {
+    margin-left: 10%;
     font-family:"Courier New", 'Courier', 'monospace';
     text-align: justify;
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-weight: bold;
     color: #990099;
 }
 p {
-    text-align:center;
+    font-weight: bold;
+    margin-left: 10%;
+    text-align:justify;
     font-size: 1.5em;
     line-height: 1.4em;
     color: #c79325;
@@ -64,6 +69,7 @@ p {
 }
 footer {
     border-top: 1px solid #990099;
+    border-bottom: 1px solid #990099;
     font-size: .8em;
 }
 
