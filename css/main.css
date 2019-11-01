@@ -72,6 +72,7 @@ p {
 footer {
     border-top: 1px solid #990099;
     border-bottom: 1px solid #990099;
+    background: rgba(255, 255, 255, 0.1);
     font-size: .8em;
 }
 
