@@ -48,7 +48,7 @@ h1 {
     margin-left: 5%;
     margin-right: 5%;
     font-size: 3em;
-    font-family:"Impact", "Charcoal", sans-serif;
+    font-family:"Courier New", 'Courier', 'monospace';
     color: #990099;
 }
 h2 {
@@ -78,7 +78,7 @@ p {
     margin-left: 9%;
     margin-right: 9%;
     font-size: 1.5em;
-    line-height: 1.4em;
+    line-height: 2em;
     color: #c79325;
     font-family: "Verdana", "Geneva", sans-serif;
     text-align:center, justify;
