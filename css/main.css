@@ -55,6 +55,7 @@ h1 {
     font-size: 3em;
     font-family:"Courier New", 'Courier', 'monospace';
     color: #990099;
+    text-align: center;
 }
 h2 {
     margin-left: 5%;
@@ -62,6 +63,7 @@ h2 {
     font-size: 2.5em;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #c79325;
+    text-align: center;
 }
 h3 {
     margin-left: 5%;
@@ -69,6 +71,7 @@ h3 {
     font-size: 2em;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #25c793;
+    text-align: center;
 }
 h4 {
     margin-left: 5%;
@@ -77,6 +80,7 @@ h4 {
     font-size: 1.5em;
     font-weight: bold;
     color: #990099;
+    text-align:center, justify;
 }
 p {
     font-weight: bold;
