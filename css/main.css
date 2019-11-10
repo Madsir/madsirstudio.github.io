@@ -33,29 +33,29 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
     font-size: 3em;
     font-family:"Courier New", 'Courier', 'monospace';
     color: #990099;
 }
 h2 {
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
     font-size: 2.5em;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #c79325;
 }
 h3 {
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
     font-size: 2em;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #25c793;
 }
 h4 {
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
     font-family:"Courier New", 'Courier', 'monospace';
     font-size: 1.5em;
     font-weight: bold;
@@ -63,8 +63,8 @@ h4 {
 }
 p {
     font-weight: bold;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
     font-size: 1em;
     line-height: 1.4em;
     color: #c79325;
