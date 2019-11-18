@@ -1,8 +1,12 @@
 name: Madsir Studio
+title: Madsir Studio presents Remote Agent
 markdown: kramdown
 permalink: /RemoteAgentGame
 permalink: /RemoteAgentGameplay
 permalink: /RemoteAgentDemo
+twitter:
+  username: madsirstudio
+  card: summary
 
 plugins:
   - jekyll-seo-tag
