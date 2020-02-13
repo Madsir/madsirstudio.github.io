@@ -50,24 +50,24 @@ h1 {
     text-align: center;
 }
 h2 {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     font-size: 2.5em;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #c79325;
     text-align: center;
 }
 h3 {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     font-size: 2em;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #25c793;
     text-align: center;
 }
 h4 {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     font-family: "Verdana", "Geneva", sans-serif;
     font-size: 1.5em;
     font-weight: bold;
@@ -76,8 +76,8 @@ h4 {
 }
 p {
     font-weight: bold;
-    margin-left: 9%;
-    margin-right: 9%;
+    margin-left: 20%;
+    margin-right: 20%;
     font-size: 1.5em;
     line-height: 2em;
     color: #c79325;
