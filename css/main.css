@@ -42,32 +42,32 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     font-size: 3em;
     font-family:"Courier New", 'Courier', 'monospace';
     color: #990099;
     text-align: center;
 }
 h2 {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     font-size: 2.5em;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #c79325;
     text-align: center;
 }
 h3 {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     font-size: 2em;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #25c793;
     text-align: center;
 }
 h4 {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     font-family: "Verdana", "Geneva", sans-serif;
     font-size: 1.5em;
     font-weight: bold;
@@ -76,13 +76,14 @@ h4 {
 }
 p {
     font-weight: bold;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-left: 20%;
+    margin-right: 20%;
     font-size: 1.5em;
     line-height: 2em;
-    color: #c79325;
+    color: purple;
     font-family: "Verdana", "Geneva", sans-serif;
     text-align: center, justify;
+    background-image: url(/Assets/textBack.png) green;
 }
 footer {
     border-top: 1px solid #990099;
