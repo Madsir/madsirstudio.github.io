@@ -1,14 +1,10 @@
 body {
     background: url(/Assets/top.png) black;
-    width: 80%;
+    margin-left: 20%;
+    width: 100;
 }
 .side {
   background: url(/Assets/top.png) purple;
-}
-.side a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  display: block;
 }
 .centerDiv {
 margin: 0 auto;
