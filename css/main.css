@@ -1,7 +1,10 @@
 body {
     background: url(/Assets/top.png) black;
-    margin: 2px;
-    width: 100%;
+    margin-left:25%;
+        width: 100%;
+}
+.side {
+    background: url(/Assets/top.png) purple;
 }
 .centerDiv {
 margin: 0 auto;
