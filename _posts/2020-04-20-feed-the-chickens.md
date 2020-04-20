@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Chichilla Dance Party Updates"
+title:  "Chinchilla Dance Party Updates"
 ---
 
 # My first game is about to be released onto the Google Play Store
