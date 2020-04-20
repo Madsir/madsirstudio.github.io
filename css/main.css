@@ -1,12 +1,11 @@
 body {
     background: url(/Assets/top.png) black;
-    width: 100%
+    width: 80%;
 }
 .side {
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
-  left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
   background: url(/Assets/top.png) purple;
 }
