@@ -1,7 +1,6 @@
 body {
     background: url(/Assets/top.png) black;
-    margin-left:20%;
-        width: 100%;
+    width: 100%
 }
 .side {
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
