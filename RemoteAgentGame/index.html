@@ -8,12 +8,12 @@ description: "Remote Agent is a quirky, side-scrolling, physics-based platformer
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .sidenav {
-  width: 130px;
+  width: 20%;
   position: fixed;
   z-index: 1;
   top: 205px;
-  left: 10px;
-  background: "/Assets/top.png";
+  left: 15px;
+  background: url(/Assets/top.png) black;
   overflow-x: hidden;
   padding: 8px 0;
 }
@@ -21,6 +21,9 @@ description: "Remote Agent is a quirky, side-scrolling, physics-based platformer
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  color: yellow;
   display: block;
 }
 .sidenav a:hover {
@@ -28,17 +31,17 @@ description: "Remote Agent is a quirky, side-scrolling, physics-based platformer
 }
 
 .main {
-  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  margin-left: 20%; /* Same width as the sidebar + left position in px */
   padding: 0px 10px;
 }
 .centerdiv {
-  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  margin-left: 20%; /* Same width as the sidebar + left position in px */
   padding: 0px 10px;
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {padding-top: 200px;}
+  .sidenav a {font-size: 25px;}
 }
 </style>
 </head>
