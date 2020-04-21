@@ -1,9 +1,6 @@
 body {
     background: url(/Assets/top.png) black;
 }
-.centerDiv {
-margin: 0 auto;
-}
 .column {
   flex: 43%;
 }
