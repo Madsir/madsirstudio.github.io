@@ -8,9 +8,21 @@ description: "Remote Agent is a quirky, side-scrolling, physics-based platformer
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .sidenav {
-  display: block;
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 205px;
+  left: 10px;
+  background: "/Assets/top.png";
+  overflow-x: hidden;
+  padding: 8px 0;
 }
 
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  display: block;
+}
 .sidenav a:hover {
   color: #064579;
 }
