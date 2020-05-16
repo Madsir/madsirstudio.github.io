@@ -7,7 +7,7 @@ permalink: /RemoteAgentDemo
 permalink: /chinchillin
 permalink: /updates
 url: "https://madsirstudio.com" # the base hostname & protocol for your site
-
+theme: jekyll-theme-architect
 twitter:
   username: madsirstudio
   card: summary
