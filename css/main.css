@@ -1,5 +1,9 @@
 body {
     background: url(/Assets/top.png) black;
+      background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 10% 10%;
+    font-size: 62.5%;
 }
 .column {
   flex: 43%;
@@ -30,65 +34,68 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #25c793;
 }
 a:hover {
     text-decoration: underline;
 }
 h1 {
-    margin-left: 2%;
-    margin-right: 10%;
     font-size: 2.5em;
     font-family:"Courier New", 'Courier', 'monospace';
     color: #990099;
-    text-align: center;
+    text-align:center;
+    margin-left: 10%;
+        margin-right: 10%;
 }
 h2 {
-    margin-left: 2%;
-    margin-right: 10%;
+
     font-size: 2.5em;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #c79325;
-    text-align: center;
+    text-align:center;
+        margin-left: 10%;
+        margin-right: 10%;
 }
 h3 {
-    margin-left: 2%;
-    margin-right: 10%;
+
     font-size: 2em;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #25c793;
-    text-align: center;
+    text-align:center;
+        margin-left: 10%;
+        margin-right: 10%;
 }
 h4 {
-    margin-left: 10%;
-    margin-right: 10%;
+
     font-family:"Courier New", 'Courier', 'monospace';
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
     color: #990099;
-    text-align: center;
+    text-align:center;
+        margin-left: 10%;
+        margin-right: 10%;
 }
 p {
     font-weight: bold;
-    margin-left: 2%;
-    margin-right: 20%;
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 1.5em;
     color: #25c793;
     font-family: "Verdana", "Geneva", sans-serif;
     text-align: center, justify;
+        margin-left: 10%;
+        margin-right: 10%;
 }
 footer {
     border-top: 1px solid #990099;
     border-bottom: 1px solid #990099;
     background: rgba(255, 255, 255, 0.1);
-    font-size: 2em;
+    font-size: 1.2em;
 }
 
 ul.posts { 
     margin: 20px auto 40px; 
-    font-size: 2em;
+    font-size: 1.2em;
 }
 
 ul.posts li {
