@@ -38,32 +38,27 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    margin-left: 2%;
-    margin-right: 10%;
     font-size: 2.5em;
     font-family:"Courier New", 'Courier', 'monospace';
     color: #990099;
     text-align: center;
 }
 h2 {
-    margin-left: 2%;
-    margin-right: 10%;
+
     font-size: 2.5em;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #c79325;
     text-align: center;
 }
 h3 {
-    margin-left: 2%;
-    margin-right: 10%;
+
     font-size: 2em;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #25c793;
     text-align: center;
 }
 h4 {
-    margin-left: 10%;
-    margin-right: 10%;
+
     font-family:"Courier New", 'Courier', 'monospace';
     font-size: 1.5em;
     font-weight: bold;
@@ -72,13 +67,11 @@ h4 {
 }
 p {
     font-weight: bold;
-    margin-left: 2%;
-    margin-right: 20%;
     font-size: 1.5em;
     line-height: 1.5em;
     color: #25c793;
     font-family: "Verdana", "Geneva", sans-serif;
-    text-align: center, justify;
+    text-align: justify;
 }
 footer {
     border-top: 1px solid #990099;
