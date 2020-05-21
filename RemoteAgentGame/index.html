@@ -4,6 +4,7 @@ title: Remote Agent
 description: "Remote Agent is a quirky, side-scrolling, physics-based platformer. A fresh game inspired by nostalgia."
 ---
 <html>
+	<script type="text/javascript" src="gifffer.min.js"></script>
 	<head>
 <style>
 .sidenav {
@@ -29,12 +30,10 @@ description: "Remote Agent is a quirky, side-scrolling, physics-based platformer
 }
 
 .main {
-  margin-left: 10%; /* Same width as the sidebar + left position in px */
- margin-right: 10%;
+padding: 1px, 1px;
 }
 .centerdiv {
-  margin-left: 10%; /* Same width as the sidebar + left position in px */
-margin-right: 10%;
+padding: 1px, 1px;
 }
 </style>
 </head>
@@ -62,7 +61,7 @@ margin-right: 10%;
 
 			  
 
-    <img src="/GIFs/hacky.gif" alt="smash" style="width:90%">
+    <img data-gifffer="/GIFs/hacky.gif" alt="smash" style="width:70%">
 
 
 				  <br>
@@ -70,7 +69,7 @@ margin-right: 10%;
 
 
 
-    <img src="/GIFs/infiniteSlider.gif" alt="infiniteSlide" style="width:90%">
+    <img data-gifffer="/GIFs/infiniteSlider.gif" alt="infiniteSlide" style="width:70%">
 
 
 		  <br>
@@ -78,11 +77,14 @@ margin-right: 10%;
         <h2>Toss rocks, fireballs, & things that go boom.</h2><br>
 
 
-    <img src="/GIFs/throwBoom.gif" alt="boom" style="width:90%">
+    <img data-gifffer="/GIFs/throwBoom.gif" alt="boom" style="width:70%">
 
 
 		  <br>
        <h2>Bonus Levels, Cheat Codes, and more!</h2>	</center>
 	</div>
 </body>
+	window.onload = function() {
+  Gifffer();
+}
 	<html>
