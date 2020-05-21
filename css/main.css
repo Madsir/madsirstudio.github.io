@@ -41,18 +41,21 @@ h1 {
     font-size: 2.5em;
     font-family:"Courier New", 'Courier', 'monospace';
     color: #990099;
+    text-align:center;
 }
 h2 {
 
     font-size: 2.5em;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #c79325;
+    text-align:center;
 }
 h3 {
 
     font-size: 2em;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #25c793;
+    text-align:center;
 }
 h4 {
 
@@ -60,6 +63,7 @@ h4 {
     font-size: 1.5em;
     font-weight: bold;
     color: #990099;
+    text-align:center;
 }
 p {
     font-weight: bold;
@@ -67,7 +71,7 @@ p {
     line-height: 1.5em;
     color: #25c793;
     font-family: "Verdana", "Geneva", sans-serif;
-    text-align: justify;
+    text-align: center, justify;
 }
 footer {
     border-top: 1px solid #990099;
