@@ -46,11 +46,23 @@ description: "Remote Agent is a quirky, side-scrolling, physics-based platformer
   margin-left: 10%; /* Same width as the sidebar + left position in px */
 	margin-right: 10%;
 }
+  .columns {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 </style>
 </head>
 <body>
 <div class="sidenav">
-
+<img src="/Assets/skug.png" style="width:90%">
+	<br>
+	<br>
 <div style="display: inline-block;background: url('/Assets/buttonBack.png'); width: 204px; overflow: hidden;">
   <a href="/RemoteAgentGameplay">GAMEPLAY</a>
 			</div>
@@ -77,29 +89,20 @@ description: "Remote Agent is a quirky, side-scrolling, physics-based platformer
 	<br>
 	 <h1>Fight your way through harsh environments and fearsome creatures!</h1>
 	<br>
+<div class="row">
+  <div class="columns">
 		<h2>Hack and smash.</h2>
-
-			  
-
-    <img src="/GIFs/hacky.gif" alt="smash" style="width:70%">
-
-
-				  <br>
+		<img src="/GIFs/hacky.gif" alt="smash" style="width:70%">
+	</div>
+  		<div class="columns">
 			<h2>Slide and kick.</h2><br>
-
-
-
-    <img src="/GIFs/infiniteSlider.gif" alt="infiniteSlide" style="width:70%">
-
-
-		  <br>
-
-        <h2>Toss rocks, fireballs, & things that go boom.</h2><br>
-
-
+			<img src="/GIFs/infiniteSlider.gif" alt="infiniteSlide" style="width:70%">
+		</div>
+  		<div class="columns">
+        <h2>Toss rocks, fireballs, & things that go boom.</h2><br<
     <img src="/GIFs/throwBoom.gif" alt="boom" style="width:70%">
-
-
+	</div>
+		</div>
 		  <br>
        <h2>Bonus Levels, Cheat Codes, and more!</h2>	
 			</center>
