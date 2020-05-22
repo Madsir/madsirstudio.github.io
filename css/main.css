@@ -3,6 +3,7 @@ body {
       background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
+    background-size: 950px;
     font-size: 62.5%;
 }
 .column {
