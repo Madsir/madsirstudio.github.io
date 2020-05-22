@@ -26,6 +26,7 @@ nav
 nav ul, footer ul {
     font-family:"Courier New", 'Courier', 'monospace';
     list-style: none;
+        font-size: 1.7em;
     font-weight: bold;
 }
 nav ul li, footer ul li {
@@ -35,7 +36,7 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.7em;
     color: #25c793;
 }
 a:hover {
@@ -46,8 +47,8 @@ h1 {
     font-family:"Courier New", 'Courier', 'monospace';
     color: #990099;
     text-align:center;
-    margin-left: 10%;
-        margin-right: 10%;
+    margin-left: 15%;
+        margin-right: 15%;
 }
 h2 {
 
@@ -55,8 +56,8 @@ h2 {
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #c79325;
     text-align:center;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 15%;
+        margin-right: 15%;
 }
 h3 {
 
@@ -64,8 +65,8 @@ h3 {
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #25c793;
     text-align:center;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 15%;
+        margin-right: 15%;
 }
 h4 {
 
@@ -74,8 +75,8 @@ h4 {
     font-weight: bold;
     color: #990099;
     text-align:center;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 15%;
+        margin-right: 15%;
 }
 p {
     font-weight: bold;
@@ -84,8 +85,8 @@ p {
     color: #25c793;
     font-family: "Verdana", "Geneva", sans-serif;
     text-align: center, justify;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 17%;
+        margin-right: 17%;
 }
 footer {
     border-top: 1px solid #990099;
@@ -96,7 +97,7 @@ footer {
 
 ul.posts { 
     margin: 20px auto 40px; 
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 ul.posts li {
