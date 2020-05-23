@@ -37,7 +37,17 @@ description: "Test your math skills while helping these chins keep their party g
   margin-left: 2%; /* Same width as the sidebar + left position in px */
   padding: 1px 1px;
 }
-
+.columns {
+	  margin-left: 3%;
+  float: left;
+  width: 29%;
+  padding: 1px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 </style>
 </head>
 <body>
@@ -60,22 +70,39 @@ description: "Test your math skills while helping these chins keep their party g
 	<br>
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/la2U6QvxXXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		<br>
+		
 		<h3> Race against time! <br>
 			Solve math problems to keep the party going!</h3>
-		<img src="/Assets/CDPInstruction.png" width="50%">
-		<h1>Nine levels, each with a unique environment and song. </h1>
-		<img src="/Assets/Division.png" width="50%">
-		<h2>Addition, Subtraction, Multiplication, and Division.</h2>
-		<img src="/Assets/ChooseMenu.png" width="50%">
-		<h1>Choose between four levels of difficulty.</h1>
-		<img src="/Assets/challenges.png" width="50%">
-		<h2>Beat timed challenges to earn stars. </h2><br>
-		<h1>Use stars to unlock new levels.</h1>
-<img src="/Assets/Ender.png" width="50%">
-	<h2> Saves your highest score.</h2>
-		<br>
+		<div class="row">
+	<center>
+  <div class="columns">
+	  <h2> Instructions</h2>
+	  <a href="/Assets/CDPInstruction.png"><img src="/Assets/CDPInstruction.png" width="70%"></a>
+			</div>
+	    <div class="columns">
+		<h1>9 levels & songs</h1>
+		    <a href="/Assets/Division.png"><img src="/Assets/Division.png" width="70%"></a>
+		</div>
+		 <div class="columns">
+		<h2>Choose category</h2>
+			 <a href="/Assets/ChooseMenu.png"><img src="/Assets/ChooseMenu.png" width="70%"></a>
+		</div>
+		 <div class="columns">
+		<h1>Beat challenges, earn stars</h1>
+			 <a href="/Assets/challenges.png"><img src="/Assets/challenges.png" width="70%"></a>
+		</div>
+		 <div class="columns">
+		<h2>Use stars to unlock new levels.</h2>
+			 <a href="/Assets/levels.png"><img src="/Assets/levels.png" width="70%"></a>
+		</div>
+		<div class="columns">
+			<h2> Saves your highest score.</h2>
+			<a href="/Assets/Ender.png"><img src="/Assets/Ender.png" width="70%"></a>
+		</div>
+			</center>
+		</div>
 								<img src="/Assets/esrb.png"  width="25%">
-		<br>
+
 <h4>If you have any questions or would like to report an issue: <li><a href="mailto:madsirstudiob@gmail.com">Contact Support</a></li> </h4>
 			</center>
 	</div>
