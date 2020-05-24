@@ -1,6 +1,3 @@
-layout: post	
-title: Remote Agent Updates
-
 Current stage of development: 
 
 All levels are built, including bonus levels. Toilet Noise is working on the soundtrack, making some dank retro tunes to fit the mysterious and creepy settings in the game.<br>
