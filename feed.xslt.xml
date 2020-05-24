@@ -1,6 +1,7 @@
 ---
 layout: post
 ---
+<?xml-stylesheet href="my-style.css"?>
 <?xml version="1.0" encoding="utf-8"?>
 {% if page.xsl %}
   <?xml-stylesheet type="text/xml" href="{{ '/css/style.css' | absolute_url }}"?>
