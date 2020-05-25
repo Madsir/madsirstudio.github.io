@@ -3,4 +3,12 @@ layout: default
 title: Updates
 ---
 <body>
+   {% for post in site.posts %}
+<h1>{{ post.title }}</h1>
+<p class="meta">{{ post.date | date_to_string }}</p>
+
+<div class="post">
+  {{ content }}
+</div>
+  {% endfor %}
 </body>
