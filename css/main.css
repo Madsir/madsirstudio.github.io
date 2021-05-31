@@ -43,7 +43,7 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     font-family:"Courier New", 'Courier', 'monospace';
     color: #990099;
     text-align:center;
@@ -52,7 +52,7 @@ h1 {
 }
 h2 {
 
-    font-size: 2.5em;
+    font-size: 2em;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #c79325;
     text-align:center;
