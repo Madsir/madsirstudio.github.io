@@ -1,6 +1,6 @@
 Radness and madness.
 
-Madsir Studio presemys ...
+Madsir Studio presents ...
 
 Remote Agent: a quirky, physics-based, 2D platformer.
 
