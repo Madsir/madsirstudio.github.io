@@ -2,11 +2,7 @@ name: Madsir Studio
 title: Madsir Studio presents ...
 markdown: kramdown
 permalink: /RemoteAgentGame
-permalink: /RemoteAgentGameplay
-permalink: /RemoteAgentDemo
-permalink: /chinchillin
-permalink: /updates
-url: "https://madsirstudio.com" # the base hostname & protocol for your site
+url: "www.madsirstudio.com" # the base hostname & protocol for your site
 twitter:
   username: madsirstudio
   card: summary
