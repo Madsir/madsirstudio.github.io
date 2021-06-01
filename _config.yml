@@ -2,7 +2,7 @@ name: Madsir Studio
 title: Madsir Studio presents ...
 markdown: kramdown
 permalink: /RemoteAgentGame
-url: "www.madsirstudio.com" # the base hostname & protocol for your site
+url: "madsirstudio.com" # the base hostname & protocol for your site
 twitter:
   username: madsirstudio
   card: summary
