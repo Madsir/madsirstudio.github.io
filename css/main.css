@@ -93,12 +93,3 @@ footer {
     border-bottom: 1px solid #990099;
     background: rgba(255, 255, 255, 0.1);
 }
-
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-ul.posts li {
-    list-style: none;
-}
