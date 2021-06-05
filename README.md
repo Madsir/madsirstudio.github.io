@@ -8,5 +8,4 @@ Calculation Boogie: a math practice game with good music and cute chinchillas.
 
 Thwrt: description coming soon
 
-All original content is Copyright © 2021 Madsir Studio and is not to be used or distributed without permission.
-
+All original content © 2021 Madsir Studio
