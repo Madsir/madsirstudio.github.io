@@ -1,7 +1,9 @@
 name: Madsir Studio
 title: Madsir Studio presents ...
 markdown: kramdown
-url: "https://madsirstudio.com" # the base hostname & protocol for your site
+url: "http://madsirstudio.com" # the base hostname & protocol for your site
+permalink: /about
+permalink: /RemoteAgentGame
 
 
 plugins:
