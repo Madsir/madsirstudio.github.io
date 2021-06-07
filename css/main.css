@@ -36,14 +36,14 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.5vh;
     color: #25c793;
 }
 a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 2em;
+    font-size: 2vh;
     font-family:"Courier New", 'Courier', 'monospace';
     color: #990099;
     text-align:center;
@@ -52,7 +52,7 @@ h1 {
 }
 h2 {
 
-    font-size: 2em;
+    font-size: 2vh;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #c79325;
     text-align:center;
@@ -61,7 +61,7 @@ h2 {
 }
 h3 {
 
-    font-size: 2em;
+    font-size: 2vh;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #25c793;
     text-align:center;
@@ -71,7 +71,7 @@ h3 {
 h4 {
 
     font-family:"Courier New", 'Courier', 'monospace';
-    font-size: 1.5em;
+    font-size: 1.5vh;
     font-weight: bold;
     color: #990099;
     text-align:center;
@@ -80,8 +80,8 @@ h4 {
 }
 p {
     font-weight: bold;
-    font-size: 1.5em;
-    line-height: 1.5em;
+    font-size: 1.5vh;
+    line-height: 1.5vh;
     color: #25c793;
     font-family: "Verdana", "Geneva", sans-serif;
     text-align: center, justify;
