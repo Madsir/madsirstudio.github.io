@@ -24,7 +24,7 @@ nav
     background: rgba(255, 255, 255, 0.1);
 }
 nav ul, footer ul {
-    font-family:"Courier New", 'Courier', 'monospace';
+   font-family: "Verdana", "Geneva", sans-serif;
     list-style: none;
         font-size: 1.5em;
     font-weight: bold;
@@ -44,7 +44,7 @@ a:hover {
 }
 h1 {
     font-size: 2vh;
-    font-family:"Courier New", 'Courier', 'monospace';
+    font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #990099;
     text-align:center;
     margin-left: 15%;
@@ -82,7 +82,7 @@ p {
     font-weight: bold;
     font-size: 1.5vh;
     line-height: 1.5vh;
-    color: #25c793;
+    color: #FFF;
     font-family: "Verdana", "Geneva", sans-serif;
     text-align: center, justify;
         margin-left: 17%;
