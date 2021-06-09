@@ -24,7 +24,7 @@ nav
     background: rgba(255, 255, 255, 0.1);
 }
 nav ul, footer ul {
-    font-family:"Courier New", 'Courier', 'monospace';
+   font-family: "Verdana", "Geneva", sans-serif;
     list-style: none;
         font-size: 1.5em;
     font-weight: bold;
@@ -36,15 +36,15 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 2vh;
     color: #25c793;
 }
 a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 2em;
-    font-family:"Courier New", 'Courier', 'monospace';
+    font-size: 2vh;
+    font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #990099;
     text-align:center;
     margin-left: 15%;
@@ -52,7 +52,7 @@ h1 {
 }
 h2 {
 
-    font-size: 2em;
+    font-size: 2vh;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #c79325;
     text-align:center;
@@ -61,7 +61,7 @@ h2 {
 }
 h3 {
 
-    font-size: 2em;
+    font-size: 2vh;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #25c793;
     text-align:center;
@@ -71,7 +71,7 @@ h3 {
 h4 {
 
     font-family:"Courier New", 'Courier', 'monospace';
-    font-size: 1.5em;
+    font-size: 1.5vh;
     font-weight: bold;
     color: #990099;
     text-align:center;
@@ -80,9 +80,9 @@ h4 {
 }
 p {
     font-weight: bold;
-    font-size: 1.5em;
-    line-height: 1.5em;
-    color: #25c793;
+    font-size: 1.5vh;
+    line-height: 1.5vh;
+    color: #FFF;
     font-family: "Verdana", "Geneva", sans-serif;
     text-align: center, justify;
         margin-left: 17%;
