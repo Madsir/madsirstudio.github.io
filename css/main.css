@@ -1,9 +1,5 @@
 body {
     background: black;
-      background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-    background-size: 950px;
 }
 .column {
   flex: 43%;
@@ -25,7 +21,7 @@ nav
 nav ul, footer ul {
    font-family: "Verdana", "Geneva", sans-serif;
     list-style: none;
-        font-size: 1.5px;
+        font-size: 1em;
     font-weight: bold;
 }
 nav ul li, footer ul li {
@@ -35,14 +31,14 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    font-size: 2vh;
+    font-size: 2em;
     color: #25c793;
 }
 a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 2vh;
+    font-size: 3em;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #990099;
     text-align:center;
@@ -51,7 +47,7 @@ h1 {
 }
 h2 {
 
-    font-size: 2vh;
+    font-size: 2em;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #c79325;
     text-align:center;
@@ -60,7 +56,7 @@ h2 {
 }
 h3 {
 
-    font-size: 2vh;
+    font-size: 1,5em;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #25c793;
     text-align:center;
@@ -70,7 +66,7 @@ h3 {
 h4 {
 
     font-family:"Courier New", 'Courier', 'monospace';
-    font-size: 1.5vh;
+    font-size: 1.5em;
     font-weight: bold;
     color: #990099;
     text-align:center;
