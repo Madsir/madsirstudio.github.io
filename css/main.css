@@ -21,7 +21,7 @@ nav
 nav ul, footer ul {
    font-family: "Verdana", "Geneva", sans-serif;
     list-style: none;
-        font-size: 1px;
+        font-size: 1em;
     font-weight: bold;
 }
 nav ul li, footer ul li {
@@ -75,7 +75,7 @@ h4 {
 }
 p {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.5vh;
     line-height: 1.5vh;
     color: #FFF;
     font-family: "Verdana", "Geneva", sans-serif;
