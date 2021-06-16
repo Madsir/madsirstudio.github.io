@@ -38,7 +38,7 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 2.2em;
+    font-size: 2vh;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #FFF;
     text-align:center;
@@ -49,7 +49,7 @@ h1 {
 }
 h2 {
 
-    font-size: 2em;
+    font-size: 1.9vh;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #FFF;
     text-align:center;
@@ -58,7 +58,7 @@ h2 {
 }
 h3 {
 
-    font-size: 1.5em;
+    font-size: 1.5vh;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #FFF;
     text-align:center;
@@ -68,7 +68,7 @@ h3 {
 h4 {
 
     font-family:"Courier New", 'Courier', 'monospace';
-    font-size: 1.3em;
+    font-size: 1.3vh;
     font-weight: bold;
     color: #FFF;
     text-align:center;
@@ -79,7 +79,7 @@ h4 {
 }
 p {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.5vh;
     color: #FFF;
     font-family: "Verdana", "Geneva", sans-serif;
     text-align: center, justify;
