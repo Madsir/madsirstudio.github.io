@@ -10,7 +10,7 @@ body {
  #header-text{
   text-align:center;
     font-family:"Lucida Console", 'Monaco', 'monospace';
-    color: #8D248D;
+    color: #FFF;
  }
 nav
 {
@@ -32,7 +32,7 @@ nav ul li, footer ul li {
 a {
     text-decoration: none;
     font-size: 1em;
-    color: #25c793;
+    color: #FFF;
 }
 a:hover {
     text-decoration: underline;
@@ -51,7 +51,7 @@ h2 {
 
     font-size: 2em;
     font-family:"Lucida Console", 'Monaco', 'monospace';
-    color: #c79325;
+    color: #FFF;
     text-align:center;
         margin-left: 15%;
         margin-right: 15%;
@@ -60,7 +60,7 @@ h3 {
 
     font-size: 1.5em;
     font-family:"Lucida Console", 'Monaco', 'monospace';
-    color: #25c793;
+    color: #FFF;
     text-align:center;
         margin-left: 15%;
         margin-right: 15%;
