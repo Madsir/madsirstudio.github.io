@@ -38,18 +38,18 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 1.7vw;
+    font-size: 1.2vw;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #FFF;
     text-align:center;
     margin-left: 15%;
         margin-right: 15%;
       background-color: #202020 ;
-  padding: 10px ;
+  padding: 2px ;
 }
 h2 {
 
-    font-size: 1.6vw;
+    font-size: 1.1vw;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #FFF;
     text-align:center;
@@ -58,7 +58,7 @@ h2 {
 }
 h3 {
 
-    font-size: 1.2vw;
+    font-size: 1vw;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #FFF;
     text-align:center;
@@ -77,14 +77,14 @@ h4 {
 }
 p {
     font-weight: bold;
-    font-size: 1.1vw;
+    font-size: 1vw;
     color: #FFF;
     font-family: "Verdana", "Geneva", sans-serif;
     text-align: center, justify;
         margin-left: 17%;
         margin-right: 17%;
           background-color: #202020 ;
-  padding: 10px ;
+  padding: 2px ;
 }
 footer {
     border-top: 1px solid #990099;
