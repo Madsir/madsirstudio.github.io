@@ -44,8 +44,6 @@ h1 {
     text-align: left, justify;
     margin-left: 15%;
         margin-right: 15%;
-      background-color: #202020 ;
-  padding: 2px ;
     line-height: 2 ;
 }
 h2 {
@@ -85,8 +83,6 @@ p {
     text-align: justify;
         margin-left: 17%;
         margin-right: 17%;
-          background-color: #202020 ;
-  padding: 2px ;
     line-height: 2 ;
 }
 footer {
