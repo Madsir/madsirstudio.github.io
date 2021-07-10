@@ -72,7 +72,6 @@ h4 {
 
     font-family:"Lucida Console", 'Monaco', 'monospace';
     font-size: 1vw;
-    font-weight: bold;
     color: #FFF;
     text-align: right, justify;
         margin-left: 15%;
@@ -80,7 +79,6 @@ h4 {
     line-height: 2 ;
 }
 p {
-    font-weight: bold;
     font-size: 1vw;
     color: #FFF;
     font-family: "Verdana", "Geneva", sans-serif;
