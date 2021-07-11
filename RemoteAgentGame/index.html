@@ -8,13 +8,23 @@ description: "A fresh game inspired by nostalgia."
 	<head>
 <style>
 .main {
-  margin-left: 10%;
+  margin-left: 10%; /* Same width as the sidebar + left position in px */
 	margin-right: 10%;
 }
 .centerdiv {
-  margin-left: 17%; 
-	margin-right: 17%;
+  margin-left: 15%; /* Same width as the sidebar + left position in px */
+	margin-right: 15%;
 }
+  .columns {
+	  margin-left: 3%;
+  float: left;
+  width: 29%;
+  padding: 1px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 </style>
 </head>
 <body>
@@ -32,9 +42,9 @@ description: "A fresh game inspired by nostalgia."
 		Left with no means of communication, he is forced to leave his station and seek help.<br> </p>
 	<br>
 			<br>
-						<p>
+						<h2>
 	As his journey begins, however, it becomes clear that whatever source destroyed his monitoring station has also unleashed a strange, new chaos across the land.
-	</p>
+	</h2>
 			<br>
 			<br>
 		<div class="row">
@@ -66,7 +76,7 @@ description: "A fresh game inspired by nostalgia."
 		<br>
 		<br>
 			<br>
-		<p> Tune in to Remote Agent Radio for exclusive updates, trailers, gameplay footage, behind the scenes footage, and gaming music by Toilet Noise!</p>
+		<h1> Tune in to Remote Agent Radio for exclusive updates, trailers, gameplay footage, behind the scenes footage, and gaming music by Toilet Noise!</h1>
 		<br>
 		<a href="https://www.youtube.com/channel/UCWeUH4JTZM1-0H_xBKX2_Hg"><img src="/Assets/twitch.png" alt="youtube" style="width:20%"></a>
 		<br>
