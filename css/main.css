@@ -1,5 +1,5 @@
 body {
-    background: black;
+    background-color: #2d2d2d;
 }
 .column {
   flex: 43%;
@@ -21,8 +21,8 @@ nav
 nav ul, footer ul {
    font-family: "Verdana", "Geneva", sans-serif;
     list-style: none;
-        font-size: 12px;
-    font-weight: bold;
+        font-size: 13px;
+   /* font-weight: bold; */
 }
 nav ul li, footer ul li {
     display: inline;
@@ -31,58 +31,62 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     color: #FFF;
 }
 a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 1.2vw;
-    font-family:"Lucida Console", 'Monaco', 'monospace';
+    font-size: 1.3vw;
+    font-family:"OCR A Std", 'monospace';
     color: #FFF;
-    text-align: left, justify;
+    text-align: justify;
     margin-left: 15%;
         margin-right: 15%;
-    line-height: 2 ;
+   /* line-height: 1 ; */
 }
 h2 {
 
-    font-size: 1.1vw;
-    font-family:"Lucida Console", 'Monaco', 'monospace';
+    font-size: 1vw;
+    font-family: "Andale Mono", 'monospace';
     color: #FFF;
-    text-align: right, justify;
-        margin-left: 15%;
+    text-align: right;
+   /*     margin-left: 15%;
         margin-right: 15%;
     line-height: 2 ;
+    */
 }
 h3 {
 
     font-size: 1vw;
-    font-family:"Lucida Console", 'Monaco', 'monospace';
+    font-family: "Andale Mono", 'monospace';
     color: #FFF;
-    text-align: left, justify;
-        margin-left: 15%;
+    text-align: left;
+    /*    margin-left: 15%;
         margin-right: 15%;
     line-height: 2 ;
+    */
 }
 h4 {
 
-    font-family:"Lucida Console", 'Monaco', 'monospace';
+    font-family: "Andale Mono", 'monospace';
     font-size: 1vw;
     color: #FFF;
-    text-align: right, justify;
-        margin-left: 15%;
+    text-align: right;
+    /*    margin-left: 15%;
         margin-right: 15%;
-    line-height: 2 ;
+    line-height: 1 ;
+    */
 }
 p {
     font-size: 1vw;
     color: #FFF;
     font-family: "Verdana", "Geneva", sans-serif;
-    text-align: justify;
-        margin-left: 17%;
+    text-align: center, justify;
+   /*     margin-left: 17%;
         margin-right: 17%;
+    */
     line-height: 2 ;
 }
 footer {
