@@ -38,8 +38,8 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 1.1vw;
-    font-family: "Georgia", serif;
+    font-size: 1.3vw;
+    font-family: Verdana, Arial, Tahoma, Serif;
     color: #f1f1f1;
         text-align: justify;
     -moz-text-align-last: center; /* Firefox 12+ */
@@ -48,47 +48,49 @@ h1 {
 }
 h2 {
 
-    font-size: 1vw;
-    font-family: "Georgia", serif;
+    font-size: 1.2vw;
+    font-family: Verdana, Arial, Tahoma, Serif;
     color: #f1f1f1;
     text-align: justify;
     -moz-text-align-last: center; /* Firefox 12+ */
-    text-align-last: center;
+    text-align-last: left;
+    margin-left: 15%;
+    margin-right: 15%;
 
 }
 h3 {
 
-    font-size: 1vw;
-    font-family: "Georgia", serif;
+    font-size: 1.1vw;
+    font-family: Verdana, Arial, Tahoma, Serif;
     color: #f1f1f1;
         text-align: justify;
     -moz-text-align-last: center; /* Firefox 12+ */
-    text-align-last: center;
-        margin-left: 2%;
-        margin-right: 2%;
+    text-align-last: left;
+        margin-left: 15%;
+        margin-right: 15%;
 
 }
 h4 {
 
-    font-family: "Georgia", serif;
+    font-family: Verdana, Arial, Tahoma, Serif;
     font-size: 1vw;
     color: #f1f1f1;
         text-align: justify;
     -moz-text-align-last: center; /* Firefox 12+ */
-    text-align-last: center;
-        margin-left: 2%;
-        margin-right: 2%;
+    text-align-last: left;
+        margin-left: 20%;
+        margin-right: 20%;
 
 }
 p {
     font-size: 1vw;
     color: #f1f1f1;
-    font-family: "Verdana", "Geneva", sans-serif;
+    font-family: Verdana, Arial, Tahoma, Serif;
         text-align: justify;
     -moz-text-align-last: center; /* Firefox 12+ */
-    text-align-last: center;
-        margin-left: 9%;
-        margin-right: 9%;
+    text-align-last: left;
+        margin-left: 20%;
+        margin-right: 20%;
 }
 footer {
     border-top: 1px solid #990099;
