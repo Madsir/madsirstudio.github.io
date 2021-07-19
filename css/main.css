@@ -10,7 +10,7 @@ body {
  #header-text{
   text-align:center;
     font-family:"Lucida Console", 'Monaco', 'monospace';
-    color: #FFF;
+    color: #F6F6F6;
  }
 nav
 {
@@ -40,7 +40,7 @@ a:hover {
 h1 {
     font-size: 1.3vw;
     font-family: Verdana, Arial, Tahoma, Serif;
-    color: #f1f1f1;
+    color: #F6F6F6;
         text-align: justify;
     -moz-text-align-last: center; /* Firefox 12+ */
     text-align-last: center;
@@ -50,7 +50,7 @@ h2 {
 
     font-size: 1.2vw;
     font-family: Verdana, Arial, Tahoma, Serif;
-    color: #f1f1f1;
+    color: #F6F6F6;
     text-align: justify;
     -moz-text-align-last: center; /* Firefox 12+ */
     text-align-last: left;
@@ -62,7 +62,7 @@ h3 {
 
     font-size: 1.1vw;
     font-family: Verdana, Arial, Tahoma, Serif;
-    color: #f1f1f1;
+    color: #F6F6F6;
         text-align: justify;
     -moz-text-align-last: center; /* Firefox 12+ */
     text-align-last: left;
@@ -74,7 +74,7 @@ h4 {
 
     font-family: Verdana, Arial, Tahoma, Serif;
     font-size: 1vw;
-    color: #f1f1f1;
+    color: #F6F6F6;
         text-align: justify;
     -moz-text-align-last: center; /* Firefox 12+ */
     text-align-last: left;
@@ -84,7 +84,7 @@ h4 {
 }
 p {
     font-size: 1vw;
-    color: #f1f1f1;
+    color: #F6F6F6;
     font-family: Verdana, Arial, Tahoma, Serif;
         text-align: justify;
     -moz-text-align-last: center; /* Firefox 12+ */
