@@ -39,7 +39,7 @@ a:hover {
 }
 h1 {
     font-size: 1.3vw;
-    font-family: Georgia, serif;
+    font-family: "Georgia", serif;
     color: #f1f1f1;
     text-align: center,justify;
 
@@ -47,17 +47,17 @@ h1 {
 h2 {
 
     font-size: 1.1vw;
-    font-family: Georgia, serif;
+    font-family: "Georgia", serif;
     color: #f1f1f1;
     text-align: center,justify;
-        margin-left: 11%;
-        margin-right: 11%;
+        margin-left: 1%;
+        margin-right: 1%;
 
 }
 h3 {
 
     font-size: 1vw;
-    font-family: Georgia, serif;
+    font-family: "Georgia", serif;
     color: #f1f1f1;
     text-align: center,justify;
         margin-left: 2%;
@@ -66,7 +66,7 @@ h3 {
 }
 h4 {
 
-    font-family: Georgia, serif;
+    font-family: "Georgia", serif;
     font-size: 1vw;
     color: #f1f1f1;
     text-align: center,justify;
@@ -79,8 +79,8 @@ p {
     color: #f1f1f1;
     font-family: "Verdana", "Geneva", sans-serif;
     text-align: center,justify;
-        margin-left: 12%;
-        margin-right: 12%;
+        margin-left: 2%;
+        margin-right: 2%;
 }
 footer {
     border-top: 1px solid #990099;
