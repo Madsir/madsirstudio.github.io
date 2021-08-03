@@ -82,6 +82,18 @@ h4 {
         margin-right: 20%;
 
 }
+h5 {
+
+    font-family: Verdana, Arial, Tahoma, Serif;
+    font-size: 1vw;
+    color: #F6F6F6;
+        text-align: center;
+    -moz-text-align-last: center; /* Firefox 12+ */
+    text-align-last: center;
+        margin-left: 20%;
+        margin-right: 20%;
+
+}
 p {
     font-size: 1vw;
     color: #F6F6F6;
