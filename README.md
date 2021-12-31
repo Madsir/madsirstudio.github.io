@@ -27,4 +27,4 @@ Utterer Dialogue System: Easily create and control dialogue. Customizable. Infin
 
 SownSystm Audio Controller: Control all sounds in your game with one easy to use system.
 
-All content © 2019-2022 Madsir Studio and is not to be downloaded or distributed without the express persmission of Madsir Studio.
+All content © 2019-2022 Madsir Studio and is not to be downloaded or distributed without the permission of Madsir Studio.
