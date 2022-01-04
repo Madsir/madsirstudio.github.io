@@ -21,9 +21,9 @@ Tetrachromat: description unavailable til 2022
 
 *Coming Soon:*
 
-Cinemat 2D Cutscene System: Easily create and control cutscenes. Can control multiple cutscenes in one scene. Infinite camera shots.
+CinemArchon 2D - Cutscene System: Easily create and control cutscenes. Can control multiple cutscenes in one scene. Infinite camera shots.
 
-Utterer Dialogue System: Easily create and control dialogue. Customizable. Infinite utters.
+Utterer - Dialogue and Subtitle System: Easily create and control dialogue. Customizable. Infinite utters.
 
 SownSystm Audio Controller: Control all sounds in your game with one easy to use system.
 
