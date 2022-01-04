@@ -21,7 +21,7 @@ Tetrachromat: description unavailable til 2022
 
 *Coming Soon:*
 
-CinemArchon 2D - Cutscene System: Easily create and control cutscenes. Can control multiple cutscenes in one scene. Infinite camera shots.
+Cutscheme 2D - Cutscene System: Easily create and control cutscenes. Can control multiple cutscenes in one scene. Infinite camera shots.
 
 Utterer - Dialogue and Subtitle System: Easily create and control dialogue. Customizable. Infinite utters.
 
