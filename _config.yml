@@ -3,9 +3,9 @@ title: Madsir Studio presents ...
 markdown: kramdown
 url: "http://madsirstudio.com" # the base hostname & protocol for your site
 permalink: /about/
-permalink: /RemoteAgent/
-permalink: /UnityAssets/
-permalink: /Privacy/
+permalink: /remoteagent/
+permalink: /cutscheme2d/
+permalink: /privacy/
 permalink: /chinchillin
 
 
