@@ -1,6 +1,6 @@
-Radness and madness.
-
 Madsir Studio presents ...
+
+Radness and madness.
 
 **GAMES**
 
@@ -8,23 +8,17 @@ Remote Agent Radio: Secret radio messages and gaming music by CR Bird's Toilet N
 
 Calculation Boogie: a math practice game with good music and cute chinchillas.
 
-*Coming Soon:*
+*In Production*
 
 Remote Agent: Far out in the remote wilderness lives an agent whose aerospace monitoring station has been attacked by an unknown source. Left with no means of communication, he is forced to leave his station and seek help. As his journey begins, however, it becomes clear that whatever source destroyed his monitoring station has also unleashed a strange, new chaos across the land.
-
-Thwrt: description unavailable til 2022
-
-Tetrachromat: description unavailable til 2022
 
 
 **UNITY ASSETS**
 
-*Coming Soon:*
-
 Cutscheme 2D - Cutscene System: Easily create and control cutscenes. Can control multiple cutscenes in one scene. Infinite camera shots.
 
-Utterer - Dialogue and Subtitle System: Easily create and control dialogue. Customizable. Infinite utters.
+*Coming Soon:*
 
-SownSystm Audio Controller: Control all sounds in your game with one easy to use system.
+Utterer - Dialogue and Subtitle System: Easily create and control dialogue. Customizable. Infinite utters.
 
 All content © 2019-2022 Madsir Studio and is not to be downloaded or distributed without the permission of Madsir Studio.
