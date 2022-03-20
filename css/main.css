@@ -1,6 +1,5 @@
 body {
     background-color: black;
-    box-shadow: 0 0 10px 5px black;
 }
 .column {
   flex: 43%;
