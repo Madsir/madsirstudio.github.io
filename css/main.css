@@ -2,16 +2,16 @@ body {
     background-color: black;
 }
 .column {
-  flex: 43%;
+    flex: 43%;
 }
 .row{
-  display: flex;
+    display: flex;
 }
- #header-text{
-  text-align:center;
+    #header-text{
+    text-align:center;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: #F6F6F6;
- }
+}
 nav
 {
     border-top: 1px solid #990099;
@@ -19,9 +19,9 @@ nav
     background: rgba(255, 255, 255, 0.1);
 }
 nav ul, footer ul {
-   font-family: "Verdana", "Geneva", sans-serif;
+    font-family: "Verdana", "Geneva", sans-serif;
     list-style: none;
-        font-size: 14px;
+    font-size: 14px;
     font-weight: bold;
 }
 nav ul li, footer ul li {
@@ -38,71 +38,41 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 1.3vw;
+    font-size: 1.5em;
     font-family: Verdana, Arial, Tahoma, Serif;
     color: #F6F6F6;
-        text-align: justify;
-    -moz-text-align-last: center; /* Firefox 12+ */
-    text-align-last: center;
-
+    text-align: center;
 }
 h2 {
-
-    font-size: 1.2vw;
+    font-size: 1.3em;
     font-family: Verdana, Arial, Tahoma, Serif;
     color: #F6F6F6;
-    text-align: justify;
-    -moz-text-align-last: center; /* Firefox 12+ */
-    text-align-last: left;
-    margin-left: 15%;
-    margin-right: 15%;
-
+    text-align: left;
 }
 h3 {
-
-    font-size: 1.1vw;
+    font-size: 1.3em;
     font-family: Verdana, Arial, Tahoma, Serif;
     color: #F6F6F6;
-        text-align: justify;
-    -moz-text-align-last: center; /* Firefox 12+ */
-    text-align-last: left;
-        margin-left: 15%;
-        margin-right: 15%;
-
+    text-align: right;
 }
 h4 {
-
     font-family: Verdana, Arial, Tahoma, Serif;
-    font-size: 1vw;
+    font-size: 1.2em;
     color: #F6F6F6;
-        text-align: justify;
-    -moz-text-align-last: center; /* Firefox 12+ */
-    text-align-last: left;
-        margin-left: 20%;
-        margin-right: 20%;
-
+    text-align: left;
 }
 h5 {
-
     font-family: Verdana, Arial, Tahoma, Serif;
-    font-size: 1vw;
+    font-size: 1.2em;
     color: #F6F6F6;
-        text-align: center;
-    -moz-text-align-last: center; /* Firefox 12+ */
-    text-align-last: center;
-        margin-left: 20%;
-        margin-right: 20%;
-
+    text-align: right;
 }
 p {
     font-size: 1em;
     color: #F6F6F6;
     font-family: Verdana, Arial, Tahoma, Serif;
-        text-align: justify;
-    -moz-text-align-last: center; /* Firefox 12+ */
+    text-align: justify;
     text-align-last: left;
-        margin-left: 20%;
-        margin-right: 20%;
 }
 footer {
     border-top: 1px solid #990099;
