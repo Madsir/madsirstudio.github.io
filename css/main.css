@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: #020202;
     box-shadow: 0 0 10px 5px black;
 }
 .column {
@@ -36,54 +36,51 @@ a {
     color: #ff8e8e;
 }
 a:hover {
-    text-decoration: underline;
+    text-shadow: 0 0 2px 1px #ff8e8e;
 }
 h1 {
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-family: Verdana, Arial, Tahoma, Serif;
     color: #ffd472;
     -moz-text-align-last: center; /* Firefox 12+ */
     text-align-last: center;
-
+    box-shadow: 0 0 8px 5px #ffd472;
 }
 h2 {
 
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     font-family: Verdana, Arial, Tahoma, Serif;
     color: #ffd472;
-    text-align: justify;
-    -moz-text-align-last: center; /* Firefox 12+ */
+    -moz-text-align-last: left; /* Firefox 12+ */
     text-align-last: left;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
 
 }
 h3 {
 
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     font-family: Verdana, Arial, Tahoma, Serif;
     color: #ffd472;
-    text-align: justify;
-    -moz-text-align-last: center; /* Firefox 12+ */
+    -moz-text-align-last: right; /* Firefox 12+ */
     text-align-last: right;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
 
 }
 h4 {
 
     font-family: Verdana, Arial, Tahoma, Serif;
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     color: #ffd472;
     -moz-text-align-last: center; /* Firefox 12+ */
     text-align-last: center;
-
 }
 h5 {
 
     font-family: Verdana, Arial, Tahoma, Serif;
     font-size: 14px;
-    color: #ffd472;
+    color: #e0e0e0;
     text-align: justify;
     -moz-text-align-last: center; /* Firefox 12+ */
     text-align-last: center;
@@ -92,14 +89,14 @@ h5 {
 
 }
 p {
-    font-size: 16px;
-    color: #ffd472;
+    font-size: 14px;
+    color: #e0e0e0;
     font-family: Verdana, Arial, Tahoma, Serif;
     text-align: justify;
-    -moz-text-align-last: center; /* Firefox 12+ */
+    -moz-text-align-last: left; /* Firefox 12+ */
     text-align-last: left;
     margin-left: 15%;
-    margin-right: 15%;
+    margin-right: 15;
 }
 footer {
     border-top: 1px solid #990099;
