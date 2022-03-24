@@ -15,19 +15,28 @@ description: "Cutscheme 2D | A versatile and easy-to-use cutscene tool designed 
   box-shadow: 0 0 8px 5px purple;
 }
 .centerdiv {
-  margin-left: 2%; /* Same width as the sidebar + left position in px */
-  margin-right: 2%;
+  margin-left: 10%; /* Same width as the sidebar + left position in px */
+  margin-right: 10%;
 }
 .columns {
-  margin-left: 3%;
   float: left;
-  width: 29%;
+  width: 49%;
   padding: 1px;
 }
 .row::after {
   content: "";
   clear: both;
   display: table;
+}
+img {
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: 5px;
+  max-width: 100%;
+  height: auto;
+}
+img:hover {
+  box-shadow: 0 0 2px 1px #ff8e8e;
 }
 </style>
 </head>
@@ -36,6 +45,7 @@ description: "Cutscheme 2D | A versatile and easy-to-use cutscene tool designed 
 	<center>
 	<br>
 	<br>
+		<h1>CUTSCHEME 2D</h1>
 	<br>
 	<br>
 	<br>
@@ -50,16 +60,23 @@ description: "Cutscheme 2D | A versatile and easy-to-use cutscene tool designed 
 			<br>
 			This system works with top-down, side-on, and isometric camera styles.</p>
 			<br>
+			<div class="row">
+				<div class="columns">
 				<img src="/Assets/Instructionsc2d.png" alt="Cutscheme 2D" width="60%">
-			<br>
-			<br>
+				</div>
+				<div class="columns">
 				<img src="/Assets/InstructionsCameraPositions.png" alt="Cutscheme 2D" width="60%">
+				</div>
+			</div>
 			<br>
-			<br>
+			<div class="row">
+				<div class="columns">
 				<img src="/Assets/C2DEffectsSystemInstructions.png" alt="Cutscheme 2D" width="60%">
-			<br>
-			<br>
+				</div>
+				<div class="columns">
 				<img src="/Assets/c2DFilterSystemInstructions.png" alt="Cutscheme 2D" width="60%">
+				</div>
+			</div>
 			<br>
 			<br>
 		</div>
