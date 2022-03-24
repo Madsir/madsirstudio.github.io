@@ -1,6 +1,7 @@
 body {
     background-color: #020202;
     box-shadow: 0 0 10px 5px black;
+    font-size: 100%;
 }
 .column {
   flex: 43%;
@@ -39,7 +40,7 @@ a:hover {
     text-shadow: 0 0 2px 1px #ff8e8e;
 }
 h1 {
-    font-size: 2vw;
+    font-size: 2em;
     font-family: Verdana, Arial, Tahoma, Serif;
     color: #ffd472;
     -moz-text-align-last: center; /* Firefox 12+ */
@@ -48,7 +49,7 @@ h1 {
 }
 h2 {
 
-    font-size: 1.5vw;
+    font-size: 1.5em;
     font-family: Verdana, Arial, Tahoma, Serif;
     color: #ffd472;
     -moz-text-align-last: left; /* Firefox 12+ */
@@ -59,7 +60,7 @@ h2 {
 }
 h3 {
 
-    font-size: 1.5vw;
+    font-size: 1.5em;
     font-family: Verdana, Arial, Tahoma, Serif;
     color: #ffd472;
     -moz-text-align-last: right; /* Firefox 12+ */
@@ -71,7 +72,7 @@ h3 {
 h4 {
 
     font-family: Verdana, Arial, Tahoma, Serif;
-    font-size: 1.5vw;
+    font-size: 1.5em;
     color: #ffd472;
     -moz-text-align-last: center; /* Firefox 12+ */
     text-align-last: center;
@@ -79,7 +80,7 @@ h4 {
 h5 {
 
     font-family: Verdana, Arial, Tahoma, Serif;
-    font-size: 14px;
+    font-size: 0.85em;
     color: #e0e0e0;
     text-align: justify;
     -moz-text-align-last: center; /* Firefox 12+ */
@@ -89,7 +90,7 @@ h5 {
 
 }
 p {
-    font-size: 14px;
+    font-size: 0.9em;
     color: #e0e0e0;
     font-family: Verdana, Arial, Tahoma, Serif;
     text-align: justify;
