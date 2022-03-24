@@ -33,25 +33,24 @@ nav ul li, footer ul li {
 a {
     text-decoration: none;
     font-size: 14px;
-    color: #ff997f
+    color: #ff8e8e;
 }
 a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     font-family: Verdana, Arial, Tahoma, Serif;
-    color: #fdeabf;
-        text-align: justify;
+    color: #ffd472;
     -moz-text-align-last: center; /* Firefox 12+ */
     text-align-last: center;
 
 }
 h2 {
 
-    font-size: 1.6vw;
+    font-size: 1.3vw;
     font-family: Verdana, Arial, Tahoma, Serif;
-    color: #fdeabf;
+    color: #ffd472;
     text-align: justify;
     -moz-text-align-last: center; /* Firefox 12+ */
     text-align-last: left;
@@ -61,12 +60,12 @@ h2 {
 }
 h3 {
 
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     font-family: Verdana, Arial, Tahoma, Serif;
-    color: #fdeabf;
+    color: #ffd472;
         text-align: justify;
     -moz-text-align-last: center; /* Firefox 12+ */
-    text-align-last: left;
+    text-align-last: right;
         margin-left: 15%;
         margin-right: 15%;
 
@@ -74,36 +73,36 @@ h3 {
 h4 {
 
     font-family: Verdana, Arial, Tahoma, Serif;
-    font-size: 1.4vw;
-    color: #fdeabf;
+    font-size: 1.2vw;
+    color: #ffd472;
         text-align: justify;
     -moz-text-align-last: center; /* Firefox 12+ */
     text-align-last: left;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 15%;
+        margin-right: 15%;
 
 }
 h5 {
 
     font-family: Verdana, Arial, Tahoma, Serif;
-    font-size: 1.3vw;
-    color: #fdeabf;
-        text-align: center;
+    font-size: 1.2vw;
+    color: #ffd472;
+        text-align: right;
     -moz-text-align-last: center; /* Firefox 12+ */
     text-align-last: center;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 15%;
+        margin-right: 15%;
 
 }
 p {
-    font-size: 1.2vw;
-    color: #fdeabf;
+    font-size: 16px;
+    color: #ffd472;
     font-family: Verdana, Arial, Tahoma, Serif;
-        text-align: justify;
+    text-align: justify;
     -moz-text-align-last: center; /* Firefox 12+ */
     text-align-last: left;
-        margin-left: 20%;
-        margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 footer {
     border-top: 1px solid #990099;
