@@ -1,6 +1,6 @@
 Madsir Studio presents ...
 
-Radness and madness.
+**RADNESS & MADNESS**
 
 **GAMES**
 
