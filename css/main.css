@@ -42,7 +42,7 @@ a:hover {
 h1 {
     font-size: 2em;
     font-family: Verdana, Arial, Tahoma, Serif;
-    color: #ffd472;
+    color: #ffd87f;
     -moz-text-align-last: center; /* Firefox 12+ */
     text-align-last: center;
     box-shadow: 0 0 8px 5px #ffd472;
@@ -51,7 +51,7 @@ h2 {
 
     font-size: 1.5em;
     font-family: Verdana, Arial, Tahoma, Serif;
-    color: #ffd472;
+    color: #ffd87f;
     -moz-text-align-last: left; /* Firefox 12+ */
     text-align-last: left;
     margin-left: 20%;
@@ -62,7 +62,7 @@ h3 {
 
     font-size: 1.5em;
     font-family: Verdana, Arial, Tahoma, Serif;
-    color: #ffd472;
+    color: #ffd87f;
     -moz-text-align-last: right; /* Firefox 12+ */
     text-align-last: right;
     margin-left: 20%;
@@ -73,7 +73,7 @@ h4 {
 
     font-family: Verdana, Arial, Tahoma, Serif;
     font-size: 1.5em;
-    color: #ffd472;
+    color: #ffd87f;
     -moz-text-align-last: center; /* Firefox 12+ */
     text-align-last: center;
         margin-left: 20%;
