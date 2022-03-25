@@ -82,7 +82,7 @@ h4 {
 h5 {
 
     font-family: Verdana, Arial, Tahoma, Serif;
-    font-size: 0.9em;
+    font-size: 16px;
     color: #e0e0e0;
     text-align: justify;
     -moz-text-align-last: center; /* Firefox 12+ */
@@ -104,5 +104,5 @@ p {
 footer {
     border-top: 1px solid #990099;
     border-bottom: 1px solid #990099;
-    background: rgba(255, 255, 255, 0.1);
+    background-color: #14001e;
 }
