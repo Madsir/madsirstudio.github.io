@@ -49,7 +49,7 @@ h1 {
 }
 h2 {
 
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-family: Verdana, Arial, Tahoma, Serif;
     color: #ffd87f;
     -moz-text-align-last: left; /* Firefox 12+ */
@@ -60,7 +60,7 @@ h2 {
 }
 h3 {
 
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-family: Verdana, Arial, Tahoma, Serif;
     color: #ffd87f;
     -moz-text-align-last: right; /* Firefox 12+ */
@@ -72,7 +72,7 @@ h3 {
 h4 {
 
     font-family: Verdana, Arial, Tahoma, Serif;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #ffd87f;
     -moz-text-align-last: center; /* Firefox 12+ */
     text-align-last: center;
@@ -84,22 +84,19 @@ h5 {
     font-family: Verdana, Arial, Tahoma, Serif;
     font-size: 16px;
     color: #e0e0e0;
-    text-align: justify;
-    -moz-text-align-last: center; /* Firefox 12+ */
-    text-align-last: center;
+    text-align: left;
     margin-left: 5%;
     margin-right: 5%;
-
+    line-height: 1.5;
 }
 p {
     font-size: 1em;
     color: #e0e0e0;
     font-family: Verdana, Arial, Tahoma, Serif;
-    text-align: justify;
-    -moz-text-align-last: left; /* Firefox 12+ */
-    text-align-last: left;
+    text-align: left;
     margin-left: 5%;
     margin-right: 5%;
+    line-height: 1.5;
 }
 footer {
     border-top: 1px solid #990099;
