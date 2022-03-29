@@ -15,7 +15,7 @@ description: "Cutscheme 2D | A versatile and easy-to-use cutscene tool designed 
   box-shadow: 0 0 8px 5px purple;
   background-color: #14001e;
 }
-centerdiv {
+.centerdiv {
   margin-left: 1%;
   margin-right: 1%;
 }
@@ -41,6 +41,10 @@ p {
 h2 {
 margin-left: 5%;
 }
+.around {
+  margin-left: 5%;
+  margin-right: 5%;
+}
 </style>
 </head>
 <body>
@@ -49,23 +53,22 @@ margin-left: 5%;
 	<div class="centerdiv">
 	<br>
 		<br>
-		<p>The Cutscheme 2D system is designed to be your camera crew, handling the technical aspects so you can play director and let your creativity flow.
-			<br>
-			<br>
-			Create standalone cutscenes, opening cutscenes, triggered cutscenes, transition cutscenes and trailers.
-			<br>
-			<br>
-			orks with orthographic cameras (top-down, side-on, orthographic, etc.).</p>	
-			<br>
-
+		<p>The Cutscheme 2D system is designed to be your camera crew, handling the technical aspects so you can play director and let your creativity flow. 
+		   Create standalone cutscenes, opening cutscenes, triggered cutscenes, transition cutscenes and trailers. 
+		   Works with orthographic cameras (top-down, side-on, orthographic, etc.).</p>	
+	<br>
 		<h2>Cutscheme 2D Controller</h2>
 		<br>
 		<p>Control a camera (or parent of a camera) in the scene. Cutscheme 2D will automatically detect whether the transform you drag into the Main Camera field is a Camera or a parent of a Camera and will reformat itself accordingly.<br>
 		Allows option to show or hide outlines of the camera positions in the cutscene. These outlines reflect each of their respective camera sizes and positions.<br>Idle camera positions are outlined in dark purple and selected camera positions are outlined in light green.</p>
-		>br>
 		<br>
+		<br>
+		<div class="around">
+			<center>
 		<a href="/Assets/Instructionsc2d.png"><img src="/Assets/Instructionsc2d.png" alt="Cutscheme 2D" width="50%"></a>
-<br>
+			</center>
+		</div>
+	<br>
 			<h2>Cutscheme Object Control</h2><br>
 			<p>-Hide or show objects before, during, and after the cutscene<br>
 			-Objects hidden before cutscene will be automatically disabled in the editor, though can be enabled and disabled manually<br>
@@ -99,8 +102,11 @@ margin-left: 5%;
 		-speed up or slow down time during the camera shot</p>
 <br>
 		<br>
-		<a href="/Assets/InstructionsCameraPositions.png"><img src="/Assets/InstructionsCameraPositions.png" alt="Cutscheme 2D" width="50%"></a>
-
+	<div class="around">
+		<center>
+		<a href="/Assets/InstructionsCameraPositions.png"><img src="/Assets/InstructionsCameraPositions.png" alt="Cutscheme 2D" width="60%"></a>
+		</center>
+	</div>
 	<br>
 	<br>
 <br>
