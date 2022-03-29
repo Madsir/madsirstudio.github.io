@@ -52,9 +52,6 @@ h2 {
     font-family: Verdana, Arial, Tahoma, Serif;
     color: #ffd87f;
     text-align: left;
-    margin-left: 5%;
-    margin-right: 5%;
-
 }
 h3 {
 
@@ -62,9 +59,6 @@ h3 {
     font-family: Verdana, Arial, Tahoma, Serif;
     color: #ffd87f;
     text-align: right;
-    margin-left: 5%;
-    margin-right: 5%;
-
 }
 h4 {
 
@@ -72,8 +66,6 @@ h4 {
     font-size: 1.3em;
     color: #ffd87f;
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 h5 {
 
@@ -86,7 +78,7 @@ h5 {
     line-height: 1.5;
 }
 p {
-    font-size: 1em;
+    font-size: 0.9em;
     color: #e0e0e0;
     font-family: Verdana, Arial, Tahoma, Serif;
     text-align: left;
