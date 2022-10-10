@@ -12,13 +12,13 @@ body {
  #header-text{
   text-align:center;
     font-family:"Lucida Console", 'Monaco', 'monospace';
-    color: #F6F6F6;
+    color: 	#A9A9A9;
  }
 nav
 {
-    border-top: 1px solid #990099;
-    border-bottom: 1px solid #990099;
-    background-color: #14001e;
+    border-top: 1px solid #A9A9A9;
+    border-bottom: 1px solid #A9A9A9;
+    background-color: #303030;
 }
 nav ul, footer ul {
    font-family: "Verdana", "Geneva", sans-serif;
@@ -42,29 +42,29 @@ a:hover {
 h1 {
     font-size: 2em;
     font-family: Verdana, Arial, Tahoma, Serif;
-    color: #ffd87f;
+    color: 	#A9A9A9;
     text-align: center;
-    box-shadow: 0 0 8px 5px #ffd472;
+    box-shadow: 0 0 8px 5px #A9A9A9;
 }
 h2 {
 
     font-size: 1.3em;
     font-family: Verdana, Arial, Tahoma, Serif;
-    color: #ffd87f;
+    color:	#A9A9A9;
     text-align: left;
 }
 h3 {
 
     font-size: 1.3em;
     font-family: Verdana, Arial, Tahoma, Serif;
-    color: #ffd87f;
+    color: #A9A9A9;
     text-align: right;
 }
 h4 {
 
     font-family: Verdana, Arial, Tahoma, Serif;
     font-size: 1.3em;
-    color: #ffd87f;
+    color: #A9A9A9;
     text-align: center;
 }
 h5 {
@@ -78,7 +78,7 @@ h5 {
     line-height: 1.5;
 }
 p {
-    font-size: 0.9em;
+    font-size: 12pt;
     color: #e0e0e0;
     font-family: Verdana, Arial, Tahoma, Serif;
     text-align: left;
@@ -87,7 +87,7 @@ p {
     line-height: 1.5;
 }
 footer {
-    border-top: 1px solid #990099;
-    border-bottom: 1px solid #990099;
-    background-color: #14001e;
+    border-top: 1px solid #A9A9A9;
+    border-bottom: 1px solid #A9A9A9;
+    background-color: #303030;
 }
