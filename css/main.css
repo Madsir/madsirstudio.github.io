@@ -16,9 +16,9 @@ body {
  }
 nav
 {
-    border-top: 1px solid #990099;
-    border-bottom: 1px solid #990099;
-    background-color: #14001e;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #303030;
 }
 nav ul, footer ul {
    font-family: "Verdana", "Geneva", sans-serif;
@@ -78,7 +78,7 @@ h5 {
     line-height: 1.5;
 }
 p {
-    font-size: 0.9em;
+    font-size: 12pt;
     color: #e0e0e0;
     font-family: Verdana, Arial, Tahoma, Serif;
     text-align: left;
@@ -87,7 +87,7 @@ p {
     line-height: 1.5;
 }
 footer {
-    border-top: 1px solid #990099;
-    border-bottom: 1px solid #990099;
-    background-color: #14001e;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #303030;
 }
