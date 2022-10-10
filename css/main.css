@@ -18,7 +18,7 @@ nav
 {
     border-top: 1px solid #A9A9A9;
     border-bottom: 1px solid #A9A9A9;
-    background-color: #303030;
+    background-color: #16161d;
 }
 nav ul, footer ul {
    font-family: "Verdana", "Geneva", sans-serif;
@@ -89,5 +89,5 @@ p {
 footer {
     border-top: 1px solid #A9A9A9;
     border-bottom: 1px solid #A9A9A9;
-    background-color: #303030;
+    background-color: #16161d ;
 }
