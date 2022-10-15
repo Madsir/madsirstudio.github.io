@@ -70,7 +70,7 @@ h4 {
 h5 {
 
     font-family: Verdana, Arial, Tahoma, Serif;
-    font-size: 19px;
+    font-size: 1.2em;
     color: #e0e0e0;
     text-align: center;
     margin-left: 5%;
@@ -78,7 +78,7 @@ h5 {
     line-height: 1.5;
 }
 p {
-    font-size: 19px;
+    font-size: 1.2em;
     color: #e0e0e0;
     font-family: Verdana, Arial, Tahoma, Serif;
     text-align: left;
