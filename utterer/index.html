@@ -61,16 +61,14 @@ margin-left: 5%;
 		<br>
 		<br>
 		<br>
-		<h2>Utterer</h2>
-		<br>
-		<p>The Utterer package comes with three main components: Utterer Dialogue System, Utterer Languages, and Utterer Dynamics.</p>
+		<p>The Utterer package comes with three main components: Utterer Languages, Utterer Dynamics, and Utterer Dialogue System.</p>
 	<br>
 		<br>
 		
 		<h2>Utterer Languages</h2>
 		<br>
 	<p>Utterer Languages localization framework is compatible with Text/TextMesh Pro, AudioSource, and Image components as well as the Utterer Dialogue System. 
-<br>
+<br><br>
 The system contains 187 languages to choose from (you can also add more) and automatically updates current culture settings based on which language is selected at runtime. Text/UDS translations can be imported and exported as CSV data.</p>
 	<br>
 			<div class="around">
@@ -80,31 +78,36 @@ The system contains 187 languages to choose from (you can also add more) and aut
 	<br>
 	<p>
 For general use :
-<br>
+<br><br>
 Add an UttererLanguages script to any object with a Text, TextMesh Pro, Audio Source, or Image component. Text areas/audio/sprite fields will be added for each language in the list and the Text, TextMesh Pro, Audio Source, or Image component will display the text/audio/sprite of whichever language is the current language in use.
 <br>
 <br>
 For UDS :
-<br>
+<br><br>
 Add an UttererLanguages script to a UDS prefab in the scene. Speaker text areas and utterance text areas will appear in each Utterance for every language in the Languages list, along with an option for localized sound in each Utterance. Text/TextMesh Pro and Utterer Dialogue System translations can be imported and exported as CSV data.</p><br>
-	<br><br>
+	<br><br><br>
+<br><br>
+<br>
 	<h2>Utterer Dynamics</h2>
 	<br>
 <p>
 
-Built-In Dynamics (&lt;call&gt;)<br>
-	Utterer Dynamics contains several built in dynamic strings that are formatted based on the current culture settings, as well as a Dynamics List for you to add your own dynamic strings, each with a call and an ID. Calls are replaced with their IDs at runtime.<br>
-	Utterer Dynamics contains several built in Dynamics that are formatted based on the current culture settings :<br><br>
-Several DateTime calls (&lt;LongDate&gt;, &lt;ShortDate&gt;, &lt;LongTime&gt;, etc.)<br>
-Currency based on culture settings (&lt;c123.4567&gt; = $123.45)<br>
+Built-In Dynamics (&lt;call&gt;)<br><br>
+	Utterer Dynamics contains several built in dynamic strings as well as a Dynamics List for you to add your own dynamic strings, each with a call and an ID. Calls are replaced with their IDs at runtime.<br>
+	Built in Dynamics are formatted based on the current culture settings :<br><br>
+Several DateTime calls :<br><br> (&lt;LongDate&gt;, &lt;ShortDate&gt;, &lt;LongTime&gt;, etc.)<br><br>
+Currency based on culture settings : <br>
+	<br>(&lt;c123.4567&gt; = $123.45)<br><br>
 Decimals/doubles/floats, etc. based on culture settings (&lt;1234.56789&gt; = 1234.568)<br>
 <br>
 Dynamics List :<br><br>
 With the Dynamics List you can create a custom list of calls. As long as at least one UttererDynamics script is in the scene, these calls will be replaced with their ID at runtime in all Text/TMPro instances.
 <br><br>
-Save custom calls and IDs in Editor<br>
+Save custom calls and IDs in Editor<br><br>
 		Save custom calls and IDs through user input.<br></p>
-		<br>
+		<br><br>
+<br><br>
+<br>
 	<br><br>
 	<h2>Utterer Dialogue System (UDS)</h2>
 	<br>
