@@ -23,4 +23,4 @@ Cutscheme 2D - Cutscene System: Easily create and control cutscenes. Can control
 
 Utterer - Dialogue and Subtitle System: Easily create and control dialogue. Customizable. Infinite utters. Comes with Utterer Languages localization system.
 
-All content © 2019-2022 Madsir Studio and is not to be downloaded or distributed without the permission of Madsir Studio.
+All content © 2019-2023 Madsir Studio and is not to be downloaded or distributed without the permission of Madsir Studio.
