@@ -37,6 +37,7 @@ a {
     color: #ff8e8e;
 }
 a:hover {
+    color: #ffc3aa;
     text-shadow: 0 0 2px 1px #ff8e8e;
 }
 h1 {
