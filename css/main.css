@@ -23,7 +23,7 @@ nav
 nav ul, footer ul {
    font-family: "Verdana", "Geneva", sans-serif;
     list-style: none;
-    font-size: 14px;
+    font-size: 1.1667em;
     font-weight: bold;
 }
 nav ul li, footer ul li {
@@ -69,9 +69,8 @@ h4 {
     text-align: center;
 }
 h5 {
-
     font-family: Verdana, Arial, Tahoma, Serif;
-    font-size: 1.2em;
+    font-size: 1.1667em;
     color: #e0e0e0;
     text-align: center;
     margin-left: 5%;
