@@ -27,12 +27,12 @@ nav ul li, footer ul li {
     display: inline;
     padding-right: 45px;
     margin-left: 0px;
-    font-size: small;
+    font-size: medium;
     font-weight: bold;
 }
 a {
     text-decoration: none;
-    font-size: small;
+    font-size: medium;
     color: #ff8e8e;
 }
 a:hover {
@@ -69,12 +69,12 @@ h4 {
 }
 h5 {
     font-family: Verdana, Arial, Tahoma, Serif;
-    font-size: small;
+    font-size: medium;
     color: #e0e0e0;
     text-align: center;
 }
 p {
-        font-size: small;
+        font-size: medium;
     color: #e0e0e0;
     font-family: Verdana, Arial, Tahoma, Serif;
     text-align: left;
