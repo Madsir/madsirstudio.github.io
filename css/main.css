@@ -30,6 +30,7 @@ nav ul li, footer ul li {
     display: inline;
     padding-right: 45px;
     margin-left: 0px;
+    font-size: 1.1667em;
 }
 a {
     text-decoration: none;
