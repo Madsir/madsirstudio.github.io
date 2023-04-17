@@ -1,7 +1,6 @@
 body {
     background-color: #020202;
-    box-shadow: 0 0 10px 5px #090F14;
-    font-size: 100%;
+    box-shadow: 0 0 10px 5px #090F14;    
 }
 .column {
   flex: 43%;
@@ -23,18 +22,17 @@ nav
 nav ul, footer ul {
    font-family: "Verdana", "Geneva", sans-serif;
     list-style: none;
-    font-size: 1.1667em;
-    font-weight: bold;
 }
 nav ul li, footer ul li {
     display: inline;
     padding-right: 45px;
     margin-left: 0px;
-    font-size: 1.1667em;
+    font-size: small;
+    font-weight: bold;
 }
 a {
     text-decoration: none;
-    font-size: 1.1667em;
+    font-size: small;
     color: #ff8e8e;
 }
 a:hover {
@@ -71,21 +69,15 @@ h4 {
 }
 h5 {
     font-family: Verdana, Arial, Tahoma, Serif;
-    font-size: 1.1667em;
+    font-size: small;
     color: #e0e0e0;
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
-    line-height: 1.5;
 }
 p {
-        font-size: 1.1667em;
+        font-size: small;
     color: #e0e0e0;
     font-family: Verdana, Arial, Tahoma, Serif;
     text-align: left;
-    margin-left: 5%;
-    margin-right: 5%;
-    line-height: 1.5;
 }
 footer {
     border-top: 1px solid #A9A9A9;
