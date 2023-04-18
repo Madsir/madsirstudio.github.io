@@ -59,6 +59,11 @@ p {
   margin-bottom: 2%;
   box-shadow: 0 0 2px 2px #B0B0B0;	
 }
+.demoWrapper{
+	  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
@@ -71,10 +76,17 @@ p {
   width: 100%;
   height: 100%;
 }
-	.baround {
+.demoWrapper iframe {
+	  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+  height: 45%;
+}
+.baround {
   margin-left: 5%;
   margin-right: 5%;
-	  margin-top: 5%;
+  margin-top: 5%;
   margin-bottom: 5%;
 }
 </style>
@@ -141,8 +153,12 @@ The higher the difficulty, the more stars you get for beating the challenge.<br>
 	  <br>
 	  <br>
 	  <br>
+	  <div class="baround">
+		  <div class="demoWrapper">
 	  <iframe frameborder="0" src="https://itch.io/embed/1425556?border_width=4&amp;bg_color=000000&amp;fg_color=afbfd2&amp;link_color=df5bfa&amp;border_color=333333" width="558" height="173"><a href="https://madsirstudio.itch.io/chinchilla-dance-party">Chinchilla Dance Party by Madsir Studio</a></iframe>
-	<br>
+	</div>
+		</div>
+			  <br>
 	  <br>
 	  <br>
 	</center>
