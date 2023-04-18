@@ -1,6 +1,7 @@
 body {
     background-color: #020202;
     box-shadow: 0 0 10px 5px #090F14;    
+    font-size: 80%;
 }
 .column {
   flex: 43%;
