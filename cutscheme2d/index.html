@@ -48,6 +48,18 @@ margin-left: 5%;
 	  margin-top: 5%;
   margin-bottom: 5%;
 }
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 </style>
 </head>
 <body>
@@ -73,8 +85,10 @@ margin-left: 5%;
 		<h2>Cutscheme 2D Controller</h2>
 		<br>
 		<div class="around">
+			<div class="videoWrapper">
 				<iframe width="854" height="480" src="https://www.youtube.com/embed/2e4nPRtItoE" title="Cutscheme 2D" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>		</center>
-	</div>
+		</div>
+		</div>
 		<br>
 		<br>
 		<p>Control a camera (or parent of a camera) in the scene. Cutscheme 2D will automatically detect whether the transform you drag into the Main Camera field is a Camera or a parent of a Camera and will reformat itself accordingly.<br>
