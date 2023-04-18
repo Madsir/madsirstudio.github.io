@@ -46,6 +46,18 @@ margin-left: 5%;
   margin-left: 5%;
   margin-right: 5%;
 }
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 </style>
 </head>
 <body>
@@ -69,8 +81,10 @@ margin-left: 5%;
 		<br>
 	<br>
 	<div class="around">
+		<div class="videoWrapper">
          <iframe width="560" height="315" src="https://www.youtube.com/embed/i3yO_ZDWI64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 	</div>
+		</div>
 	<br>
 	<br>
 	<p>Utterer Languages localization framework is compatible with Text/TextMesh Pro, AudioSource, and Image components as well as the Utterer Dialogue System. 
@@ -95,7 +109,9 @@ Add an UttererLanguages script to a UDS prefab in the scene. Speaker text areas 
 	<br>
 	<br>
 	<div class="around">
+		<div class="videoWrapper">
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/DhNGh-83Kl4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>
 		</div>
 		<br><br>
 <p>
@@ -124,8 +140,10 @@ Save custom calls and IDs in Editor<br><br>
 	<br>
 	<br>
 	<div class="around">
+		<div class="videoWrapper">
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/zQLbZBIJQOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 	</div>
+		</div>
 		<br>
 	<br>
 	<p> Utterer Dialogue System lets you easily create and control linear dialogue or subtitles, choose settings, and change appearance all from one place and with no coding necessary. Let the system automatically format itself based on your input or turn off automatic formatting for full customization.</p>	
