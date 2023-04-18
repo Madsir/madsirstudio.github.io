@@ -73,6 +73,12 @@ h5 {
     color: #e0e0e0;
     text-align: center;
 }
+h6 {
+    font-family: Verdana, Arial, Tahoma, monospace;
+    font-size: medium;
+    color: #e0e0e0;
+    text-align: left;
+}
 p {
         font-size: medium;
     color: #e0e0e0;
