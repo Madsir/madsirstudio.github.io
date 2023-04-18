@@ -59,9 +59,17 @@ p {
   margin-bottom: 2%;
   box-shadow: 0 0 2px 2px #B0B0B0;	
 }
-video {
-  width: 100%    !important;
-  height: auto   !important;
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>
 </head>
@@ -71,8 +79,9 @@ video {
   <h1>CHINCHILLA DANCE PARTY</h1>
 	<br>
 <br>
-	  <!--<iframe width="854" height="480" src="https://www.youtube.com/embed/fG802iciFXE" title="CDP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-	 <video src="https://www.youtube.com/watch?v=fG802iciFXE" controls></video>
+	  <div class="videoWrapper">
+	  <iframe width="854" height="480" src="https://www.youtube.com/embed/fG802iciFXE" title="CDP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+	  </div>
 	  <br>
 	  <br><div class="around"><br><br><br>
 	<h2>  Chinchilla Dance Party is a mathematics-practice game with groovy music and dancing chinchillas. Do the math and help these chins keep their party going!</h2>
