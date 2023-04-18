@@ -68,7 +68,7 @@ h4 {
     text-align: center;
 }
 h5 {
-    font-family: Verdana, Arial, Tahoma, Serif;
+    font-family: Verdana, Arial, Tahoma, monospace;
     font-size: medium;
     color: #e0e0e0;
     text-align: center;
@@ -76,7 +76,7 @@ h5 {
 p {
         font-size: medium;
     color: #e0e0e0;
-    font-family: Verdana, Arial, Tahoma, Serif;
+    font-family: Verdana, Arial, Tahoma, monospace;
     text-align: left;
 }
 footer {
