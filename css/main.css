@@ -26,8 +26,6 @@ nav ul, footer ul {
 }
 nav ul li, footer ul li {
     display: inline;
-    padding-right: 50%;
-    margin-left: 0px;
     font-size: medium;
     font-weight: bold;
 }
