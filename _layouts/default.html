@@ -21,11 +21,14 @@ h1{
   display: inline-block;
   position: relative;
 }
+.flexer{
+    display: flex;
+    column-gap: 20px;  /* Set a gap of 20px */
+    align-items: flex-start;
+}
 button{
   border:none;
   background-color: transparent;
-  margin-left:0;
-  padding-right: 45px;
   font-family: "Verdana", "Geneva", monospace;
   list-style: none;
   font-size: medium;
@@ -67,7 +70,7 @@ button:hover{
 			<a href="/"><img src="/Assets/heroImage.png" width=99%; style=display:block;margin-left:auto;margin-right:auto></a>
 			<nav>
     		<ul>
-	<div class="center">		
+	<div class="flexer">		
 <div class="dropdown">
   <button>Games</button>
   <div class="dropdown-content">
@@ -94,10 +97,10 @@ button:hover{
 			</div><!-- /.container -->
       		<footer>
     			<ul>
-						<div class="center">	
-        			<li><a href="/contact" style=padding-right:45px>Contact</a></li>
-				<li><a href="/about" style=padding-right:45px>About</a></li>
-				<li><a href="/privacy"style=padding-right:45px>Privacy</a></li>	
+						<div class="flexer">	
+        			<li><a href="/contact">Contact</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/privacy">Privacy</a></li>	
 				</div>
 			</ul>
 		</footer>
