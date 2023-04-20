@@ -16,8 +16,8 @@ body {
  }
 nav
 {
-    border-top: 1px solid #A9A9A9;
-    border-bottom: 1px solid #A9A9A9;
+    border-top: 1px solid #14335e;
+    border-bottom: 1px solid #14335e;
     background-color: #16161d;
 }
 nav ul, footer ul {
@@ -84,7 +84,7 @@ p {
     text-align: left;
 }
 footer {
-    border-top: 1px solid #A9A9A9;
-    border-bottom: 1px solid #A9A9A9;
+    border-top: 1px solid #14335e;
+    border-bottom: 1px solid #14335e;
     background-color: #16161d ;
 }
