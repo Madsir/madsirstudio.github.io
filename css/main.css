@@ -20,15 +20,7 @@ nav
     border-bottom: 1px solid #14335e;
     background-color: #16161d;
 }
-nav ul, footer ul {
-   font-family: "Verdana", "Geneva", sans-serif;
-    list-style: none;
-}
-nav ul li, footer ul li {
-    display: inline;
-    font-size: medium;
-    font-weight: bold;
-}
+
 a {
     text-decoration: none;
     font-size: medium;
