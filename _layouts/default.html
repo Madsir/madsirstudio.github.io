@@ -26,6 +26,39 @@ h1{
    margin-left: auto;
    margin-right: 2.5%;
 }
+.dropup {
+  display: table-cell;
+  position: relative;
+}
+.dropup-content {
+  z-index:999;
+  display: none;
+  position: absolute;
+  font-family: "Verdana", "Geneva", monospace;
+  width: 150%;
+  overflow: auto;
+  background-color: #121217;
+  padding:10px 20px;
+  border-radius:10px;
+  list-style: none;
+}
+.dropup:hover .dropup-content {
+  display: block;
+  bottom: 100%
+}
+.dropup-content a {
+  display: block;
+  text-decoration: none;
+  font-size: small;
+  color: #ff8e8e;
+  padding:10px 20px;
+}
+.dropup-content a:hover {  
+  color: #ffc3aa;
+  border-radius:10px;
+  text-shadow: 0 0 2px 1px #ff8e8e;
+  background-color: #020202;
+}
 .dropdown {
   display: table-cell;
   position: relative;
@@ -113,6 +146,7 @@ footer {
 </div>
 				</div>	
 			<div class="rightO">
+				<div class="dropdown">
 				<button>Follow</button>
   <div class="dropdown-content">
 	   <li><a href="https://madsirstudio.itch.io/">itch.io</a></li>
@@ -121,6 +155,7 @@ footer {
 			<li><a href="https://www.youtube.com/channel/UCWeUH4JTZM1-0H_xBKX2_Hg">YouTube</a></li>			
 				</div>
 			</div>
+				</div>
     		</ul>
 			</nav>
 			<div class="container">
