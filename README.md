@@ -4,8 +4,6 @@ Madsir Studio presents ...
 
 **GAMES**
 
-Remote Agent Radio: Secret radio messages and gaming music by CR Bird's Toilet Noise | Translate the morse code message in each radio broadcast and use the answer as a key to decrypt the cryptogram in the RAR broadcast's description. Each code you decrypt reveals a hint about the upcoming game Remote Agent by Madsir Studio.
-
 Chinchilla Dance Party: Do you like math? Groovy music? How about dancing chinchillas? You can have all three with Chinchilla Dance Party! Test your skills and help them keep their party going!
 
 [Post Production]
@@ -22,6 +20,6 @@ Cutscheme 2D - Cutscene System: Easily create and control cutscenes. Can control
 Utterer - Dialogue and Subtitle System: Easily create and control dialogue. Customizable. Infinite utters. Comes with Utterer Languages localization system.
 
 [In Production]
-Earchestra = Sound manager and playlist creator: Create infinite music, sfx, and speech playlists. Control and call sounds from any monobehavior by using Earchestra's Maestro functions.
+Earchestra = Sound manager and playlist creator: Create music, sfx, and speech playlists. Control all of them from any monobehavior script by using Earchestra's Maestro functions.
 
 All content © 2019-2023 Madsir Studio and is not to be downloaded or distributed without the permission of Madsir Studio.
