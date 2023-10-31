@@ -52,15 +52,6 @@ p {
   margin-bottom: 2%;
   box-shadow: inset 0px 0px 16px 0px #FF6700;
 }
-@media (max-width: 600px) {
-  .baround{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    box-shadow: 0 0 2px 2px #FF6700;
-  }		
-}
 .around {
   margin-left: 5%;
   margin-right: 25%;
@@ -68,21 +59,60 @@ p {
   margin-bottom: 2%;
   box-shadow: inset 0px 0px 16px 0px #FF6700;
 }
-@media (max-width: 600px) {
-  .around{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    box-shadow: 0 0 2px 2px #FF6700;
-  }		
-}
 .around img {
   padding-top: 0.5%;
   padding-bottom: 0.5%;
 }
 .around img:hover {
   box-shadow: 0 0 2px 1px #FF6700;
+}
+.fonter {
+width: 48%;
+}
+.fonter img{
+  width: 55%;
+}
+@media (max-width: 600px) {
+  .around{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: 0 0 2px 2px rgba(0, 203, 145, 0.7);
+  }
+  .baround{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: 0 0 2px 2px rgba(0, 203, 145, 0.7);
+  }	
+  p {
+  font-size: 0.7em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+h5 {
+  font-size: 0.7em;
+}
+.fonter a {
+  font-size: 0.7em;
+}
+.fonter img{
+  width: 75%;
+}
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconic {
+  box-shadow: 0 0 2px 2px rgba(0, 203, 145, 0.7);
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 </style>
 </head>
@@ -93,9 +123,18 @@ p {
   </center>
   <div class="centerdiv">
     <br>
-    	<a href="https://assetstore.unity.com/packages/slug/252445"><img src="/Assets/earchestramadsir.jpg" alt="Earchestra" width="20%"style=display:block;margin-left:auto;margin-right:auto></a><br>
-    <br>
+<div class="iconic">
+<div class="center">
+<div class="fonter">
+    	<a href="https://assetstore.unity.com/packages/slug/252445"><img src="/Assets/earchestramadsir.jpg" alt="Earchestra" style=display:block;margin-left:auto;margin-right:auto></a><br>
+</div>
+	<div class="fonter">
+		<p>Create audio playlists and control them by commanding Earchestra's built-in Maestro.<br><br>Earchestra's Maestro Methods can be called from any MonoBehavior script.
+</p>
     <h5>Available on the <a href="https://assetstore.unity.com/packages/slug/252445">Unity Asset Store</a></h5>
+</div>
+</div>
+</div>
     <br>
    <div class="around">
 		<a href="/Assets/earchestraSectionsMSS.jpg"><img src="/Assets/earchestraSectionsMSS.jpg" alt="Earchestra Sections" width="99%" height="99%"style=display:block;margin-left:auto;margin-right:auto></a>
@@ -121,7 +160,6 @@ p {
     <br>
         <h2>Ensemble</h2>
  <div class="baround"><br><p>
-    Use the Auto Ensemble builder or add as many audio players to your Ensemble as you wish.<br><br>
     Play multiple playlists from the same section at the same time. <br> <br>
     Play multiple tracks from a Section's playlist, each with their own transform. <br> <br>
     Make any clip from your playlists play at the position of your choice.
