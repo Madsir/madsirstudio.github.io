@@ -12,10 +12,10 @@ description: "Cutscheme 2D | A versatile cutscene tool designed for orthographic
   margin-right: 2.5%;
   margin-top: 2%;
   margin-bottom: 2%;
-	  box-shadow: 0px 2px 4px 0px rgba(0, 203, 145, 0.7),
-            1px 4px 8px 0px rgba(0, 203, 145, 0.7),
-            2px 4px 16px 0px rgba(0, 203, 145, 0.7),
-            2px 4px 20px 0px rgba(0, 203, 145, 0.7);
+  box-shadow: 0px 2px 4px 0px rgba(0, 203, 145, 0.7),
+  1px 4px 8px 0px rgba(0, 203, 145, 0.7),
+  2px 4px 16px 0px rgba(0, 203, 145, 0.7),
+  2px 4px 20px 0px rgba(0, 203, 145, 0.7);
   background-image: url("/Assets/tough.png")
 }
 .centerdiv {
@@ -30,7 +30,6 @@ description: "Cutscheme 2D | A versatile cutscene tool designed for orthographic
 p {
   margin-left: 5%;
   margin-right: 5%;
-line-heightL 1.5;
 }
 h2 {
 margin-left: 5%;
@@ -38,15 +37,15 @@ margin-left: 5%;
 .around {
   margin-left: 5%;
   margin-right: 25%;
-   margin-top: 2%;
+  margin-top: 2%;
   margin-bottom: 2%;
   box-shadow: inset 0px 0px 16px 0px rgba(0, 203, 145, 0.7);
 }
 .around img {
-  margin-top:1%;
-  margin-bottom: 1%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
 }
-	.around img:hover {
+.around img:hover {
   box-shadow: 0 0 2px 1px #ff8e8e;
 }
 @media (max-width: 600px) {
@@ -86,6 +85,11 @@ margin-left: 5%;
   width: 100%;
   height: 100%;
 }
+.iconic {
+  display: flex;
+  width: 45%;
+  justify-content: center;
+}
 </style>
 </head>
 <body>
@@ -94,8 +98,10 @@ margin-left: 5%;
 	<div class="centerdiv">
 	<br>
 		<br>
-		<a href="https://assetstore.unity.com/packages/tools/camera/cutscheme-2d-211649"><img src="/Assets/c2d.png" alt="Cutscheme 2D" width="20%"style=display:block;margin-left:auto;margin-right:auto></a><br>
-		<h5>Available on the <a href="https://assetstore.unity.com/packages/tools/camera/cutscheme-2d-211649">Unity Asset Store</a></h5>
+		<div class="iconic">
+		<a href="https://assetstore.unity.com/packages/tools/camera/cutscheme-2d-211649"><img src="/Assets/c2d.png" alt="Cutscheme 2D" width="99%"style=display:block;margin-left:auto;margin-right:auto></a><br>
+		</div>
+			<h5>Available on the <a href="https://assetstore.unity.com/packages/tools/camera/cutscheme-2d-211649">Unity Asset Store</a></h5>
 		<br>
 		<br>
 		<h2>Cutscheme 2D System<br>Easily create and control multiple types of cutscenes.</h2>
