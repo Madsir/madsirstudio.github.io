@@ -48,30 +48,12 @@ margin-left: 5%;
 .around img:hover {
   box-shadow: 0 0 2px 1px rgba(0, 203, 145, 0.7);
 }
-@media (max-width: 600px) {
-  .around{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    box-shadow: 0 0 2px 2px rgba(0, 203, 145, 0.7);
-  }
-}
 .baround {
   margin-left: 5%;
   margin-right: 25%;
   margin-top: 2%;
   margin-bottom: 2%;
   box-shadow: inset 0px 0px 16px 0px rgba(0, 203, 145, 0.7);
-}
-@media (max-width: 600px) {
-  .baround{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    box-shadow: 0 0 2px 2px rgba(0, 203, 145, 0.7);
-  }		
 }
 .videoWrapper {
   position: relative;
@@ -85,15 +67,27 @@ margin-left: 5%;
   width: 100%;
   height: 100%;
 }
-.iconic {
-  margin-left: 33%;
-  margin-right: 33%;
+.fonter {
+width: 48%;
+}
+.fonter img{
+  width: 50%;
 }
 @media (max-width: 600px) {
-  .iconic {
-    margin-left: 9%;
-    margin-left: 9%;
+  .around{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: 0 0 2px 2px rgba(0, 203, 145, 0.7);
   }
+  .baround{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: 0 0 2px 2px rgba(0, 203, 145, 0.7);
+  }	
   p {
   font-size: 0.7em;
   margin-left: 5%;
@@ -107,15 +101,21 @@ h5 {
 .fonter a {
   font-size: 0.7em;
 }
+.fonter img{
+  width: 70%;
+}
 }
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.fonter {
-width: 48%;
-box-shadow: 0 0 2px 2px rgba(0, 203, 145, 0.7);
+.iconic {
+  box-shadow: 0 0 2px 2px rgba(0, 203, 145, 0.7);
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 </style>
 </head>
@@ -125,6 +125,7 @@ box-shadow: 0 0 2px 2px rgba(0, 203, 145, 0.7);
 	<div class="centerdiv">
 	<br>
 		<br>
+		<div class="iconic">
 <div class="center">
 <div class="fonter">
 		<a href="https://assetstore.unity.com/packages/tools/camera/cutscheme-2d-211649"><img src="/Assets/c2d.png" alt="Cutscheme 2D" width="55%"style=display:block;margin-left:auto;margin-right:auto></a><br>
@@ -137,6 +138,7 @@ box-shadow: 0 0 2px 2px rgba(0, 203, 145, 0.7);
 		<h5>Available on the <a href="https://assetstore.unity.com/packages/tools/camera/cutscheme-2d-211649">Unity Asset Store</a></h5>
 </div>
 </div>
+		</div>
 		<br>
 		<br>
 		<h2>Cutscheme 2D Controller<br>Control a camera (or parent of a camera) in the scene.</h2>
