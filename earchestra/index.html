@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Earchestra
-description: "Earchestra is a versatile audio manager for Unity Engine."
+description: "Earchestra is a command-based sound manager for Unity Engine."
 ---
 <!DOCTYPE html>
 <html>
@@ -12,10 +12,10 @@ description: "Earchestra is a versatile audio manager for Unity Engine."
   margin-right: 2.5%;
   margin-top: 2%;
   margin-bottom: 2%;
-	 box-shadow: 0px 2px 4px 0px #FF6700,
-            1px 4px 8px 0px #FF6700,
-            2px 4px 16px 0px #FF6700,
-            2px 4px 20px 0px #FF6700;
+  box-shadow: 0px 2px 4px 0px #FF6700,
+  1px 4px 8px 0px #FF6700,
+  2px 4px 16px 0px #FF6700,
+  2px 4px 20px 0px #FF6700;
   background-image: url("/Assets/tough.png")
 }
 .centerdiv {
@@ -50,7 +50,7 @@ p {
   margin-right: 25%;
   margin-top: 2%;
   margin-bottom: 2%;
-	box-shadow: inset 0px 0px 16px 0px #FF6700;
+  box-shadow: inset 0px 0px 16px 0px #FF6700;
 }
 @media (max-width: 600px) {
   .baround{
@@ -61,14 +61,14 @@ p {
     box-shadow: 0 0 2px 2px #FF6700;
   }		
 }
-	.around {
+.around {
   margin-left: 5%;
   margin-right: 25%;
-	  margin-top: 2%;
+  margin-top: 2%;
   margin-bottom: 2%;
-box-shadow: inset 0px 0px 16px 0px #FF6700;
+  box-shadow: inset 0px 0px 16px 0px #FF6700;
 }
-	@media (max-width: 600px) {
+@media (max-width: 600px) {
   .around{
     margin-left: 5%;
     margin-right: 5%;
@@ -76,8 +76,11 @@ box-shadow: inset 0px 0px 16px 0px #FF6700;
     margin-bottom: 2%;
     box-shadow: 0 0 2px 2px #FF6700;
   }		
-	}
-
+}
+.around img {
+  margin-top: 1%;
+  margin-bottom:1%;
+}
 .around img:hover {
   box-shadow: 0 0 2px 1px #ff8e8e;
 }
@@ -90,67 +93,55 @@ box-shadow: inset 0px 0px 16px 0px #FF6700;
   </center>
   <div class="centerdiv">
     <br>
-    		<a href="https://assetstore.unity.com/packages/slug/252445"><img src="/Assets/earchestramadsir.jpg" alt="Earchestra" width="20%"style=display:block;margin-left:auto;margin-right:auto></a><br>
+    	<a href="https://assetstore.unity.com/packages/slug/252445"><img src="/Assets/earchestramadsir.jpg" alt="Earchestra" width="20%"style=display:block;margin-left:auto;margin-right:auto></a><br>
     <br>
     <h5>Available on the <a href="https://assetstore.unity.com/packages/slug/252445">Unity Asset Store</a></h5>
     <br>
-    	  		<div class="around">
+   <div class="around">
 		<a href="/Assets/earchestraSectionsMSS.jpg"><img src="/Assets/earchestraSectionsMSS.jpg" alt="Earchestra Sections" width="99%"style=display:block;margin-left:auto;margin-right:auto></a>
-		</div>
+</div>
     <br>
     <h2>Sections :<br>Music, SFX, Speech</h2>
-	  	 <div class="baround"><br>
+<div class="baround"><br>
     <p>
     Create playlists and add tracks in each of these sections.<br><br>
     Customize your playlist and track names. <br><br>
     Control playlists using Earchestra's Maestro methods.</p>
-		  <br></div>
-	  	  	  		<div class="around">
-		<a href="/Assets/earchestraMusicSectionMSS.jpg"><img src="/Assets/earchestraMusicSectionMSS.jpg" alt="Earchestra Sections" width="99%"style=display:block;margin-left:auto;margin-right:auto></a>
-		</div>
-	  	  	  		<div class="around">
-		<a href="/Assets/earchestraSFXSectionMSS.jpg"><img src="/Assets/earchestraSFXSectionMSS.jpg" alt="Earchestra Sections" width="99%"style=display:block;margin-left:auto;margin-right:auto></a>
-		</div>
-	  	  	  		<div class="around">
-		<a href="/Assets/earchestraSpeechSectionMSS.jpg"><img src="/Assets/earchestraSpeechSectionMSS.jpg" alt="Earchestra Sections" width="99%"style=display:block;margin-left:auto;margin-right:auto></a>
-		</div>
+		  <br>
+</div>
+<div class="around">
+	<a href="/Assets/earchestraMusicSectionMSS.jpg"><img src="/Assets/earchestraMusicSectionMSS.jpg" alt="Earchestra Sections" width="99%"style=display:block;margin-left:auto;margin-right:auto></a>
+</div>
+<div class="around">
+	<a href="/Assets/earchestraSFXSectionMSS.jpg"><img src="/Assets/earchestraSFXSectionMSS.jpg" alt="Earchestra Sections" width="99%"style=display:block;margin-left:auto;margin-right:auto></a>
+</div>
+<div class="around">
+	<a href="/Assets/earchestraSpeechSectionMSS.jpg"><img src="/Assets/earchestraSpeechSectionMSS.jpg" alt="Earchestra Sections" width="99%"style=display:block;margin-left:auto;margin-right:auto></a>
+</div>
     <br>
-<br><!--
-	  <h2>Settings</h2>h2>
-	  <br><div class="baround"><br>
-		  <p> Earchestra has two toggle settings:<br><br>
-		  Perpetual : When on, the current instance of Earchestra will persist throughout each scene in the build index.
-                 <br><br> 3D Sound : Switches Earchestra's audio players between 2D and 3D Sound settings.
-</p>
-	<br></div><br>
-    <h2>Volumes</h2>
-    <br><div class="baround"><br>
-    <p>Control the volumes for each section.<br><br>Includes a prefab slider system that allows the player to set the master volumes for each section.<br><br>The system saves and loads these volume values automatically.
-	  </p> <br></div> !-->
-      <br>
         <h2>Ensemble</h2>
-	  <div class="baround"><br><p>
-		  Use the Auto Ensemble builder or add as many audio players to your Ensemble as you wish.<br><br>
+ <div class="baround"><br><p>
+    Use the Auto Ensemble builder or add as many audio players to your Ensemble as you wish.<br><br>
     Play multiple playlists from the same section at the same time. <br> <br>
     Play multiple tracks from a Section's playlist, each with their own transform. <br> <br>
     Make any clip from your playlists play at the position of your choice.
     </p>
   <br>
-	  </div>
-	  	  	  	  		<div class="around">
-		<a href="/Assets/earchestraEnsemble.jpg"><img src="/Assets/earchestraEnsemble.jpg" alt="Earchestra Ensemble" width="99%"style=display:block;margin-left:auto;margin-right:auto></a>
-		</div>
+</div>
+<div class="around">
+	<a href="/Assets/earchestraEnsemble.jpg"><img src="/Assets/earchestraEnsemble.jpg" alt="Earchestra Ensemble" width="99%"style=display:block;margin-left:auto;margin-right:auto></a>
+</div>
   <br>
   <h2>Earchestra's Maestro Methods</h2>
-	  	  <div class="baround"><br><p>
+<div class="baround"><br><p>
     Control playlists, tracks, and transforms.<br><br>
     Use these methods in any Monobehavior scripts.
   </p>
       <br>
-	  </div>
-	  	  	  	  	  		<div class="around">
-		<a href="/Assets/earchestraMaestroCommands.jpg"><img src="/Assets/earchestraMaestroCommands.jpg" alt="Earchestra Maestro Commands" width="99%"style=display:block;margin-left:auto;margin-right:auto></a>
-		</div>
+ </div>
+<div class="around">
+	<a href="/Assets/earchestraMaestroCommands.jpg"><img src="/Assets/earchestraMaestroCommands.jpg" alt="Earchestra Maestro Commands" width="99%"style=display:block;margin-left:auto;margin-right:auto></a>
+</div>
   <br>
       <br>
   <br>
