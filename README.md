@@ -22,4 +22,4 @@ Utterer - Dialogue and Subtitle System: Easily create and control dialogue. Cust
 
 Earchestra - Sound manager and playlist creator: Create infinite playlists. Control all of them from any script in the scene by using Earchestra's Maestro Methods.
 
-All content © 2019-2023 Madsir Studio and is not to be downloaded or distributed without the permission of Madsir Studio.
+All content © 2019-2024 Madsir Studio and is not to be downloaded or distributed without the permission of Madsir Studio.
