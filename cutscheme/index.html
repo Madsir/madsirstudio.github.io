@@ -20,6 +20,8 @@ description: "Cutscheme | A versatile cutscene tool for game development."
 }
 .centerdiv {
   overflow:auto;
+	margin-left:1%;
+	margin-right:1%;
 }
   .left, .right { 
   width: 48%; 
@@ -132,11 +134,14 @@ h5 {
 <div class="main">
 <br><br><br>
 	<h2>
-	Cutscheme Cutscene Tool</h2><br><p>Easily create standalone cutscenes, opening cutscenes, triggered cutscenes, transition cutscenes, and more!<br><br>
-	This tool works by building a sequence of camera shots in the scene and giving you full control over each shot's transform, duration, and transition as well as options to add audio and visual effects.
+	Cutscheme Cutscene Tool</h2><br><p>Easily create cutscenes which can be activated automatically, triggered by collision, or enabled after a set period of time.<br>All cutscenes will automatically disable themselves after finishing or if skipped.
+<br><br>
+This tool works by building a sequence of camera shots in the scene and giving you control over each shot's position, rotation, duration, and transition as well as audio and visual effects.
+<br><br>
+Includes visual effects systems for Built-In & URP pipelines.
 	</p>
 	<br><br>
-	<div class="centerdiv">		
+<div class="centerdiv">		
     <div class="left">
 	    <div class="split">
 	    	<h1>Cutscheme 2D</h1>
@@ -155,7 +160,7 @@ h5 {
 		</div>
 
       </div>
-	</div>
+</div><!--end of left-->
       <div class="right">
 	      <div class="split">
 	      <h1>Cutscheme 3D</h1>
@@ -172,7 +177,7 @@ h5 {
 		</div>
 	</div>
 </div>
-	      </div>
+</div>
       </div>
 		<br>
 		<br>
