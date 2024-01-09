@@ -22,10 +22,16 @@ description: "Cutscheme | A versatile cutscene tool for game development."
 	margin-left:1%;
 	margin-right:1%;
 }
+.centerdiv::after {
+  content: "";
+  clear: both;
+  display: table;
+}
   .left, .right { 
   width: 48%; 
   margin-left:1%;
   margin-right:1%;
+  float: center;
 } 
 
 .split {
