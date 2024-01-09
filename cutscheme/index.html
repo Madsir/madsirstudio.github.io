@@ -22,8 +22,7 @@ description: "Cutscheme | A versatile cutscene tool for game development."
   overflow:auto;
 }
   .left, .right { 
-  width: 40%; 
-  box-shadow: inset 0px 0px 16px 0px rgba(0, 203, 145, 0.7);
+  width: 50%; 
 } 
 
 .left  { float:left;  }
@@ -44,7 +43,7 @@ margin-left: 5%;
 }
 .around {
   margin-left: 5%;
-  margin-right: 25%;
+  margin-right: 5%;
   margin-top: 2%;
   margin-bottom: 2%;
   box-shadow: inset 0px 0px 16px 0px rgba(0, 203, 145, 0.7);
@@ -58,7 +57,7 @@ margin-left: 5%;
 }
 .baround {
   margin-left: 5%;
-  margin-right: 25%;
+  margin-right: 5%;
   margin-top: 2%;
   margin-bottom: 2%;
   box-shadow: inset 0px 0px 16px 0px rgba(0, 203, 145, 0.7);
@@ -232,21 +231,20 @@ Copies the volume you drag into the system and uses the copy to create and contr
       </div>
       <div class="right">
 	      <h1>Cutscheme 3D</h1>
-        <div class="iconic">
-<div class="center">
-<div class="fonter">
-		<img src="/Assets/c3d.png" alt="Cutscheme 3D" style=display:block;margin-left:auto;margin-right:auto><br>
-</div>
-<div class="fonter">
-		<p>
-		Easily create cutscenes which can be activated automatically, triggered by collision, or enabled after a set period of time.
+<div class="iconic">
+	<div class="center">
+		<div class="fonter">
+				<a href="/Assets/c3d.png"><img src="/Assets/c3d.png" alt="Cutscheme 3D" style=display:block;margin-left:auto;margin-right:auto></a><br>
+		</div>
+		<div class="fonter">
+			<p>
+			Easily create cutscenes which can be activated automatically, triggered by collision, or enabled after a set period of time.
 			For perspective cameras only.
 			</p>
-	<h5> Coming soon!</h5>
-		<!--<h5>Available now on the <a href="https://assetstore.unity.com/packages/slug/273807">Unity Asset Store</a></h5>-->
-</div>
-</div>
+			<h5> Coming soon!</h5>
 		</div>
+	</div>
+</div>
 		<br>
 		<br>
 		<h2>Cutscheme Controller<br>Control a camera (or parent of a camera) in the scene.</h2>
@@ -263,33 +261,42 @@ Copies the volume you drag into the system and uses the copy to create and contr
 		<a href="/Assets/Instructionsc3d.jpg"><img src="/Assets/Instructionsc3d.jpg" alt="Cutscheme 3D" width="99%"style=display:block;margin-left:auto;margin-right:auto></a>
 		</div>
 	<br>
-			<h2>Cutscheme Object Control<br>
-	Hide or show objects before, during, and after the cutscene</h2><br>				<div class="baround"><br><p>
+	      
+<h2>Cutscheme Object Control<br>
+	Hide or show objects before, during, and after the cutscene</h2><br>	
+	      
+	<div class="baround"><br><p>
 			Objects hidden before cutscene will be automatically disabled in the editor, though can be enabled and disabled manually.<br><br>
 			Objects hidden during the cutscene are hidden at the start of the cutscene and enabled again after the cutscene.<br><br>
-	Objects hidden after the cutscene are disabled after the cutscene ends.</p><br></div>
+	Objects hidden after the cutscene are disabled after the cutscene ends.</p><br>
+	</div>
 		<br>
 		<br>
 			<h2>Cutscheme Audio
 		<br>
-	Controls the main audio (if any) for the cutscene.</h2><br>			<div class="baround"><br><p>
+	Controls the main audio (if any) for the cutscene.</h2><br>			
+	<div class="baround"><br><p>
 			Loop the cutscene audio and control the volume from Cutscheme 2D Controller.<br><br>
 			Automatically fades the main audio in and out.<br><br>
   Option to only play audio originating from cutscene.</p>
-	<br></div>
+	<br>
+	</div>
 		<br><br>
-			<h2>Cutscheme Options</h2> <br>						<div class="baround"><br>
+			<h2>Cutscheme Options</h2> <br>						
+	<div class="baround"><br>
 			<p>Fade the cutscene in/out at the beginning and end.<br><br>
 			Reset the camera(s) back to their original FOV(s) after the cutscene ends.<br><br>
       Reset the camera(s) back to their original position(s) and rotations(s) after the cutscene ends.<br><br>
 			Choose whether the cutscene can be skipped.<br><br>
 			Change to a new scene via build index or let the Cutscheme 2D prefab disable itself when the cutscene ends.</p>
-	<br></div>
+	<br>
+	</div>
 			<br><br>
 
 		    <h2>Camera Positions
 		<br>
-			    Controls for each camera shot :</h2><br>				<div class="baround"><br><p>
+			    Controls for each camera shot :</h2><br>				
+	<div class="baround"><br><p>
             Position and rotation of each camera shot.<br><br>
 		Duration the camera shot stays still before transitioning to the next.<br><br>
 		Zoom in or out to a new FOV at the speed of your choice.<br><br>
@@ -297,7 +304,9 @@ Copies the volume you drag into the system and uses the copy to create and contr
 		Play an audioclip at the start of the camera shot.<br><br>
 		Speed up or slow down time during the camera shot.<br><br>>
     Transition to the next shot by cutting instantly or panning/rotating at the speed of your choice.</p>
-	<br></div><br>
+	<br>
+	</div>
+	      <br>
 		<br>
 	<div class="around">
 		<a href="/Assets/InstructionsCameraPositions3D.jpg"><img src="/Assets/InstructionsCameraPositions3D.jpg" alt="Cutscheme 2D" width="99%"style=display:block;margin-left:auto;margin-right:auto></a>
@@ -315,10 +324,13 @@ Copies the volume you drag into the system and uses the copy to create and contr
 	      -->
 			<br>
 		<h2>Cutscheme Effect System
-			<br>(Universal Render Pipeline only)</h2><br>				<div class="baround"><br><p>
-Display multiple camera effects during each shot in the cutscene. <br><br>
-Copies the volume you drag into the system and uses the copy to create and control effects for the cutscene.<br><br> After the cutscene it resets your volume back to normal and removes the copy.</p>
-	<br></div><br>
+			<br>(Universal Render Pipeline only)</h2><br>				
+	<div class="baround"><br><p>
+		Display multiple camera effects during each shot in the cutscene. <br><br>
+		Copies the volume you drag into the system and uses the copy to create and control effects for the cutscene.<br><br> After the cutscene it resets your volume back to normal and removes the copy.</p>
+		<br>
+	</div>
+	      <br>
 		<br>
 		<div class="around">
 		<a href="/Assets/C3DEffectsSystemInstructions.jpg"><img src="/Assets/C3DEffectsSystemInstructions.jpg" alt="Cutscheme 3D" width="99%"style=display:block;margin-left:auto;margin-right:auto></a>
@@ -326,19 +338,21 @@ Copies the volume you drag into the system and uses the copy to create and contr
 			<br>
 			<br>
 <br>
-		<h2>Cutscheme Filter System<br>(Built-In Renderer Pipeline only)</h2><br>				<div class="baround"><br><p>
+		<h2>Cutscheme Filter System<br>(Built-In Renderer Pipeline only)</h2><br>				
+	<div class="baround"><br><p>
 		Display up to two camera filters at a time during each shot in the cutscene.<br><br>
 		Customize with your own filters (Materials) or use the ones that come with the package.</p>
-	<br></div><br>
+	<br>
+	</div>
+	      <br>
 		<br>
-		<div class="around">
+	<div class="around">
 		<a href="/Assets/c3DFilterSystemInstructions.jpg"><img src="/Assets/c3DFilterSystemInstructions.jpg" alt="Cutscheme 3D" width="99%"style=display:block;margin-left:auto;margin-right:auto></a>
-		</div>
+	</div>
 		<br>
 		<br>
 	</div>
-      </div>
-	</div>
+</div>
 </div>  
 </body>
 </html>
