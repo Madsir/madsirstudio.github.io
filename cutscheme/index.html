@@ -27,21 +27,14 @@ description: "Cutscheme | A versatile cutscene tool for game development."
   clear: both;
   display: table;
 }
-  .left, .right { 
+  .col{ 
   width: 48%; 
-  margin-left:1%;
-  margin-right:1%;
   float: center;
 } 
 
 .split {
  margin-left:2.5%;
  margin-right:2.5%;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 p {
   font-size: 1.3em;
@@ -153,7 +146,7 @@ h5 {
 	<br>
 	<br>
 <div class="centerdiv">		
-    <div class="left">
+    <div class="col">
 	    <div class="split">
 	    	<h1>Cutscheme 2D</h1>
 	<div class="iconic">
@@ -170,9 +163,9 @@ h5 {
 	   </div>
 	</div>
       </div>
-</div><!--end of left-->
+</div>
 	
-<div class="right">
+<div class="col">
   <div class="split">
      <h1>Cutscheme 3D</h1>
 	<div class="iconic">
