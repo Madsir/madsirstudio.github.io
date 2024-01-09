@@ -25,14 +25,15 @@ description: "Cutscheme | A versatile cutscene tool for game development."
 }
   .left, .right { 
   width: 48%; 
-  box-shadow: inset 0px 0px 16px 0px rgba(0, 203, 145, 0.7);
+  margin-left:1%;
+  margin-right:1%;
 } 
 
 .left  { float:left;  }
 .right { float:right;}
 .split {
-	margin-left:2.5%;
-	margin-right:2.5%;
+ margin-left:2.5%;
+ margin-right:2.5%;
 }
 .row::after {
   content: "";
@@ -132,42 +133,51 @@ h5 {
 </head>
 <body>
 <div class="main">
-<br><br><br>
+	<br>
+	<br>
+	<br>
 	<h2>
-	Cutscheme Cutscene Tool</h2><br><p>Easily create cutscenes which can be activated automatically, triggered by collision, or enabled after a set period of time.<br>All cutscenes will automatically disable themselves after finishing or if skipped.
-<br><br>
-This tool works by building a sequence of camera shots in the scene and giving you control over each shot's position, rotation, duration, and transition as well as audio and visual effects.
-<br><br>
-Includes visual effects systems for Built-In & URP pipelines.
+<div class="split">
+	Cutscheme Cutscene Tool</h2>
+	<br>
+	<p>Easily create cutscenes which can be activated automatically, triggered by collision, or enabled after a set period of time.<br>All cutscenes will automatically disable themselves after finishing or if skipped.
+	<br>
+		<br>
+	This tool works by building a sequence of camera shots in the scene and giving you control over each shot's position, rotation, duration, and transition as well as audio and visual effects.
+	<br>
+		<br>
+		Includes visual effects systems for Built-In & URP pipelines.
 	</p>
-	<br><br>
+</div>
+	<br>
+	<br>
 <div class="centerdiv">		
     <div class="left">
 	    <div class="split">
 	    	<h1>Cutscheme 2D</h1>
-		<div class="iconic">
-<div class="center">
-<div class="fonter">
+	<div class="iconic">
+	   <div class="center">
+		<div class="fonter">
 		<a href="https://assetstore.unity.com/packages/tools/camera/cutscheme-2d-211649"><img src="/Assets/c2d.png" alt="Cutscheme 2D" style=display:block;margin-left:auto;margin-right:auto></a><br>
-</div>
-<div class="fonter">
-		<p>
-			For orthographic cameras only (top-down, side-on, isometric, etc.)
-			</p>
-		<h5>Available on the <a href="https://assetstore.unity.com/packages/tools/camera/cutscheme-2d-211649">Unity Asset Store</a></h5>
-</div>
-</div>
 		</div>
-
+		<div class="fonter">
+		<p>
+		For orthographic cameras only (top-down, side-on, isometric, etc.)
+		</p>
+		<h5>Available on the <a href="https://assetstore.unity.com/packages/tools/camera/cutscheme-2d-211649">Unity Asset Store</a></h5>
+		</div>
+	   </div>
+	</div>
       </div>
 </div><!--end of left-->
-      <div class="right">
-	      <div class="split">
-	      <h1>Cutscheme 3D</h1>
-<div class="iconic">
-	<div class="center">
+	
+<div class="right">
+  <div class="split">
+     <h1>Cutscheme 3D</h1>
+	<div class="iconic">
+	   <div class="center">
 		<div class="fonter">
-				<a href="/Assets/c3d.png"><img src="/Assets/c3d.png" alt="Cutscheme 3D" style=display:block;margin-left:auto;margin-right:auto></a><br>
+			<a href="/Assets/c3d.png"><img src="/Assets/c3d.png" alt="Cutscheme 3D" style=display:block;margin-left:auto;margin-right:auto></a><br>
 		</div>
 		<div class="fonter">
 			<p>
@@ -175,10 +185,11 @@ Includes visual effects systems for Built-In & URP pipelines.
 			</p>
 			<h5> Coming soon!</h5>
 		</div>
+	   </div>
 	</div>
+  </div>
 </div>
 </div>
-      </div>
 		<br>
 		<br>
 <div class="split">
@@ -286,7 +297,6 @@ Includes visual effects systems for Built-In & URP pipelines.
 	<div class="around">
 		<a href="/Assets/c3DFilterSystemInstructions.jpg"><img src="/Assets/c3DFilterSystemInstructions.jpg" alt="Cutscheme 3D" width="99%"style=display:block;margin-left:auto;margin-right:auto></a>
       </div>
-</div>
 </div>
 </div>  
 </body>
