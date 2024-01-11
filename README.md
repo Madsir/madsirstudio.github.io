@@ -14,7 +14,7 @@ Space Toots: Eat space jellies get gas, and toot. Propel your way through the sp
 
 **UNITY ASSETS**
 
-Cutscheme 2D - Cutscene System: Easily create and control cutscenes. Infinite camera shots. Can control multiple cutscenes in one scene.
+Cutscheme 2D/3D - Cutscene System: Easily create and control cutscenes. Infinite camera shots. Can control multiple cutscenes in one scene.
 
 Utterer - Dialogue and Subtitle System: Easily create and control dialogue. Customizable. Infinite utters. Comes with Utterer Languages localization system.
 
