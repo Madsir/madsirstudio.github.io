@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Cutscheme 2D/3D
-description: "Cutscheme | A versatile cutscene tool for game development."
+title: Cutscheme - Cutscene Tool
+description: "Cutscheme | A versatile cutscene tool for game development using Unity."
 ---
 <!DOCTYPE html>
 <html>
@@ -154,8 +154,6 @@ h5 {
 	Cutscheme uses your input to build a sequence of camera shots in the Editor, and at Runtime directs your camera through the sequence to create your cutscene.
 <br><br>
 Customize each shot's position, rotation, duration, and transition. Manage audio, apply effects, enable skipping, and much more all from one component. No coding necessary.
-<br><br>
-Easily create custom cutscenes which can be activated automatically, triggered by collision, or enabled after a set period of time.
 	<br>
 	</p>
 </div>
@@ -191,7 +189,7 @@ Easily create custom cutscenes which can be activated automatically, triggered b
 			<p>
 			For perspective cameras.
 			</p>
-			<h5> Coming soon!</h5>
+			<h5>Coming soon!</h5>
 		</div>
 	   </div>
   </div>
@@ -204,24 +202,35 @@ Easily create custom cutscenes which can be activated automatically, triggered b
 	<br>
 	<br>
 	<br>
-		<h2>Cutscheme Controller<br><br>Control a camera in the scene for the duration of your cutscene.</h2>
+			<h2>Cutscheme Prefabs<br><br>Easily and quickly create custom cutscenes.</h2>
 		<br>
 	<br>
-    
-<div class="around">
+	<div class="around">
 	   <div class="center">
 		<div class="col">
 			<div class="videoWrapper">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/uHkCkdFk9tk?si=Y7MxMs60qGxDG_Av" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/zk6i6bAGH2A?si=RdZCOBY_XPxmY39H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 			</div>
 		</div>
 		 <div class="coll">
 			<div class="videoWrapper">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/UOJpjUSH3dA?si=ICjP4zShF2yFRnsv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/UOJpjUSH3dA?si=ICjP4zShF2yFRnsv" title="Cutscheme 3D Prefabs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 			</div>
 		</div>
 	   </div>
 	</div>
+	<div class="baround"><br><p>Cutscheme2D - This prefab is for making Cutscheme cutscenes from scratch.<br><br>
+OneShotCutscheme - This editable prefab includes a Cutscheme 2D prefab and a Camera to control during the cutscene. It's a one-shot cutscene by default, though it can be made into a full cutscene by adding camera shots.
+<br><br>
+DelayedOneShotCutscheme - This prefab is a timed version of OneShotCutscheme. It uses its EnableCutscheme child to enable the cutscene after a period of time.
+<br><br>
+TriggeredOneShotCutscheme - This prefab is the triggerable version of OneShotCutscheme. It uses its TriggerCutscheme child to trigger the cutscene.
+<br><br>
+</p>
+	</div>
+		<br>
+		<br>
+		<h2>Cutscheme Controller<br><br>Control a camera in the scene for the duration of your cutscene.</h2>
 		<br>
 		<br>
 		<div class="around">
@@ -237,32 +246,38 @@ Easily create custom cutscenes which can be activated automatically, triggered b
 	<br><br>
 	      
 <h2>Cutscheme Object Control<br>
-	Hide or show objects before, during, and after the cutscene</h2><br>	
+	Hide or show objects (or their Behaviours) before, during, and after the cutscene</h2><br>	
 	      
 	<div class="baround"><br><p>
-			Objects hidden before cutscene will be automatically disabled in the editor, though can be enabled and disabled manually.<br><br>
-			Objects hidden during the cutscene are hidden at the start of the cutscene and enabled again after the cutscene.<br><br>
-	Objects hidden after the cutscene are disabled after the cutscene ends.</p><br>
+			Hide Before Cutscene - Objects or Behaviours in this list are automatically disabled in the editor, though can be enabled and disabled manually.<br><br>
+			Hide During Cutscene - Objects or Behaviours in this list are hidden at the start of the cutscene and enabled again after the cutscene.<br><br>
+	Hide After Cutscene = Objects or Behaviours in this list are disabled after the cutscene ends.</p><br>
 	</div>
 		<br>
 		<br>
 			<h2>Cutscheme Audio
 		<br>
-	Controls the main audio (if any) for the cutscene.</h2><br>			
+	Cutscheme creates its own Audio Source at runtime and places it on the Cutscheme's Main Camera.</h2><br>			
 	<div class="baround"><br><p>
-			Loop the cutscene audio and control the volume from Cutscheme Controller.<br><br>
-			Automatically fades the main audio in and out.<br><br>
-  Option to only play audio originating from cutscene.</p>
+		C2D Audio Only - Choose whether only cutscene audio should play during the cutscene.
+<br><br>Add an audio clip to the Main Audio field to play during the cutscene.
+<br><br>
+			Loop the Cutscheme's Main Audio.<br><br>
+		Choose the volume level for the cutscene's audio.<br><br>
+			Fade the main audio in and/or out.<br><br>
+	Choose the amount of time it takes to fade the audio.</p>
 	<br>
 	</div>
 		<br><br>
 			<h2>Cutscheme Options</h2> <br>						
 	<div class="baround"><br>
 			<p>Fade the cutscene in/out at the beginning and end.<br><br>
+				Choose the amount of time it takes to fade in/out to black.<br><br>
 			Reset the camera back to its original size after the cutscene ends.<br><br>
       			Reset the camera back to its original transform after the cutscene ends.<br><br>
 			Choose whether the cutscene can be skipped.<br><br>
-			Change to a new scene via build index or let the Cutscheme prefab disable itself when the cutscene ends.</p>
+			Set the Cutscheme system's timers to ignore the scene's timescale.<br><br>
+			After the cutscene, change to a new Scene via build index.</p>
 	<br>
 	</div>
 			<br><br>
