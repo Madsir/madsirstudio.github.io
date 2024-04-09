@@ -1,1 +1,512 @@
-Hello World
+UTTERER USER MANUAL
+<br><br>
+Table of Contents
+<br>
+Utterer Languages<br>
+1. Adding Languages<br>
+i.	Choose Languages<br>
+ii.	Add To List<br>
+2. Setting a Language<br>
+i.	Method 1<br>
+ii.	Method 2<br>
+   3. Using with UDS<br>
+ 	   i.UDS Options<br>
+   4. Using with Text/TextMeshPro<br>
+	   i. Text Options<br>
+   5. Using with Audiosources<br>
+   6. Using with Images<br>
+<br><br>
+Utterer Dialogue System<br>
+   1. Getting Started<br>
+   2. Utterance Controls<br>
+   3. Utterer Object Control<br>
+   4. Settings<br>
+   5. Styles<br>
+   6. Tips<br>
+<br><br>
+Utterer Dynamics<br>
+   1. Built-In Dynamics<br>
+	2. Adding Dynamics in Editor<br>
+	   i. Developer Input<br>
+	   ii. Player Input<br>
+	3. Removing Dynamics<br><br>
+
+
+
+UTTERER LANGUAGES<br><br>
+
+Utterer Languages is a localization tool for Text/TextMeshPro, AudioSource, and Image components as well as the Utterer Dialogue System.<br><br>
+
+
+WARNING : Deleting the LanguageCodes.txt file in Utterer/Languages/Resources will result in the loss of all available languages in the Choose Languages Menu.<br><br>
+
+
+
+Adding Languages to the Languages In Use List<br>
+
+PLEASE NOTE : It is recommended to add all of the languages you will be using to the Languages In Use list before you start localizing your components.<br><br>
+
+
+1. Add an UttererLanguages script to an empty object in the hierarchy.<br>
+
+The script can be found here: Assets/Utterer/Languages/UttererLanguages.cs<br><br>
+
+
+2. Select languages from the 'Choose Languages' button.<br>
+
+Click the languages you want to add to the Languages In Use list. To remove a language from the list, select it again in the Choose Languages menu.<br><br>
+
+
+
+Can't Find What You're Looking For in Choose Languages?<br>
+
+
+
+1. In the Project window, right click LanguageCodes and select 'Show In Explorer'<br>
+
+The file can be found here: Assets/Utterer/Languages/Resources/LanguageCodes.txt<br><br>
+
+
+2. Open the document from the explorer.<br>
+
+
+3. At the bottom of the list, add the new language in this format :<br>
+
+	English Name (iso code) "Local endonym, Roman endonym"<br>
+
+	Example: Icelandic (is) "íslenska"<br><br>
+
+
+Format explanation :<br>
+
+English Name is used for display and reference purposes during development.<br>
+
+ISO codes are necessary for setting the currency and decimal formats for each language.
+<br>
+Local script endonym is the native name of the language in its native script and only applies to languages written in non-Roman scripts (Arabic, Mandarin, Hebrew, etc).<br>
+
+Roman script endonym is the native name of languages written in Roman script, or the backup native name of a language in a non-Roman script (in case the font doesn't contain the script's characters).<br>
+
+<br>
+IMPORTANT :<br>
+
+If this language is written Right-To-Left, you must add an asterisk (*) after the iso code so the system knows to reformat when this language is selected.<br>
+
+Example: Fula (ff)* "Fulfulde"<br>
+
+<br>
+
+4. When you're finished, save the file. The new language is now in the Choose Languages menu.<br><br>
+
+
+
+
+Setting A Language<br>
+
+To Set Language in Editor:<br>
+
+
+1. In the Languages In Use list, check the box of the language you want to set as the current language in use<br>
+
+You can change the current language selection in any UttererLanguages script that is added to an object.<br>
+
+While the application is playing, if no language is selected then the first language in the list will become the current language in use.<br><br>
+
+
+To Set Language During Play :<br>
+
+
+METHOD 1 :<br>
+
+1. Add a Language Chooser prefab to the hierarchy as a child of a Canvas.<br>
+
+Found here: Assets/Utterer/Prefabs/LanguageChooser<br>
+
+This dropdown list allows the user to pick a language at runtime and saves the chosen language as the main language for all other instances of UttererLanguages.<br><br>
+
+
+METHOD 2 :
+<br>
+
+1. Add UttererLanguages to any game object in the hierarchy with a Dropdown component.<br>
+
+UttererLanguages will fill out the Dropdown's Options with its Languages List and work as a Language Chooser at runtime.<br>
+
+
+While the Languages In Use list displays the English names of each language, Language Choosers will display the native name of each language in its native script if available, else the name will display in Roman script.<br><br>
+
+
+
+
+Using with UDS<br>
+
+1. Add UttererLanguages.cs to a UDS object in the hierarchy.<br>
+
+In each Utterance, a speaker Text Area and an utterance Text Area is added for each language. UDS will use the current language in use and show the text from that language's text areas. <br><br>
+               
+
+UDS Options
+<br>
+1. Use File Name to create a new .csv file or find an already existing .csv file in Assets/Utterer/Languages/SavedFiles.<br>
+
+Name only, .csv is included automatically.<br>
+
+2. Save this object's UDS data to a .csv file.<br>
+
+Saves/overwrites all Utterances into the file with the name you entered in File Name.<br>
+
+3. Import UDS data from a .csv file.<br>
+
+Imports Utterances from the file with the name you entered in File Name.<br>
+
+
+Based on the number of Languages in the Languages List and the number of Utterances in the current UDS, Utterer Languages with UDS reads and writes .csv in the following format:<br>
+
+Utterance 1<br>
+Language 1<br>
+Speaker, Utterance.<br>
+Language 2<br>
+Speaker, Utterance.<br>
+<br>
+
+EXAMPLE:<br>
+
+Utterance 1<br>
+English<br>
+John, Hello.<br>
+Spanish<br>
+John, Hola.<br>
+<br><br>
+
+
+Using with Text/TextMeshPro<br>
+
+1. Add UttererLanguages.cs to an object with a Text/TMPro Component.<br>
+
+For every language you added to the Languages In Use list, a Text Area will appear in UttererLanguages for this object. Each Text Area will be named after its respective language.<br><br>
+
+
+
+Text Options<br>
+
+
+Use Main File Name to create a new .csv file or find an already existing .csv file in Assets/Utterer/Languages/SavedFiles.<br>
+
+1. Enter the name of an already existing file, or enter a unique name to create a new file.<br>
+
+Name only, .csv is included automatically.<br>
+
+When creating a new Text file, it is recommended to give it a distinguishable name such as 'TextObjectName-SceneName'.<br><br>
+
+
+
+Use Subsection to create a new subsection of a file, or find an already existing subsection of a file.<br>
+
+1. Enter the name of an already existing subsection of the file referenced in Main File Name, or enter a unique name to create a new subsection of the file referenced in Main File Name.<br>
+
+This will be used to store/find this Text/TMPro component's data in Main File Name.<br>
+
+When creating a new subsection it is recommended to give the subsection a distinguishable name, such as the name of the text object you are saving so you can easily remember or decipher which Subsection to reference for each Text/TMPro component.
+<br><br>
+
+
+Save Text/TMPro to File<br>
+
+Saves all of the data from Texts to the file you entered in Main File Name. If you entered a subsection, the data will be saved under the name of that subsection.
+
+<br><br>
+
+Import Text/TMPro from File<br>
+
+Imports from the Main File Name and Subsection you have entered. If no Subsection, reads all data from the file with the Main File Name you entered.<br>
+
+Based on the number of Languages in the Languages In Use list, Utterer Languages with Text/TMPro reads and writes .csv in the following format:<br>
+
+Subsection name<br>
+Language 1<br>
+Text.<br>
+Language 2<br>
+Text.<br><br>
+
+EXAMPLE:<br>
+
+Example-DemoScene<br>
+English<br>
+Hello.<br>
+Spanish<br>
+Hola.<br><br>
+
+
+
+Using with AudioSources<br>
+
+1. Add UttererLanguages.cs to an object with an AudioSource Component.<br>
+
+For every language you added to the Languages In Use list, an AudioClip field will appear in UttererLanguages under a Sounds foldout. Each field will be named after its respective language.<br>
+
+Whichever language is currently in use will decide which AudioClip is played out of the Sounds list.<br>
+<br><br>
+
+
+Using with Images<br>
+
+Add UttererLanguages.cs to an object with an Image Component.<br>
+
+For every language you added to the Languages In Use list, a Sprite field will appear in UttererLanguages under an Images foldout. Each field will be named after its respective language.<br>
+
+Whichever language is currently in use will determine which Sprite is displayed on the Image component.<br>
+
+<br><br>
+
+UTTERER DIALOGUE SYSTEM (UDS)<br>
+
+
+The Utterer Dialogue System is built to format itself based on your input so you can easily create and control single person/multiple person dialogue/subtitles/captions.<br><br>
+
+
+Getting Started<br>
+
+1. Drag the 'UDS' prefab into the hierarchy.<br>
+
+	Found here : Assets/Utterer/Prefabs/UDS<br>
+
+	UDS must be a child of a Canvas. UDS works best when the Canvas 	Scaler's UI Scale Mode is set to scale with screen size, though it 	will still work with other modes.<br>
+
+2. Increase the size of Utterances.
+<br>
+	The Utterances array contains your subtitles/dialogue as 	individual utterances.<br><br>
+	
+
+Utterance Controls
+<br>
+
+1. Add an icon to the Icon field.
+<br>
+	   Sprite/Texture 2D<br>
+<br>
+
+2. Input the title/name of the speaker into the Speaker field.<br>
+
+This field is hidden if the system is set to Subtitles or if the No Speaker setting is enabled.<br>
+
+<br>
+3. Input the dialogue for this utterance into the large text field. 
+<br>
+This field is the only one that is always enabled and never hidden.
+<br>
+4. Add a sound to play during this utterance.
+<br>
+You can also loop this sound for the duration of the utterance. The sound field can be left empty.
+<br>
+
+5. Input into each utterance's Duration field the amount of time you would like it to display itself.
+<br>
+This field and the Break Between field are hidden if the system is set to be interactive.
+<br>
+
+6. Input the amount of time you want to wait to display the next utterance into the Break Between field.<br>
+
+	   Utterer will display nothing during this break.<br><br>
+
+
+
+Settings<br>
+
+
+Pause Scene<br>
+
+Grab the original timeScale, set the timeScale of the scene to 0 until UDS is finished, then set timeScale back to its original value.<br><br>
+
+
+Delay Start<br>
+
+The length of time to delay UDS from starting the dialogue/subtitle sequence. Can be null.<br><br>
+
+
+<br>
+System Fade
+
+The entire system fades in and out at the beginning and end of the dialogue/subtitle sequence.<br><br>
+
+
+Content Fade<br>
+
+Icon, speaker, and dialogue fade in for each utterance if they are enabled.<br><br>
+
+
+
+Using TMPro<br>
+Switch the speaker and dialogue Text components to TextMeshPro Text components. Uchecking this switches them back to Legacy Text.<br><br>
+
+Interactive Inputs<br>
+
+Set the system to allow any key to progress the dialogue, or choose which keys you want to use instead.<br><br>
+
+
+Type Writer Effect
+<br>
+Adds one letter at a time like a typewriter. Has a Rate field for you to control the speed.<br><br>
+
+
+
+
+Styles<br>
+
+
+No Icons, No Button, No Back, No Outline, No Speaker, No Scrollbar<br>
+
+Hides the icon placeholder, next button, background, outline, speaker, and scrollbar, respectively. If Subtitles is enabled, the icons, next button, speaker, and scrollbar are automatically hidden.<br>
+
+
+Back, Next, Outline, Scrollbar Colors & Images<br>
+
+If the next button, background, outline, or scrollbar are displayed, you can choose the color and texture (sprite/image) of each in their respective fields.<br>
+<br>
+
+Speaker Style<br>
+
+Contains settings for the speaker font. This foldout and its contents will be hidden if Subtitles or No Speaker is enabled.
+<br>
+
+Dialogue Style<br>
+
+Contains settings for the dialogue font. Will be renamed to Subtitle Style if Subtitles is enabled.
+<br><br>
+
+
+Tips<br>
+
+⦁	You can have multiple Utterer Dialogue Systems in a scene but only one can be enabled at a time when the application is playing.<br>
+
+⦁	Use the UDS automatic scaling and anchoring system to set up a basic layout, then in Settings check Custom Layout for ultimate customization.<br>
+
+⦁	Next button has a Text child that when enabled creates a color field for it in the Style foldout.<br>
+
+⦁	The background, outline, and next button objects are set to use 9-slice sprites but you can technically use any sprites as long as you apply the proper settings.
+<br><br>
+
+
+Utterer Dynamics<br>
+
+
+With Utterer Dynamics, you can make string calls to the system using the format <string> to change strings in any applicable Text/TMPro component at runtime.<br>
+            
+Only one instance of Utterer Dynamics is needed in order to control all calls in the scene. UttererDynamics.cs can be added to any object.<br>
+<br>
+
+
+Built-In Dynamics<br>
+
+Utterer Dynamics contains several built in calls that are formatted at runtime based on the current culture settings.<br><br>
+
+
+DateTimes<br>
+
+Use any of the following calls in any Text/TMPro/UDS/UL text area:<br>
+
+CALLS			      IDS<br>
+  
+<LongDate> 			System.DateTime.Now.ToLongDateString()<br>
+<ShortDate> 		System.DateTime.Now.ToShortDateString()<br>
+<LongTime> 			System.DateTime.Now.ToLongTimeString()<br>
+<ShortTime> 		System.DateTime.Now.ToShortTimeString() <br>
+<Day> 			    System.DateTime.Now.DayOfWeek<br>
+<Month> 		  	System.DateTime.Now.Month<br>
+<Year> 		    	System.DateTime.Now.Year<br>
+
+<br>
+
+Currency<br>
+
+Use c (case sensitive) followed by the amount inside the Dynamics indicators <c1234.00><br>
+
+Example if culture is (en) : Adding <c4321.5678> to any Text/TMPro component's text will be overwritten at runtime as $4,321.56.<br>
+
+<br><br>
+
+Decimals, doubles, floats, etc.<br>
+
+Place the number inside the Dynamics indicators <1234.5678><br>
+
+Example if culture is (en) : Adding <2552.5225> to any Text/TMPro component's text will be overwritten at runtime as 2552.523.<br>
+
+
+<br><br>
+The Dynamics List<br>
+
+With the Dynamics List you can call your own specific calls and replace them with their ID string. These call and ID strings are saved into Utterer/Dynamics/Resources/ in a file called DynamicsList.json.<br>
+
+
+To use a call from the Dynamics List, input it into any Text/TMPro/UDS/UL text area.<br>
+
+Example: Hello <Player>.<br>
+
+<br>
+
+Adding Dynamics to Dynamics List<br>
+
+
+Add an UttererDynamics script to any gameObject in the scene.<br>
+
+<br><br>
+DEVELOPER INPUT
+<br>
+1. Click the 'Add to List' button of the Dynamics List and enter a call key and an ID.<br>
+
+Calls must begin with "<" and end with ">"<br>
+
+EXAMPLE Call: <Player>  ID: Madsir<br><br>
+
+
+
+Utterer Dynamics can also be used to make specific strings remain a certain color no matter the color of the Text's font.<br>
+
+
+1. Enter a call key and then in its ID field, type the word 'color' (not case sensitive).
+<br>
+	EXAMPLE :<br>
+	Call: <Madsir><br>
+	ID: color<br>
+
+	A new color field will appear beneath the ID field. Choose the 	color you wish and any instance of the call string will display in 	that color.<br>
+
+<br>
+PLAYER INPUT<br>
+
+1. Add an Input Field to the hierarchy.<br>
+
+(Works with both Text and TextMeshPro InputFields)<br>
+
+2. Add a new element to Input Field component's On End Edit() and then add the object containing this scene's Utterer Dynamics instance to the new element's object field.<br>
+
+
+3. Set to On Runtime Only, then call the DynamicsInput(Object) function from UttererDynamics and drag the Input Field object into the method's Object field.<br>
+
+
+
+4. Use the InputField's placeholder text to save the inputted text to a call in the Dynamics List, OR use the placeholder text to create a new call to save to the Dynamics List.<br>
+            
+<br><br>
+EXAMPLE :<br>
+If the InputField's placeholder text is "Player Name" Utterer will check the Dynamics list to see if that call exists, and if not, save the call as <Player Name><br>
+
+So any previously created strings containing <Player Name> will be replaced with the call's ID.<br>
+
+The ID for the call <Player Name> is saved as the string inputted by the player during runtime.<br><br>
+
+
+
+Removing Dynamics<br>
+
+1. Click the Dynamic you want to remove in the Dynamics List.<br>
+
+2. Click the 'Remove from List' button of the Dynamics List.
+<br>
+Utterer will automatically save the Dynamics after you're finished editing the Dynamics List.<br>
+
+<br><br>
+
+
+Questions, concerns, or suggestions?<br>
+contactmadsir@gmail.com<br>
+Utterer © 2023 Madsir Studio
