@@ -2,9 +2,6 @@ body {
     background-color: #020202;
     box-shadow: 0 0 10px 5px #090F14;    
     font-size: 80%;
-        min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 .column {
   flex: 43%;
@@ -80,5 +77,4 @@ p {
 footer {
     border-top: 1px solid #12002E;
     border-bottom: 1px solid #12002E;
-    margin-top: auto;
 }
