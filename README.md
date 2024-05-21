@@ -16,7 +16,7 @@ Space Toots: Eat space jellies get gas, and toot. Propel your way through the sp
 
 Cutscheme (2D/3D) - Cutscene System: Easily create and control cutscenes. Infinite camera shots. Can control multiple cutscenes in one scene. 
 
-Utterer - Dialogue and Subtitle System: Easily create and control dialogue. Customizable. Infinite utters. Comes with Utterer Languages localization system.
+Utterer - Localization Framework, String Interpolation, & Dialogue/Captions Systems.
 
 Earchestra - Sound manager and playlist creator: Create infinite playlists. Control all of them from any script in the scene by using Earchestra's Maestro Methods.
 
