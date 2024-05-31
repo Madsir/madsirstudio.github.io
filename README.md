@@ -18,4 +18,4 @@ Utterer - Localization Framework, String Interpolation, & Dialogue/Captions Syst
 
 Earchestra - Sound manager and playlist creator: Create infinite playlists. Control all of them from any script in the scene by using Earchestra's Maestro Methods.
 
-All content on www.madsirstudio.com is Copyright 2019-2024 Madsir Studio.
+All content Copyright 2019-2024 Madsir Studio.
