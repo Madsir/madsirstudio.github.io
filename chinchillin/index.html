@@ -69,6 +69,7 @@ h2 {
 h6 {
    font-size: 0.3em;
 }
+	footer
 }
 .around {
 	border-radius: 10px;
@@ -89,6 +90,18 @@ h6 {
   font-size: 0.7em;
   text-align: center;
 }
+  .videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 </style>
 </head>
 <body>
@@ -106,10 +119,11 @@ h6 {
 	</div>
 	<br><br>
 	<div class="fonter">
-<div class="center">
-	<iframe frameborder="0" src="https://itch.io/embed/1425556?bg_color=000000&amp;fg_color=eeeeee&amp;link_color=3a99ff&amp;border_color=363636" width="40%" height="80%"><a href="https://madsirstudio.itch.io/chinchilla-dance-party">Chinchilla Dance Party by Madsir Studio</a></iframe>
+<div class="videoWrapper">
+<iframe frameborder="0" src="https://itch.io/embed/1425556?border_width=0&amp;bg_color=000000&amp;link_color=5ba3fa" width="206" height="165"><a href="https://madsirstudio.itch.io/chinchilla-dance-party">Chinchilla Dance Party by Madsir Studio</a></iframe>	</div>
 	</div>
-			<div class="center">
+		<br>
+		<div class="center">
 	<a href="https://play.google.com/store/apps/details?id=com.MadsirStudio.ChinchillaDanceParty"><img src="/Assets/google-play-badge.png" style="width:40%;display:block;margin-left:auto;margin-right:auto"></a>
 	</div>
 	<h6>Google Play and the Google Play logo are trademarks of Google LLC.</h6>
