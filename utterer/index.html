@@ -129,7 +129,7 @@ h5 {
 		<a href="https://assetstore.unity.com/packages/slug/215643"><img src="/Assets/utterer.png" alt="Utterer" style=display:block;margin-left:auto;margin-right:auto></a><br>
 </div>
 	<div class="fonter">
-		<h5>Localization Framework<br>Dialogue & Captions Systems<br>String Interpolation<br>All in one package. <br> <br>
+		<h5>Localization Framework<br>Dialogue & Captions<br>String Interpolation<br>All in one package. <br> <br>
 	Available on the <a href="https://assetstore.unity.com/packages/tools/localization/utterer-215643">Unity Asset Store</a></h5>
 	</div>
 </div>
@@ -137,28 +137,34 @@ h5 {
 
 		<br>
 	<br>
-		<h1>Please note: (5/23/2024) This asset is currently being overhauled.<br>Utterer 2.0 will include both linear and dynamic dialogue systems (including new visual dialogue trees), a new caption/subtitle system, a restructured localization system, and a new and improved dynamic string interpolation system.<br>Utterer 2.0 will be arriving shortly.</h1>
+		<h1>Utterer v2.0 is a complete overhaul of Utterer v1.0 and will be releasing shortly.</h1>
 		<br><br>
 	<h2>Utterer Languages - Localization Framework</h2><br>
 		<div class="baround"><br><p>
-		Compatible with the following components:<br><br>Text/TextMesh Pro<br>AudioSource<br>Image<br>Utterer Dialogue System 
+
+Utterer Languages is a scriptable object which stores information and guides the components connected to it.<br>
+This asset creates a menu of available languages from which you can add languages to the asset's Languages In Use list. Utterer Languages stores the ISO, native name, and English name of each language in the Languages in Use list.<br>
 <br><br>
-Contains 187 languages to choose from (you can also add more).<br><br>Automatically updates current culture settings based on which language is selected.<br><br>
-			Translations can be imported and exported as CSV data.</p>
-			<br></div>
+Utterer Languages comes with a Language Chooser script for syncing dropdown components with the Languages In Use list.
+<br>
+Language Chooser allows the user to choose a language at runtime. The Utterer Languages asset will save any changes made, guiding its related components to reflect those changes.
+Compatible with the following components:<br><br> Utterer Texts<br>Utterer Audio<br>Utterer Images<br>Utterer Dialogue System <br>Utterer Captions System <br> Utterer Dynamics
+<br><br>
+</div>
 	<br>
 
 <br>
 	<br><br>
-	<h2>Utterer Dialogue && Utterer Captions Systems</h2>
+	<h2>Utterer Dialogue System
 	<br>
 		<div class="baround">
 	<br>
-	<p> Create linear or dynamic dialogue/captions using Utterer's visual dialogue tree.<br><br>
-		Control which content to display using multiple settings.<br><br>
-		Easily customize the system's appearance.<br><br>
-		Fade dialogue in and out, use typing animations, control user input.
-			All this with no coding necessary.</p>	
+	<p> Create linear or dynamic dialogue sequences using Utterer's visual Dialogue Tool.<br><br>
+		Fade the system and/or its content in and out, use typing animations, .<br><br>
+		Easily customize the appearance of the system and its components.<br><br>
+		Each individual part in the sequence can be interactive, time-based, or response-based. <br><br>
+		
+		</p>	
 		<br>
 		</div>
 				
@@ -166,10 +172,10 @@ Contains 187 languages to choose from (you can also add more).<br><br>Automatica
 <br>
 	<h2>Utterer Dynamics - Dynamic String Interpolation</h2><br>
 	<div class="baround"><br><p>
-	Create a list of custom calls.<br><br>
-	Create color-coded string calls.<br><br>
-	Save custom calls & IDs in Editor and at Runtime.<br><br>
-		Calls are replaced with their IDs at runtime.<br>
+		Utterer Dynamics is a scriptable object string interpolator which replaces any "call" (a string or part of a string surrounded by < and > - Ex. <Player Name>) with its associated "ID" (Ex. "Madsir").<br>If a call's ID is "color", a color field will appear and you can choose a color and the system will change the string inside the call to your chosen color (ex. Call: , ID :"color")
+<br><br>
+Calls are interpolated with their IDs/colors/values once when they are enabled in the scene.<br>
+Interpolation is handled by the system's Dynamics Assistant, which the Utterer Dynamics asset adds to the current scene<br><br>
 	</p><br></div>
 		<br>
 		<br>
