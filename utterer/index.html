@@ -240,9 +240,9 @@ Response Output - If this toggle is active and connected to another Dialogue's R
 	<h2>Utterer Dynamics - Dynamic String Interpolation</h2><br>
 	<div class="baround"><br><p>
 Utterer Dynamics uses a scriptable object asset to store your list of dynamic calls in order to interpolate or color-code certain strings.<br>Interpolation is handled by the system's Dynamics Assistant, which finds all calls in an open scene and switches them with their ID's at runtime.<br><br>
-	Utterer Dynamics replaces any "call" (a string or part of a string surrounded by < and > - Ex. ) with its associated "ID" (Ex. "Madsir"). <br><br>
+	Utterer Dynamics replaces any "call" (a string or part of a string surrounded by < and > - Ex. <PlayerName> ) with its associated "ID" (Ex. "Madsir"). <br><br>
 
-If a call's ID is "color", a color field will appear and you can choose a color and the system will change the string inside the call to your chosen color (ex. Call: , ID :"color")<br><br>
+If a call's ID is "color", a color field will appear and you can choose a color and the system will change the string inside the call to your chosen color (ex. Call: <Player> , ID :"color")<br><br>
 
 
 Calls are interpolated with their IDs/colors/values once when they are enabled in the scene.<br><br>
