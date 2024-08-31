@@ -138,9 +138,17 @@ h5 {
 		<br>
 	<br>
 		<h1>Utterer v2.0 is a complete overhaul of Utterer v1.0 and will be releasing shortly.</h1>
-		<p>Utterer's components are built for ease of use with no scripting required. Each works with TextMesh Pro, TextMeshProUGUI, and Legacy Text components.<br><br>
+Utterer components have an associated tool which functions as a workspace for the component.<br><br>
 
-Utterer Texts, Utterer Captions System, and Utterer Dialogue System can import and export data from txt/csv files using Utterer's Porter.</p>
+Dialogue and Captions Tools create a window for each part in the sequence.<br><br>
+Texts, Images, and Audio Tools create a window for each language in the languages list.<br><br>
+
+All Tools have the following:<br>
+Scrollable workspace<br>
+Draggable windows<br>
+Custom background color<br>
+Light & Dark modes<br>
+Quick-position the windows in rows, columns, or diagonally<br><br>
 		<br><br>
 	<h2>Utterer Languages - Localization Framework</h2><br>
 		<div class="baround"><br><p>
@@ -237,6 +245,68 @@ Response Output - If this toggle is active and connected to another Dialogue's R
 				
 <br><br>
 <br>
+		<h2>Utterer Captions System</h2>
+		<div class="around"><br><p>
+			
+The Utterer Captions System is built to format itself based on your input so you can easily create and control a sequence of captions in your scene<br><br>
+
+Settings<br>
+Content Fade<br>
+Content Fade is a bool which when set to true causes any enabled content (caption text) to fade in and out at the beginning and end of each caption in the sequence<br><br>
+
+
+Style Fade<br>
+Style Fade is a bool which when set to true causes any enabled style (background, outline) to fade in and out at the beginning and end of each caption in the sequence<br><br>
+
+
+Paint On<br>
+Paint On is a bool which when set to true causes the system to add one letter or word at a time, depending on the type setting. Creates a bool to control word vs letter, and a float field for you to control the rate at which the letter/word appears<br><br>
+
+
+Positions<br>
+If using a TextMeshPro Object, this setting allows for the positioning of each caption in the sequence<br><br>
+
+
+
+Options<br>
+
+
+Background Style<br>
+Background style refers to the background & outline. Choose the color and texture (sprite/image) for the enabled<br><br>
+
+
+Captions Style<br>
+Contains settings for the captions font<br><br>
+
+<br><br>
+
+The Captions Tool
+<br><br>
+
+All windows will be displayed in this workspace.<br>
+Windows are draggable.<br>
+You can scroll the workspace with the mouse or keyboard arrows.<br>
+Add & Remove captions<br>
+Import or export text from documents in your project<br><br><br>
+
+
+Captions Tool - Caption Windows
+<br><br>
+Caption : Text Area<br>
+The caption text area is where you'll input the text for this caption in the sequence.<br>
+
+Time : Float Field<br>
+The amount of time you would like this caption to display itself.<br>
+This time includes start fade in and end fadeout, if applicable
+<br><br>
+Delay : Float Field<br>
+The amount of time you want to wait before displaying the next caption.<br>
+Utterer Captions System will display no text during this break<br><br><br>
+
+
+		</p>
+		</div>
+		<br><br><br>
 	<h2>Utterer Dynamics - Dynamic String Interpolation</h2><br>
 	<div class="baround"><br><p>
 Utterer Dynamics uses a scriptable object asset to store your list of dynamic calls in order to interpolate or color-code certain strings.<br>Interpolation is handled by the system's Dynamics Assistant, which finds all calls in an open scene and switches them with their ID's at runtime.<br><br>
