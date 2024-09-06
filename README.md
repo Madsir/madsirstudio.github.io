@@ -7,7 +7,7 @@ Chinchilla Dance Party: Test your skills and help them keep their party going!
 Space Toots: Eat space jellies get gas, and toot. Propel your way through the spacescapes!
 
 
-[POST PRODUCTION] (Demo available) Remote Agent: A strange, new chaos spreads across the land.
+[PRODUCTION] (Demo available) Remote Agent: A strange chaos spreads across the land.
 
 
 **UNITY ASSETS**
