@@ -133,10 +133,20 @@ font-size: 0.8em;
 </div>
 </div>
 </div>
+	  <br>
+	  <br>
+	  <h2>Earchestra</h2>
+	  <div class="baround"><br><p>Earchestra has three main Sections, each with its own main audio player:
+<br><br>
+Music, SFX, and Speech.<br><br>
+
+<br><br>
+Create playlists in each of these Sections, customize playlist names and track titles, set the volume of each Section in Editor and at Runtime, build an Ensemble of audio players for each Section, and control all of it by calling Earchestra's Maestro Methods from any MonoBehavior script.
+<br><br>
+
+This sound manager is suitable for both simple and dynamic audio needs.<br><br></p>
+	  </div>
     <br>
-   <div class="around">
-		<a href="/Assets/earchestraSectionsMSS.jpg"><img src="/Assets/earchestraSectionsMSS.jpg" alt="Earchestra Sections" width="99%" height="99%"style=display:block;margin-left:auto;margin-right:auto></a>
-</div>
     <br>
     <h2>Sections :<br>Music, SFX, Speech</h2>
 <div class="baround"><br>
@@ -146,41 +156,58 @@ font-size: 0.8em;
     Control playlists using Earchestra's Maestro methods.</p>
 		  <br>
 </div>
-<div class="around">
-	<a href="/Assets/earchestraMusicSectionMSS.jpg"><img src="/Assets/earchestraMusicSectionMSS.jpg" alt="Earchestra Sections" width="99%"style=display:block;margin-left:auto;margin-right:auto></a>
-</div>
-<div class="around">
-	<a href="/Assets/earchestraSFXSectionMSS.jpg"><img src="/Assets/earchestraSFXSectionMSS.jpg" alt="Earchestra Sections" width="99%"style=display:block;margin-left:auto;margin-right:auto></a>
-</div>
-<div class="around">
-	<a href="/Assets/earchestraSpeechSectionMSS.jpg"><img src="/Assets/earchestraSpeechSectionMSS.jpg" alt="Earchestra Sections" width="99%"style=display:block;margin-left:auto;margin-right:auto></a>
-</div>
     <br>
+	  
         <h2>Ensemble</h2>
  <div class="baround"><br><p>
     Play multiple playlists from the same section at the same time. <br> <br>
     Play multiple tracks from a Section's playlist, each with their own transform. <br> <br>
-    Make any clip from your playlists play at the position of your choice.
+    Make any clip from your playlists play at the position of your choice.<br><bR>
+	 Each playlist can play in index order or mixed order.<br> <br>
+Each playlist can fade tracks at the beginning and end.<br> <br>
+Each playlist has a setting for the delay between tracks.<br> <br>
+Each track in a music playlist can be set to loop.<br> <br>
     </p>
   <br>
 </div>
-<div class="around">
-	<a href="/Assets/earchestraEnsemble.jpg"><img src="/Assets/earchestraEnsemble.jpg" alt="Earchestra Ensemble" width="99%"style=display:block;margin-left:auto;margin-right:auto></a>
-</div>
   <br>
+	  
   <h2>Earchestra's Maestro Methods</h2>
 <div class="baround"><br><p>
-    Control playlists, tracks, and transforms.<br><br>
-    Use these methods in any Monobehavior scripts.
+    Use these methods in any Monobehavior scripts.<br><br>
+	Maestro.Stop(), Maestro.Pause(), and Maestro.Resume() affect all Earchestra-based audio sources.<br><br>
+Control your music playlists using the Maestro.Music method plus commands.<br><br>
+Control your SFX playlists using the Maestro.SFX method plus commands.<br><br>
+Control your Speech playlists using the Maestro.Speech method plus commands.<br><br>
   </p>
       <br>
  </div>
-<div class="around">
-	<a href="/Assets/earchestraMaestroCommands.jpg"><img src="/Assets/earchestraMaestroCommands.jpg" alt="Earchestra Maestro Commands" width="99%"style=display:block;margin-left:auto;margin-right:auto></a>
-</div>
   <br>
       <br>
+	  <h2>Commands</h2>
+	  <div class="baround">
+		  <br> <p>Maestro follows 15 playlist and track commands, including Play, Pause, Stop, and Loop. A full list of commands is included in the Maestro Methods foldout in Earchestra's inspector.
+<br><br>
+
+Along with commands, you can add a Transform variable at the end of any Section's Maestro Method and Earchestra will send an audio player to that Transform's position to play the designated audio.</p>
+		  <br>
   <br>
+	  </div>
+
+	  <br><br><br>
+	<h2>Settings</h2>
+	  	  <div class="baround">
+		  <br>
+<p>
+Perpetual - Earchestra persists through each scene without being destroyed.<br><br>
+3D - Automatically resets the audio players to spatial-based settings. Unchecking this reverts the players back to default (2D).<br><br>
+</p></div>
+	  <br><br>
+<h2>Volumes</h2>
+	  <div class="baround">
+		  <br><p>
+Control the master volumes for each Section using sliders in the Earchestra Sections inspector. These volumes apply to all Earchestra-based audio sources.
+Earchestra includes a prefab for the user to set the master volumes for each section at runtime.</p></div>
   </div>
   </div>
   <br>
