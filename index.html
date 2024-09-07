@@ -24,19 +24,6 @@ description: "RADNESS & MADNESS"
 justify-content: center;
   width: 48%;
 }
-@media (max-width: 600px) {
- .columns {
-   width: 50%;
- }
-  h1 {
-    font-size: 1.1em;
-  }
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 .columns img {
   border-radius: 50%;
   border: 2px solid black;
@@ -46,6 +33,22 @@ justify-content: center;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
+}
+@media (max-width: 600px) {
+ .columns {
+   width: 50%;
+ }
+.columns img {
+width: 60%;
+}
+  h1 {
+    font-size: 1.1em;
+  }
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 .around img:hover {
   box-shadow: 0 0 2px 1px #ff8e8e;
