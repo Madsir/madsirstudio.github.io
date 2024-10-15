@@ -2,7 +2,7 @@
 
 **GAMES**
 
-Chinchilla Dance Party: Test your skills and help them keep their party going!
+Calculation Boogey - Solve the math problems before the sun sets. The boogey waits til dark.
 
 Space Toots: Eat space jellies get gas, and toot. Propel your way through the spacescapes!
 
