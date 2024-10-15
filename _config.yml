@@ -2,12 +2,13 @@ name: Madsir Studio
 title: Madsir Studio presents ...
 markdown: kramdown
 url: "http://madsirstudio.com" # the base hostname & protocol for your site
-permalink: /about/
-permalink: /contact/
-permalink: /remoteagent/
-permalink: /cutscheme/
-permalink: /cutscheme2d/
+permalink: /about
+permalink: /contact
+permalink: /remoteagent
+permalink: /cutscheme
+permalink: /cutscheme2d
 permalink: /utterer
+permalink: /calculationboogey
 permalink: /spacetoots
 
 
