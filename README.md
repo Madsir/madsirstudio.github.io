@@ -2,7 +2,7 @@
 
 **GAMES**
 
-Calculation Boogey - Solve the math problems before the sun sets. The boogey waits til dark.
+Calculation Boogey - Solve the math problems before the sun sets or the boogeyman will get you.
 
 Space Toots: Eat space jellies get gas, and toot. Propel your way through the spacescapes!
 
