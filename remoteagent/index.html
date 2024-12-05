@@ -54,6 +54,18 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 </style>
 </head>
 <body>
@@ -69,7 +81,9 @@ h2 {
 		<h1>Remote Agent [In Production]</h1>
 <br><br><br><br>
 		  <div class="center">
-		  <a href="/Assets/coverArt.png"><img src="/Assets/coverArt.png" alt="Remote Agent" style="width: 35%"></a>	
+			  <div class="videoWrapper>
+		  <iframe width="560" height="315" src="https://www.youtube.com/embed/TafGR6cXga4?si=AfrIrTp7ojAkH2xJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>	
+			  </div>
 		  </div>
 		  <br><br><br>
 <p> A strange chaos spreads across the land, causing a remote monitoring station to lose all contact. <br><br>
