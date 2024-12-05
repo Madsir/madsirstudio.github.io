@@ -10,7 +10,6 @@
 			{% seo %}
 		</head>
 <style>
-
 body {
   margin: 0;
   background-image: url("/Assets/roots.jpg");
@@ -18,7 +17,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
-
 .right {
     font-family: Verdana, Arial, Tahoma, monospace;
     font-size: medium;
@@ -28,13 +26,17 @@ body {
     color: gray;
   align-self: center;
 }
-
 .hov {
   margin-left: 5%;
 }
 .dropdown {
   display: block;
   position: relative;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .flexer{
   display: flex;
@@ -61,8 +63,8 @@ a {
 }
 .imbut{
   cursor:pointer;
-	list-style: none;
-	  margin-right: 2vw;
+  list-style: none;
+  margin-right: 2vw;
   padding:5px 15px;
 }
 button:hover{
@@ -133,7 +135,7 @@ footer {
 	<a href="/"><img src="/Assets/heroImage.jpg" width=100%; style=display:block;margin-left:auto;margin-right:auto></a>
 <nav>
   <ul>
-    <div class="flexer">
+    <div class="center">
 	<div class="dropdown">
 		<button>&equiv;</button>
   		<div class="dropdown-content">
@@ -165,8 +167,8 @@ footer {
 </div>
 <footer>
     	<ul>	
-		<div class="flexer">			
-			<div class="right">© 2024 Madsir Studio</div>
+		<div class="center">			
+			© 2019-2024 Madsir Studio
 		</div>
 	</ul>
 </footer>
