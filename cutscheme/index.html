@@ -151,6 +151,7 @@ h5 {
 <div class="main">
 	<br>
 	<br>
+	<div class="baround">
 <div class="split">
 		<h2>
 	Cutscheme Cutscene Tool</h2>
@@ -160,7 +161,7 @@ h5 {
 Customize each shot's position, rotation, duration, and transition. Manage audio, apply effects, enable skipping, and much more all from one component. No coding necessary.
 	<br>
 	</p>
-</div>
+</div></div>
 	<br>
 	<br>
 	<br>
@@ -201,14 +202,6 @@ Customize each shot's position, rotation, duration, and transition. Manage audio
 	</div>
 </div>
 <div class="split">
-			<br>
-		<br>
-	<br>
-	<br>
-	<br>
-			<h2>Cutscheme Prefabs<br><br>Easily and quickly create custom cutscenes.</h2>
-		<br>
-	<br>
 	<div class="around">
 	   <div class="center">
 		<div class="col">
@@ -224,80 +217,6 @@ Customize each shot's position, rotation, duration, and transition. Manage audio
 	   </div>
 	</div>
 <br><br>
-		<br>
-		<br>
-		<h2>Cutscheme Controller</h2>
-		<br>
-		<br>
-		<div class="baround"><br><p>
-	<p>Build custom cutscenes using the Cutscheme Controller component.<br><br>
-
-Generate a sequence of camera shots for each of the shots in your cutscene.<br><br>
-Direct a camera (or parent of a camera) through your cutscene using the camera shots' positions.<br><br>
-(Optional) Disable the cutscene's main camera after the cutscene ends.</p>
-	<br>
-		</div>
-	      		<br>
-		<br>
-<h2>Cutscheme Object Control<br><br>
-	Hide or show objects (or their Behaviours) before, during, and after the cutscene</h2><br>	
-	      
-	<div class="baround"><br><p>
-			Hide Until Cutscene - Objects or Behaviours in this list are automatically disabled in the editor, though can be enabled and disabled manually.<br><br>
-			Hide During Cutscene - Objects or Behaviours in this list are hidden at the start of the cutscene and enabled again after the cutscene.<br><br>
-	Hide After Cutscene - Objects or Behaviours in this list are disabled after the cutscene ends.</p><br>
-	</div>
-		<br>
-		<br>
-			<h2>Cutscheme Audio
-		<br><br>
-	Cutscheme creates its own Audio Source at runtime and places it on the Cutscheme's Main Camera.</h2><br>			
-	<div class="baround"><br><p>
-		Choose whether only cutscene audio should play during the cutscene.
-<br><br>Add an audio clip to the Main Audio field to play during the cutscene.
-<br><br>
-			Loop the Cutscheme's Main Audio.<br><br>
-		Choose the volume level for the cutscene's audio.<br><br>
-			Fade the main audio in and/or out.<br><br>
-	Choose the amount of time it takes to fade the audio.</p>
-	<br>
-	</div>
-		<br><br>
-			<h2>Cutscheme Options</h2> <br>						
-	<div class="baround"><br>
-			<p>Fade the cutscene in/out at the beginning and end.<br><br>
-				Choose the amount of time it takes to fade in/out to black.<br><br>
-			Reset the camera back to its original size after the cutscene ends.<br><br>
-      			Reset the camera back to its original transform after the cutscene ends.<br><br>
-			Choose whether the cutscene can be skipped.<br><br>
-			Set the Cutscheme system's timers to ignore the scene's timescale.<br><br>
-			After the cutscene, change to a new Scene via build index.</p>
-	<br>
-	</div>
-			<br><br>
-
-		    <h2>Camera Shots
-		<br><br>
-			    Controls for each camera shot :</h2><br>	<br>
-<br>
-	<div class="baround"><br><p>
-            Position of the camera shot.<br><br>
-		Rotation of the camera shot.<br><br>
-		Duration the camera shot stays still before transitioning to the next.<br><br>
-		Zoom in or out to a new FOV at the speed of your choice during the shot.<br><br>
-		Shake the camera at the magnitude of your choice during the shot.<br><br>
-		Play an audio clip at the start of the camera shot.<br><br>
-		Speed up or slow down time during the camera shot.<br><br>
-    Transition to the next camera shot by cutting instantly or panning/rotating at the speed of your choice.</p>
-	<br>
-	</div>
-	      <br>
-		<br>
-	<br>
-		<br>
-		<h2>Cutscheme VFX Systems</h2>
-	<br>
-	      
 <div class="around">
 	   <div class="center">
 		<div class="col">
@@ -311,30 +230,6 @@ Direct a camera (or parent of a camera) through your cutscene using the camera s
 	      </div>
 	   </div>
 </div>
-			<br>
-		<h2>Cutscheme Effect System
-			<br>(Universal Render Pipeline only)</h2><br>				
-	<div class="baround"><br><p>
-		The Cutscheme Effect System is fully integrated into Cutscheme 2D and Cutscheme 3D. It will enable automatically when an effect is selected in a Camera Shot and display the effect(s) at runtime during that Camera Shot.<br><br>
-		The System makes a copy of the Scene Volume and uses the copy during the cutscene. After the cutscene, the system re-enables the original Scene Volume and removes the copy.<br><br>
-		Display multiple camera effects during each shot in the cutscene. <br><br>
-		Customize the override values for the copy's Vignette, Bloom, Film Grain, and Color Filter.
-		<br><br><br>
-	</div>
-	      <br>
-		<br>
-			<br>
-<br>
-		<h2>Cutscheme Filter System<br>(Built-In Renderer Pipeline only)</h2><br>				
-	<div class="baround"><br><p>
-		The Cutscheme Filter System is fully integrated into Cutscheme 2D and Cutscheme 3D. It will enable automatically when a filter is selected in a Camera Shot and display the filter(s) at runtime during that Camera Shot.<br><br>
-		Display up to two camera filters at a time during each shot in the cutscene.<br><br>
-		Customize with your own filters (Materials) or use the ones that come with the package.</p>
-	<br>
-	</div>
-	      <br>
-		<br>
-	<br><br><br>
 </div>
 </div>  
 </body>
