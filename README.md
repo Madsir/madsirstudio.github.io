@@ -7,14 +7,14 @@ Calculation Boogey - Solve the math problems before the sun sets or the boogeyma
 Space Toots: Eat space jellies get gas, and toot. Propel your way through the spacescapes!
 
 
-[PRODUCTION] (Demo available) Remote Agent: A strange chaos spreads across the land.
+[PRODUCTION] Remote Agent: A strange, chaotic adventure.
 
 
-**UNITY ASSETS**
+**DIGITAL ASSETS**
 
 Cutscheme (2D/3D) - Cutscene System: Easily create and control cutscenes. Infinite camera shots. Can control multiple cutscenes in one scene. 
 
-Utterer - Localization framework, text import/export, string interpolation, dialogue & captions systems.
+Utterer - Localization framework, string interpolation, dialogue & captions, .csv/.txt import/export features.
 
 Earchestra - Sound manager and playlist creator: Create infinite playlists. Control all of them from any script in the scene by using Earchestra's Maestro Methods.
 
