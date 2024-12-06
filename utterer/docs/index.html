@@ -28,6 +28,199 @@ p{
 </head>
 <body>
     <div class="main">
+<h1>USER NANUAL</h1>
+	    		<div class="baround"><br><p><br>
+With the Dialogue System, you can easily create a linear or dynamic dialogue sequence and customize the appearance of the system and its elements. Each individual part in the sequence has its own controls and settings.
+<br><br>
+The Captions System lets you create and control a timed sequence of captions that will format itself based on your input. Like the Dialogue System, you can easily customize the system and its elements.
+<br><br>
+Languages stores language information and guides the components connected to it. Localize Text, Image, and Audio Source components as well as the Utterer Dialogue System and Utterer Captions System.
+<br><br>
+Dynamics stores your custom list of dynamic calls in order to interpolate or color-code certain strings. Interpolation is handled by the system's Dynamics Assistant, which finds all calls in an open scene and switches them with their ID's at runtime.<br><br>
+		</p><br></div>
+		<br><br>
+		<br>
+		<br>
+				<div class="baround"><br>
+	<h2>Languages - Localization Framework</h2><br><br><p><br><br>
+
+Utterer Languages is a scriptable object asset which stores language information and guides the components connected to it. Localize Text, Image, and Audio Source components as well as the Utterer Dialogue System and Utterer Captions System.
+<br><br>
+			Utterer Languages comes with a Language Chooser script for syncing dropdown components with the Languages In Use list.<br><br>
+
+Language Chooser allows the user to choose a language at runtime. The Utterer Languages asset will save any changes made, guiding its related components to reflect those changes.<br><br>
+Control which languages are used in your project<br>
+Provides RTL support<br>
+Compatible with the following components:<br><br><br>
+
+Utterer Texts - Text Tool which can be added to Text/TextMeshPro components<br><br>
+Utterer Audio - Audio Tool which can be added to Audio Source components<br><br>
+Utterer Images - Image Tool which can be added to Image components<br><br>
+Utterer Dialogue System<br><br>
+Utterer Captions System<br><br><br>
+</div>
+	<br>
+
+<br>
+	<br><br>
+<div class="baround"><br>
+	<h2>Dialogue System - Linear or Dynamic</h2>
+	<br>
+	<br>
+	<br><br>
+	<br>
+	<p>  Easily create a linear or dynamic dialogue sequence and customize the appearance of the system and its elements. Each individual part in the sequence has its own controls and settings.
+<br><br><br>
+Settings:<br><br>
+Content Fade - If true, causes any enabled content (icon, speaker, dialogue, button) to fade in and out at the beginning and end of each dialogue in the sequence<br><br>
+Style Fade - If true, causes any enabled style (background, outline, scrollbar) to fade in and out at the beginning and end of each dialogue in the sequence<br><br>
+Paint On - If true, causes the system to add one letter or word at a time, depending on the type setting. Creates a bool to control word vs letter, and a float field for you to control the rate at which the letter/word appears<br><br>
+Freeze Scene - If true, changes the time scale to zero at the beginning of the dialogue sequence and then resets time scale to its original value at the end of the sequence<br><br>
+Positions - allows for the positioning of each dialogue part in the sequence (TMP Object only)<br><br><br>
+
+Options:<br><br>
+Outline - If true, shows the outline of the system and creates style fields for its image and color<br>
+Outline Full - If true, the outline expands to contains all responses<br>
+Background - If true, shows the background of the system and creates style fields for the its image and color<br>
+Speaker - If true, shows the system's speaker and creates style fields for its font and color<br>
+Icon - If true, shows the icon if one is available in the dialogue sequence<br>
+Scrollbar - If true, shows a scrollbar for the dialogue and creates style fields for its back and handle images and colors<br>
+Button - If true, shows the system's advance button and creates style fields for its image and color<br>
+Response Back - If true, shows the backdrop for the responses<br>
+Fill Center - If true, fills the center of the response backdrop's Image. If false, only shows the "outline" of the response backdrop<br><br><br><br>
+Styles:<br><br>
+Background Style - refers to the background, outline, scrollbar, and advance button. Choose the color and texture (sprite/image) for each enabled element<br><br>
+Speaker Style - contains font, font size, font style, font color, font outline, and outline color settings for the speaker font, as well as a spacing setting to control the space between the speaker text and the dialogue text.<br><br>
+Dialogue Style - contains font, font size, font style, font color, font outline, and outline color settings for the dialogue font<br><br>
+Response Style - contains font, font size, font style, font color, font outline, and outline color settings for the response font. It also includes a Target Image bool to determine which graphic the button should target, a color field for the button background, and a color field for button's highlight color
+<br><br><br>
+Dialogue Tool :<br><br>
+All Dialogue and Response windows will be displayed in this workspace<br>
+Dialogue and response windows are draggable<br>
+You can scroll the workspace with the mouse or keyboard arrows<br>
+You can drag the workspace area by clicking the center mouse button<br>
+You can choose the background color, and choose between light mode and dark mode<br>
+Add and remove dialogue<br>
+Quick-position the windows in rows, columns, or diagonally<br>
+Controls which inputs can interact with the system<br>
+Import/export strings from txt/csv files<br><br><br><br>
+
+Dialogue Tool - Dialogue Window<br><br>
+Each window contains the following controls:<br><br>
+
+Response Input - A Dialogue window's Response Input is used to receive input from responses within the sequence and determine which part of the dialogue to display next.<br><br>
+Speaker - The speaker text area is where you'll input the text for the name of the speaker.<br>
+This field is hidden if the Speaker option is not enabled.<br><br>
+Dialogue - The dialogue text area is where you'll input the text for this piece of dialogue in the sequence.<br><br>
+Icon - Adding a sprite to the icon field will display an icon on the left of the dialogue system for this piece of dialogue.<br><br>
+Sound - Adding an audio clip to this field will play that clip during this piece of the dialogue.<br>
+This audio clip will be played by the dialogue system's audio source.<br><br>
+Interact - When set to true, the dialogue system will proceed based on user input.<br>You can control which inputs are used by opening the Inputs window.<br><br>
+Time - The amount of time you would like this part of the dialogue to display itself.<br>
+This field and the delay field are hidden if this Dialogue is set to have Responses<br><br>
+Delay - The amount of time you want to wait to display the next dialogue into the delay field.<br>
+Utterer will display nothing during this break<br><br>
+Responses - Turning this toggle on allows you to add up to four responses to this dialogue.<br><br>
+Positions - If the Positions setting is true, two Vector 3 fields will appear. One for position and one for rotation. (TMP 3D objects only)<br><br><br><br><br>
+
+
+
+Dialogue Tool - Response Windows<br><br>
+Each Response window has the following controls:<br><br>
+
+Response - The response text area is where you'll input the text for this response to the Dialogue.<br>
+Behaviour - Adding a game object to this field creates a list of available Monobehaviours to choose from.<br>
+Function Name - This string should be the name of a function in the chosen Monobehaviour. The string will be used in an Invoke method if this response is chosen.<br>
+Response Output - If this toggle is active and connected to another Dialogue's Response Input field, then that Dialogue will display next if this response is chosen.<br><br>
+		</p>	
+		<br>
+		</div>
+				
+<br><br>
+<br>
+		<br>
+	<div class="baround"><br>
+		<h2>Captions System - Captions or Subtitles</h2><br><br>
+		<p>
+			<br>
+			<br>
+			
+The Captions System lets you create and control a timed sequence of captions that will format itself based on your input. Like the Dialogue System, you can easily customize the system and its elements. <br><br><br>
+
+Settings<br>
+Content Fade<br>
+Content Fade is a bool which when set to true causes any enabled content (caption text) to fade in and out at the beginning and end of each caption in the sequence<br><br>
+
+
+Style Fade<br>
+Style Fade is a bool which when set to true causes any enabled style (background, outline) to fade in and out at the beginning and end of each caption in the sequence<br><br>
+
+
+Paint On<br>
+Paint On is a bool which when set to true causes the system to add one letter or word at a time, depending on the type setting. Creates a bool to control word vs letter, and a float field for you to control the rate at which the letter/word appears<br><br>
+
+
+Positions<br>
+If using a TextMeshPro Object, this setting allows for the positioning of each caption in the sequence<br><br>
+
+
+
+Options<br>
+
+
+Background Style<br>
+Background style refers to the background & outline. Choose the color and texture (sprite/image) for the enabled<br><br>
+
+
+Captions Style<br>
+Contains settings for the captions font<br><br>
+
+<br><br>
+
+The Captions Tool
+<br><br>
+
+All windows will be displayed in this workspace.<br>
+Windows are draggable.<br>
+You can scroll the workspace with the mouse or keyboard arrows.<br>
+Add & Remove captions<br>
+Import or export text from documents in your project<br><br><br>
+
+
+Captions Tool - Caption Windows
+<br><br>
+Caption : Text Area<br>
+The caption text area is where you'll input the text for this caption in the sequence.<br><br>
+
+Time : Float Field<br>
+The amount of time you would like this caption to display itself.<br>
+This time includes start fade in and end fadeout, if applicable
+<br><br>
+Delay : Float Field<br>
+The amount of time you want to wait before displaying the next caption.<br>
+Utterer Captions System will display no text during this break<br><br><br>
+
+
+		</p>
+		</div>
+		<br><br><br><br>
+		<div class="baround"><br>
+	<h2>Dynamics - String Interpolation</h2><br>
+	<br><p>
+		<br>
+		<br>
+Utterer Dynamics uses a scriptable object asset to store your list of dynamic calls in order to interpolate or color-code certain strings.<br>Interpolation is handled by the system's Dynamics Assistant, which finds all calls in an open scene and switches them with their ID's at runtime.<br><br>
+	Utterer Dynamics replaces any "call" (a string or part of a string surrounded by < and > - Ex. <PlayerName> ) with its associated "ID" (Ex. "Madsir"). <br><br>
+
+If a call's ID is "color", a color field will appear and you can choose a color and the system will change the string inside the call to your chosen color (ex. Call: <Player> , ID :"color")<br><br>
+
+
+Calls are interpolated with their IDs/colors/values once when they are enabled in the scene.<br><br>
+	</p><br></div>
+	<br>
+	<br>
+	<br>
+	<br>
 		<h1>Scripting Manual</h1>
 	    <br>
 		<div class="centerdiv">
