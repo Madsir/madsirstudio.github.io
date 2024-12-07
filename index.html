@@ -77,6 +77,21 @@ width: 60%;
   margin-left: 5%;
   margin-right: 5%;
 }
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: .3s ease;
+}
+  .row:hover .overlay {
+  opacity: 0;
+}
 </style>
 </head>
 <body>
@@ -101,7 +116,9 @@ width: 60%;
 			<div class="columns">
 				<a href="https://madsirstudio.com/remoteagent"><img src="/Assets/coverArt.png" alt="Remote Agent"></a>			
 			</div>
-
+		<div class="overlay">
+   		   <img src="/Assets/tough.png">
+		</div>
 		  </div>
 		<br>
 		<br>
@@ -124,6 +141,9 @@ width: 60%;
 			<div class="columns">
 	        		 <a href="https://madsirstudio.com/earchestra"><img src="/Assets/earchestramadsir.png" alt="Earchestra"></a>
 			</div>
+					<div class="overlay">
+   		   <img src="/Assets/tough.png">
+		</div>
 		 </div>
 	        <br>
 		<br>
