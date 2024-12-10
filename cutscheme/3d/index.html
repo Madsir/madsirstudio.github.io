@@ -10,13 +10,19 @@ description: "Cutscheme 3D | A versatile cutscene tool for perspective cameras."
 .main {
     margin-left:10%;
     margin-right:10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    align-content: center;
+    overflow: hidden;
 }
 .container{
-    width: 100%;
-    display: flex;
+    width: 1100px;
+    height: 480px;
+    display: flex;   
+    background: rgb(238, 236, 236);
 }
+
 .container .videos{
     width: 20%;
     padding: 10px 0 10px 10px;
@@ -61,19 +67,14 @@ description: "Cutscheme 3D | A versatile cutscene tool for perspective cameras."
     <div class="main">
     <div class="container">
         <div class="videos">
-            <video class="active"><video width="420" height="315"
-src="https://www.youtube.com/embed/zk6i6bAGH2A?si=qqbHTYosl1LqFJeR">
-</video>
-           <video width="420" height="315"
-src="https://www.youtube.com/embed/zk6i6bAGH2A?si=qqbHTYosl1LqFJeR">
-</video> 
+            <video class="active" src="videos/video1.mp4" muted></video>
+            <video src="videos/video2.mp4" muted></video>
+            <video src="videos/video3.mp4" muted></video>
+            <video src="videos/video4.mp4" muted></video>
         </div>
         <div class="main-video">
-           <video width="420" height="315"
-src="https://www.youtube.com/embed/zk6i6bAGH2A?si=qqbHTYosl1LqFJeR">
-</video>
+            <video src="videos/video1.mp4" muted controls autoplay></video>
         </div>
-    </div>
     </div>
 
     <!-- jquery cdn link -->
@@ -83,12 +84,12 @@ src="https://www.youtube.com/embed/zk6i6bAGH2A?si=qqbHTYosl1LqFJeR">
 
         $(document).ready(function(){
 
-            $('.videos iframe').click(function(){
+            $('.videos video').click(function(){
 
                 $(this).addClass('active').siblings().removeClass('active');
 
                 var src = $(this).attr('src');
-                $('.main-video iframe').attr('src',src);
+                $('.main-video video').attr('src',src);
             });
         });
 
