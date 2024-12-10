@@ -10,10 +10,12 @@ description: "Cutscheme 3D | A versatile cutscene tool for perspective cameras."
 .container{
     width: 70%;
     display: flex;
-     align-items: center;
-    justify-content: center;
 }
-
+.center {
+display: flex;
+align-items: center;
+justify-content: center;
+}
 .container .videos{
     width: 20%;
     padding: 10px 0 10px 10px;
@@ -55,6 +57,7 @@ description: "Cutscheme 3D | A versatile cutscene tool for perspective cameras."
 </style>
 </head>
 <body>
+    <div class="center">
     <div class="container">
         <div class="videos">
             <video class="active" src="https://www.youtube.com/embed/zk6i6bAGH2A?si=qqbHTYosl1LqFJeR" muted></video>
@@ -63,8 +66,9 @@ description: "Cutscheme 3D | A versatile cutscene tool for perspective cameras."
             <video src="videos/video4.mp4" muted></video>
         </div>
         <div class="main-video">
-            <video src="videos/video1.mp4" muted controls autoplay></video>
+            <video src="https://www.youtube.com/embed/zk6i6bAGH2A?si=qqbHTYosl1LqFJeR" muted controls autoplay></video>
         </div>
+    </div>
     </div>
 
     <!-- jquery cdn link -->
