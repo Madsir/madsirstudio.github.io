@@ -7,14 +7,13 @@ description: "Cutscheme 3D | A versatile cutscene tool for perspective cameras."
 <html>
 <head>
 <style>
-.container{
-    width: 70%;
-    display: flex;
+.main {
+    margin-left:10%;
+    margin-right:10%;
 }
-.center {
-display: flex;
-align-items: center;
-justify-content: center;
+.container{
+    width: 100%;
+    display: flex;
 }
 .container .videos{
     width: 20%;
@@ -57,16 +56,22 @@ justify-content: center;
 </style>
 </head>
 <body>
-    <div class="center">
+    <div class="main">
     <div class="container">
         <div class="videos">
-            <video class="active" src="https://www.youtube.com/embed/zk6i6bAGH2A?si=qqbHTYosl1LqFJeR" muted></video>
-            <video src="videos/video2.mp4" muted></video>
+            <video class="active"><iframe width="420" height="315"
+src="https://www.youtube.com/embed/zk6i6bAGH2A?si=qqbHTYosl1LqFJeR">
+</iframe></video>
+           <video><iframe width="420" height="315"
+src="https://www.youtube.com/embed/zk6i6bAGH2A?si=qqbHTYosl1LqFJeR">
+</iframe></video> 
             <video src="videos/video3.mp4" muted></video>
             <video src="videos/video4.mp4" muted></video>
         </div>
         <div class="main-video">
-            <video src="https://www.youtube.com/embed/zk6i6bAGH2A?si=qqbHTYosl1LqFJeR" muted controls autoplay></video>
+            <video><iframe width="420" height="315"
+src="https://www.youtube.com/embed/zk6i6bAGH2A?si=qqbHTYosl1LqFJeR">
+</iframe></video></video>
         </div>
     </div>
     </div>
