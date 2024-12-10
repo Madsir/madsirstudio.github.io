@@ -104,23 +104,6 @@ width: 90%;
   padding-top: 10%;
   padding-bottom: 10%;
   background-image: url("Assets/tough.png")
-}
-	#playlist {
-    display:table;
-}
-#playlist li{
-    cursor:pointer;
-    padding:8px;
-}
-#playlist li:hover{
-    color:blue;                        
-}
-#videoarea {
-    float:left;
-    width:640px;
-    height:480px;
-    margin:10px;    
-    border:1px solid silver;
 }​
 </style>
 </head>
@@ -142,25 +125,6 @@ width: 90%;
 		</div>
 		<br>
 	<br>
-	  <video id="videoarea" controls="controls" poster="" src=""></video>
-
-<ul id="playlist">
-    <li movieurl="https://www.youtube.com/embed/UOJpjUSH3dA?si=ICjP4zShF2yFRnsv" moviesposter="VideoPoster1.jpg">Cutscheme 2D Prefabs</li>
-    <li movieurl="www.youtube.com/embed/UOJpjUSH3dA?si=ICjP4zShF2yFRnsv">Cutscheme 2D VFX Systems</li>
-</ul>
-$(function() {
-    $("#playlist li").on("click", function() {
-        $("#videoarea").attr({
-            "src": $(this).attr("movieurl"),
-            "poster": "",
-            "autoplay": "autoplay"
-        })
-    })
-    $("#videoarea").attr({
-        "src": $("#playlist li").eq(0).attr("movieurl"),
-        "poster": $("#playlist li").eq(0).attr("moviesposter")
-    })
-})​
 <div class="iconic">
 <div class="center">
 	<div class=bonter">
