@@ -29,7 +29,7 @@ description: "Cutscheme 3D | A versatile cutscene tool for perspective cameras."
     justify-content: space-between;
 }
 
-.container .videos video{
+.container .videos object{
     width: 95%;
     height: 100px;
     margin: 10px;
@@ -38,11 +38,11 @@ description: "Cutscheme 3D | A versatile cutscene tool for perspective cameras."
     transition: 0.2s;
 }
 
-.container .videos video:nth-child(1){
+.container .videos object:nth-child(1){
     margin-top: 0;
 }
 
-.container .videos video:hover,
+.container .videos object:hover,
 .container .videos .active{
     transform: scale(1.06);
     border: 3px solid blue;
@@ -53,7 +53,7 @@ description: "Cutscheme 3D | A versatile cutscene tool for perspective cameras."
     padding: 10px;
 }
 
-.container .main-video video{
+.container .main-video object{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -65,13 +65,13 @@ description: "Cutscheme 3D | A versatile cutscene tool for perspective cameras."
     <div class="main">
     <div class="container">
         <div class="videos">
-            <video class="active" src="https://youtu.be/zk6i6bAGH2A"type="video/mp4" muted></video>
-            <video src="videos/video2.mp4" muted></video>
-            <video src="videos/video3.mp4" muted></video>
-            <video src="videos/video4.mp4" muted></video>
+            <object class="active" src="https://youtu.be/zk6i6bAGH2A"></object>
+            <object src="videos/video2.mp4" muted></object>
+            <object src="videos/video3.mp4" muted></object>
+            <object src="videos/video4.mp4" muted></object>
         </div>
         <div class="main-video">
-            <video  src="https://youtu.be/zk6i6bAGH2A"type="video/mp4" muted controls autoplay></video>
+            <object  src="https://youtu.be/zk6i6bAGH2A"type="video/mp4" muted controls autoplay></object>
         </div>
     </div>
     </div>
@@ -83,12 +83,12 @@ description: "Cutscheme 3D | A versatile cutscene tool for perspective cameras."
 
         $(document).ready(function(){
 
-            $('.videos video').click(function(){
+            $('.videos object').click(function(){
 
                 $(this).addClass('active').siblings().removeClass('active');
 
                 var src = $(this).attr('src');
-                $('.main-video video').attr('src',src);
+                $('.main-video object').attr('src',src);
             });
         });
 
