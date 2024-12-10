@@ -10,6 +10,8 @@ description: "Cutscheme 3D | A versatile cutscene tool for perspective cameras."
 .main {
     margin-left:10%;
     margin-right:10%;
+    justify-content: center;
+    align-content: center;
 }
 .container{
     width: 100%;
@@ -23,7 +25,7 @@ description: "Cutscheme 3D | A versatile cutscene tool for perspective cameras."
     justify-content: space-between;
 }
 
-.container .videos iframe{
+.container .videos video{
     width: 95%;
     height: 100px;
     margin: 10px;
@@ -36,7 +38,7 @@ description: "Cutscheme 3D | A versatile cutscene tool for perspective cameras."
     margin-top: 0;
 }
 
-.container .videos iframe:hover,
+.container .videos video:hover,
 .container .videos .active{
     transform: scale(1.06);
     border: 3px solid blue;
@@ -47,7 +49,7 @@ description: "Cutscheme 3D | A versatile cutscene tool for perspective cameras."
     padding: 10px;
 }
 
-.container .main-video iframe{
+.container .main-video video{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -59,17 +61,17 @@ description: "Cutscheme 3D | A versatile cutscene tool for perspective cameras."
     <div class="main">
     <div class="container">
         <div class="videos">
-            <iframe class="active"><iframe width="420" height="315"
+            <video class="active"><video width="420" height="315"
 src="https://www.youtube.com/embed/zk6i6bAGH2A?si=qqbHTYosl1LqFJeR">
-</iframe>
-           <iframe width="420" height="315"
+</video>
+           <video width="420" height="315"
 src="https://www.youtube.com/embed/zk6i6bAGH2A?si=qqbHTYosl1LqFJeR">
-</iframe> 
+</video> 
         </div>
         <div class="main-video">
-           <iframe width="420" height="315"
+           <video width="420" height="315"
 src="https://www.youtube.com/embed/zk6i6bAGH2A?si=qqbHTYosl1LqFJeR">
-</iframe>
+</video>
         </div>
     </div>
     </div>
