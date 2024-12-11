@@ -1,5 +1,6 @@
 body {  
     font-size: 80%;
+     margin: 0;
 }
 .column {
   flex: 43%;
@@ -8,13 +9,13 @@ body {
   display: flex;
 }
  #header-text{
-  text-align:center;
+      margin: 0;
     font-family:"Lucida Console", 'Monaco', 'monospace';
     color: 	#A9A9A9;
  }
 nav
 {
- margin: 0;
+  margin: 0;
 }
 
 a {
@@ -72,4 +73,5 @@ p {
     text-align: left;
 }
 footer {
+     margin: 0;
 }
