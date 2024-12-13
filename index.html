@@ -38,6 +38,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
+	opacity: 1;
 }
 @media (max-width: 600px) {
  .columns {
@@ -50,12 +51,17 @@ font-size: 1.2em;
 width: 70%;
 }
 summary {
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
 }
 .row{
   margin-top: 10%;
   margin-bottom: 10%;
+	  background-color: #120a8f;
+  opacity: 0.5;
+   border: 2px solid white;
+   padding: 20px 30px;
+  border-radius:5px;
 }
 .row::after {
   content: "";
@@ -73,7 +79,6 @@ summary {
   margin-bottom: 2%;
 }
 details {
-        text-align: center;
 	align-items: center;
 	justify-content: center;
 	margin-top: 5%;
@@ -82,14 +87,15 @@ summary:hover {
   background-color: #090548;
   opacity: 0.5;
   margin-top: 5%;
-  border: 5px solid white;
+  border: 2px solid white;
   padding: 20px 30px;
   border-radius:10px;
 }
 summary {
- margin-left:25%%;
- margin-right:25%;
- font-family: Verdana, Arial, Tahoma, monospace;
+	text-align: center;
+ margin-left:35%;
+ margin-right:35%;
+ font-family: fantasy;
   font-size: 2.2em;
   font-weight: bold;
   color: white;
@@ -98,7 +104,8 @@ summary {
   margin-top: 5%;
    border: 5px solid white;
    padding: 20px 30px;
-  border-radius:10px;
+  border-radius:5px;
+	cursor:pointer;
 }
 </style>
 </head>
