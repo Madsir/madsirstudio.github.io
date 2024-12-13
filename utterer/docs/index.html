@@ -6,41 +6,132 @@ description: "Utterer Documentation."
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-.main {
-  margin-left: 5%; 
-  margin-right: 5%;
-  margin-top:10%;
-  margin-bottom: 25%;
+    <title>Technical Documentation</title>
+    <style>
+	body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f8fb;
+    display: flex;
+    flex-direction: column;
 }
-.centerdiv {
-  border-radius: 15px;
-  margin-left: 5%;
-  margin-right: 5%;/* Same width as the sidebar + left position in px */
-  background-image: url("/Assets/tough.png")
+
+.page-header {
+    background-color: #35424a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
-p{
-  line-height: 1.6;
-  margin-left: 5%;
-  margin-right: 5%;
+
+.container {
+    display: flex;
+    flex-direction: row;
 }
-h2{
-  margin-left:5%;
-  font-size: 1.6em;  
+
+.navbar {
+    width: 20%;
+    background-color: #2c3e50;
+    padding: 15px;
+    height: 100vh;
+    overflow: auto;
+    flex-shrink: 0; /* Prevents the navbar from shrinking */
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #1abc9c;
+}
+
+#documentation {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+#documentation section {
+    margin-bottom: 25px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+}
+
+#documentation h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+#documentation p {
+    line-height: 1.6;
+    color: #333333;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .navbar {
+        width: 100%;
+        height: auto;
+        order: -1; /* Moves the navbar to the top */
+    }
+
+    #documentation {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page-header {
+        padding: 10px 0;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar ul li a {
+        padding: 8px;
+    }
+
+    #documentation {
+        padding: 10px;
+    }
 }
 </style>
 </head>
 <body>
-    <div class="main">
-	    <br>
-	    <br>
-	    <h1>User Manual</h1>
-	    <br>
-	    <div class="centerdiv">
-		<br><br>
-	<h2>Languages - Localization Framework</h2><br><br><p><br><br>
-
-Utterer Languages is a scriptable object asset which stores language information and guides the components connected to it. Localize Text, Image, and Audio Source components as well as the Utterer Dialogue System and Utterer Captions System.
+    <header class="page-header">
+        <h1>Utterer Technical Documentation</h1>
+    </header>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#Languages">Languages</a></li>
+                <li><a href="#Dialogue">Dialogue</a></li>
+                <li><a href="#Captions">Captions</a></li>
+                <li><a href="#Dynamics">Dynamics</a></li>
+                <!-- More navigation items -->
+            </ul>
+        </nav>
+        <main id="documentation">
+            <section id="Languages">
+                <h2>Utterer Languages - Localization Framework</h2>
+                <p>Utterer Languages is a scriptable object asset which stores language information and guides the components connected to it. Localize Text, Image, and Audio Source components as well as the Utterer Dialogue System and Utterer Captions System.
 <br><br>
 			Utterer Languages comes with a Language Chooser script for syncing dropdown components with the Languages In Use list.<br><br>
 
@@ -53,19 +144,35 @@ Utterer Texts - Text Tool which can be added to Text/TextMeshPro components<br><
 Utterer Audio - Audio Tool which can be added to Audio Source components<br><br>
 Utterer Images - Image Tool which can be added to Image components<br><br>
 Utterer Dialogue System<br><br>
-Utterer Captions System<br><br><br>
+Utterer Captions System<br><br><br></p>
+		    <H2>SCRIPTING REFERENCES</H2> <p>
+		    Utterer.UttererLanguages | ScriptableObject<br><br><br>
 
-	<br>
+_LanguageData - a list of type Utterer.UttererLanguages.LanguageData that contains all languages used with this asset<br>
+instance - static instance of this UttererLanguages<br>
+selectLanguage - a list of all the English names of available languages<br>
+codes - a list of all the ISO codes of available languages<br>
+displayNames - a list of all the Native names of available languages<br>
+languages - list of strings containing all english names of the Languages In Use list<br>
+RTL - list of the int indices of all right-to-left languages in the Languages in Use list<br>
+current - int index of the current language in use<br>
+currentLanguage - string of the English name of the current language in use<br><br><br>
 
-<br>
-	<br><br>
-<br>
-	<h2>Dialogue System - Linear or Dynamic</h2>
-	<br>
-	<br>
-	<br><br>
-	<br>
-	<p>  Easily create a linear or dynamic dialogue sequence and customize the appearance of the system and its elements. Each individual part in the sequence has its own controls and settings.
+
+Utterer.UttererLanguages.LanguageData<br><br><br>
+
+languages - a list of class Utterer.UttererLanguages.LanguageList which contains all languages used with this asset<br><br><br>
+
+
+Utterer.UttererLanguages.LanguagesList
+<br><br><br>
+language - string for the English name of this language<br>
+inUse - bool determining whether or not this language is the current language in use<br><br><br>
+	    </P>
+            </section>
+            <section id="Dialogue">
+                <h2>Dialogue System - Linear & Dynamic</h2>
+                <p> Easily create a linear or dynamic dialogue sequence and customize the appearance of the system and its elements. Each individual part in the sequence has its own controls and settings.
 <br><br><br>
 Settings:<br><br>
 Content Fade - If true, causes any enabled content (icon, speaker, dialogue, button) to fade in and out at the beginning and end of each dialogue in the sequence<br><br>
@@ -127,107 +234,9 @@ Each Response window has the following controls:<br><br>
 Response - The response text area is where you'll input the text for this response to the Dialogue.<br>
 Behaviour - Adding a game object to this field creates a list of available Monobehaviours to choose from.<br>
 Function Name - This string should be the name of a function in the chosen Monobehaviour. The string will be used in an Invoke method if this response is chosen.<br>
-Response Output - If this toggle is active and connected to another Dialogue's Response Input field, then that Dialogue will display next if this response is chosen.<br><br>
-		</p>	
-		<br>
-		
-				
-<br><br>
-<br>
-		<br>
-	<br>
-		<h2>Captions System - Captions or Subtitles</h2><br><br>
-		<p>
-			<br>
-			<br>
-			
-The Captions System lets you create and control a timed sequence of captions that will format itself based on your input. Like the Dialogue System, you can easily customize the system and its elements. <br><br><br>
-
-Settings<br>
-Content Fade<br>
-Content Fade is a bool which when set to true causes any enabled content (caption text) to fade in and out at the beginning and end of each caption in the sequence<br><br>
-
-
-Style Fade<br>
-Style Fade is a bool which when set to true causes any enabled style (background, outline) to fade in and out at the beginning and end of each caption in the sequence<br><br>
-
-
-Paint On<br>
-Paint On is a bool which when set to true causes the system to add one letter or word at a time, depending on the type setting. Creates a bool to control word vs letter, and a float field for you to control the rate at which the letter/word appears<br><br>
-
-
-Positions<br>
-If using a TextMeshPro Object, this setting allows for the positioning of each caption in the sequence<br><br>
-
-
-
-Options<br>
-
-
-Background Style<br>
-Background style refers to the background & outline. Choose the color and texture (sprite/image) for the enabled<br><br>
-
-
-Captions Style<br>
-Contains settings for the captions font<br><br>
-
-<br><br>
-
-The Captions Tool
-<br><br>
-
-All windows will be displayed in this workspace.<br>
-Windows are draggable.<br>
-You can scroll the workspace with the mouse or keyboard arrows.<br>
-Add & Remove captions<br>
-Import or export text from documents in your project<br><br><br>
-
-
-Captions Tool - Caption Windows
-<br><br>
-Caption : Text Area<br>
-The caption text area is where you'll input the text for this caption in the sequence.<br><br>
-
-Time : Float Field<br>
-The amount of time you would like this caption to display itself.<br>
-This time includes start fade in and end fadeout, if applicable
-<br><br>
-Delay : Float Field<br>
-The amount of time you want to wait before displaying the next caption.<br>
-Utterer Captions System will display no text during this break<br><br><br>
-
-
-		</p>
-		
-		<br><br><br><br>
-		<br>
-	<h2>Dynamics - String Interpolation</h2><br>
-	<br><p>
-		<br>
-		<br>
-Utterer Dynamics uses a scriptable object asset to store your list of dynamic calls in order to interpolate or color-code certain strings.<br>Interpolation is handled by the system's Dynamics Assistant, which finds all calls in an open scene and switches them with their ID's at runtime.<br><br>
-	Utterer Dynamics replaces any "call" (a string or part of a string surrounded by < and > - Ex. <PlayerName> ) with its associated "ID" (Ex. "Madsir"). <br><br>
-
-If a call's ID is "color", a color field will appear and you can choose a color and the system will change the string inside the call to your chosen color (ex. Call: <Player> , ID :"color")<br><br>
-
-
-Calls are interpolated with their IDs/colors/values once when they are enabled in the scene.<br><br>
-	</p><br></div>
-	<br>
-	<br>
-	<br>
-	<br>
-		<h1>Scripting Manual</h1>
-	    <br>
-		<div class="centerdiv">
-		<br>
-			<br>
-<h2>UTTERER DIALOGUE SYSTEM</h2>
+Response Output - If this toggle is active and connected to another Dialogue's Response Input field, then that Dialogue will display next if this response is chosen.<br><br></p>
+		    <h2>SCRIPTING REFERENCES</h2>
 <p>
-
-
-<br><br><br>
-
 Utterer.UttererDialogueSystem<br><br>
 
 UTTERER LANGUAGES<br>
@@ -382,18 +391,66 @@ script - of type Behaviour is the script from the behave object that contains th
 funct - the string name of the function to call in script<br>
 nextDialogue - int for the serialized index of the next dialogue in the sequence (set in the Dialogue Tool)<br>
 If using UttererLanguages<br>
-responses - a list of strings for each language in the Languages asset, which controls what this response text displays<br><br><br>
+responses - a list of strings for each language in the Languages asset, which controls what this response text displays<br><br><br></p>
+            </section>	
+<section id="Captions">
+                <h2>Captions</h2>
+                <p>The Captions System lets you create and control a timed sequence of captions that will format itself based on your input. Like the Dialogue System, you can easily customize the system and its elements. <br><br><br>
+
+Settings<br>
+Content Fade<br>
+Content Fade is a bool which when set to true causes any enabled content (caption text) to fade in and out at the beginning and end of each caption in the sequence<br><br>
+
+
+Style Fade<br>
+Style Fade is a bool which when set to true causes any enabled style (background, outline) to fade in and out at the beginning and end of each caption in the sequence<br><br>
+
+
+Paint On<br>
+Paint On is a bool which when set to true causes the system to add one letter or word at a time, depending on the type setting. Creates a bool to control word vs letter, and a float field for you to control the rate at which the letter/word appears<br><br>
+
+
+Positions<br>
+If using a TextMeshPro Object, this setting allows for the positioning of each caption in the sequence<br><br>
 
 
 
+Options<br>
 
-</p>
-<H2>UTTERER CAPTIONS SYSTEM</H2>
+
+Background Style<br>
+Background style refers to the background & outline. Choose the color and texture (sprite/image) for the enabled<br><br>
+
+
+Captions Style<br>
+Contains settings for the captions font<br><br>
+
+<br><br>
+
+The Captions Tool
+<br><br>
+
+All windows will be displayed in this workspace.<br>
+Windows are draggable.<br>
+You can scroll the workspace with the mouse or keyboard arrows.<br>
+Add & Remove captions<br>
+Import or export text from documents in your project<br><br><br>
+
+
+Captions Tool - Caption Windows
+<br><br>
+Caption : Text Area<br>
+The caption text area is where you'll input the text for this caption in the sequence.<br><br>
+
+Time : Float Field<br>
+The amount of time you would like this caption to display itself.<br>
+This time includes start fade in and end fadeout, if applicable
+<br><br>
+Delay : Float Field<br>
+The amount of time you want to wait before displaying the next caption.<br>
+Utterer Captions System will display no text during this break<br><br><br></p>
+	<H2>SCRIPTING REFERENCES</H2>
 <p>
-
-
-<br><br><br>
-
 Utterer.UttererCaptionsSystem<br><br><br>
 
 captions - a list of type Utterer.UttererCaptionsSystem.Captions which contains all controls for each caption in the sequence<br>
@@ -450,44 +507,22 @@ rotation - the rotation of the system during this part of the sequence(TMP 3D ob
 positionGiver - Transform to set an initial position for this part of the sequence<br>
 If using Utterer Languages<br>
 caps - list of strings, one for each language in the Languages asset for the caption<br><br><br>
-
-
 </p>
-<H2>UTTERER LANGUAGES</H2><br><br><br><p>
-Utterer Languages is a scriptable object which stores information and guides the components connected to it.<br>
-This asset creates a menu of available languages. You can use this menu to add languages to the asset's Languages In Use list. Utterer Languages stores the ISO, native name, and English name of each language you add to the Languages in Use list.
-<br><br>
+            </section>
+                        <section id="Dynamics">
+                <h2>Dynamics - String Interpolation</h2>
+				<p>
+	Utterer Dynamics uses a scriptable object asset to store your list of dynamic calls in order to interpolate or color-code certain strings.<br>Interpolation is handled by the system's Dynamics Assistant, which finds all calls in an open scene and switches them with their ID's at runtime.<br><br>
+	Utterer Dynamics replaces any "call" (a string or part of a string surrounded by < and > - Ex. <PlayerName> ) with its associated "ID" (Ex. "Madsir"). <br><br>
 
-Utterer.UttererLanguages | ScriptableObject<br><br><br>
-
-_LanguageData - a list of type Utterer.UttererLanguages.LanguageData that contains all languages used with this asset<br>
-instance - static instance of this UttererLanguages<br>
-selectLanguage - a list of all the English names of available languages<br>
-codes - a list of all the ISO codes of available languages<br>
-displayNames - a list of all the Native names of available languages<br>
-languages - list of strings containing all english names of the Languages In Use list<br>
-RTL - list of the int indices of all right-to-left languages in the Languages in Use list<br>
-current - int index of the current language in use<br>
-currentLanguage - string of the English name of the current language in use<br><br><br>
+If a call's ID is "color", a color field will appear and you can choose a color and the system will change the string inside the call to your chosen color (ex. Call: <Player> , ID :"color")<br><br>
 
 
-Utterer.UttererLanguages.LanguageData<br><br><br>
-
-languages - a list of class Utterer.UttererLanguages.LanguageList which contains all languages used with this asset<br><br><br>
-
-
-Utterer.UttererLanguages.LanguagesList
-<br><br><br>
-language - string for the English name of this language<br>
-inUse - bool determining whether or not this language is the current language in use<br><br><br>
-
-
-</p>
-
-<h2>UTTERER DYNAMICS</h2><br><br><br>
+Calls are interpolated with their IDs/colors/values once when they are enabled in the scene.<br><br>
+				</p>
+	<h2>SCRIPTING REFERENCES</h2>
 
 <p>
-
 Utterer.DynamicsManager | ScriptableObject<br><br><br>
 
 _DynamicsList-  a list of class Utterer.DynamicsManager.DynamicsList that contains all the dynamics in the list<br><br><br>
@@ -510,12 +545,9 @@ Utterer.UttererDynamics<br><br><br>
 manager - reference of type DynamicsManager for the Dynamics Asset attached to this<br>
 public void DynamicsInput(TMP_InputField obj)<br>
 public void DynamicsInput(InputField obj)<br><br>
-
-<br>
-	<br>
-	<br><br><br>
-
-  		</div>
-   </div>
+</p>
+			</section>
+        </main>
+    </div>
 </body>
 </html>
