@@ -7,6 +7,7 @@ description: "Finish your math before the boogey gets you."
 <html>
 <head>
 <style>
+* {box-sizing:border-box}
 .main {
   margin-left: 0; 
   margin-right: 0%;
@@ -70,6 +71,58 @@ p {
 .center img{
   width: 80%;
 }
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 </style>
 </head>
 <body>	
@@ -106,20 +159,69 @@ p {
 </div>
 		<br>
 		<br>
-	<!--
-	<div id="slideshow">
-  <div class="slide-wrapper">
-    <div class="slide"><a href="https://img.itch.zone/aW1hZ2UvMzA0MDk3My8xODE5NjkyNS5wbmc=/original/Mn57lP.png"><img src="https://img.itch.zone/aW1hZ2UvMzA0MDk3My8xODE5NjkyNS5wbmc=/original/Mn57lP.png" alt="Calculation Boogey" style=display:block;margin-left:auto;margin-right:auto></a><br></div>
-    <div class="slide">		<a href="https://img.itch.zone/aW1hZ2UvMzA0MDk3My8xODE5Njk3Ni5wbmc=/original/liOM%2BA.png"><img src="https://img.itch.zone/aW1hZ2UvMzA0MDk3My8xODE5Njk3Ni5wbmc=/original/liOM%2BA.png" alt="Calculation Boogey" style=display:block;margin-left:auto;margin-right:auto></a><br></div>
-    <div class="slide">		<a href="https://img.itch.zone/aW1hZ2UvMzA0MDk3My8xODE5NjkyNy5wbmc=/original/KeGbW%2F.png"><img src="https://img.itch.zone/aW1hZ2UvMzA0MDk3My8xODE5NjkyNy5wbmc=/original/KeGbW%2F.png" alt="Calculation Boogey" style=display:block;margin-left:auto;margin-right:auto></a><br></div>
-    <div class="slide">		<a href="https://img.itch.zone/aW1hZ2UvMzA0MDk3My8xODE5NjkzMC5wbmc=/original/mgh%2Fbu.png"><img src="https://img.itch.zone/aW1hZ2UvMzA0MDk3My8xODE5NjkzMC5wbmc=/original/mgh%2Fbu.png" alt="Calculation Boogey" style=display:block;margin-left:auto;margin-right:auto></a><br></div>
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="https://img.itch.zone/aW1hZ2UvMzA0MDk3My8xODE5NjkyNS5wbmc=/original/Mn57lP.png" style="width:100%">
   </div>
+
+  <div class="mySlides fade">
+    <img src="https://img.itch.zone/aW1hZ2UvMzA0MDk3My8xODE5Njk3Ni5wbmc=/original/liOM%2BA.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://img.itch.zone/aW1hZ2UvMzA0MDk3My8xODE5NjkyNy5wbmc=/original/KeGbW%2F.png" style="width:100%">
+  </div>
+<div class="mySlides fade">
+    <img src="https://img.itch.zone/aW1hZ2UvMzA0MDk3My8xODE5NjkzMC5wbmc=/original/mgh%2Fbu.png" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
--->
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
 <br>
 <br>
 <br>
 <br>
 </div>
+	<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
 </body>
 </html>
