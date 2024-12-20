@@ -1,30 +1,31 @@
 ---
 layout: default
 title: Chinchilla Dance Party
-description: "Do the math and keep the party going!"
+description: "Solve the math problems to keep the party going!"
 ---
 <!DOCTYPE html>
 <html>
 <head>
 <style>
+* {box-sizing:border-box}
 .main {
-  margin-left: 2.5%; 
-  margin-right: 2.5%;
+  margin-left: 0; 
+  margin-right: 0%;
   height: 100%;
 }
 .centerdiv {
-  margin-left: 5%;
-  margin-right: 5%;
- background-color: rgba(0,0,0,0.5);
+  margin-left: 0;
+  margin-right: 0;
+  background-color: rgba(0,0,0,0.9);
 }
 h2 {
   margin-left: 5%;
   margin-right: 5%;
   font-size: 1.6em;
-  color: #58d5ff; 
+  color: #324ab2; 
 }
 h1 {
-  color: #58d5ff; 
+  color: #324ab2; 
 }
 p {
   font-size: 1.4em;
@@ -36,6 +37,8 @@ p {
   border-radius: 10px;
   margin-left: 25%; 
   margin-right: 25%;
+  background-color: black;
+  padding-bottom: 20px;
 }
 @media (max-width: 600px) {
   p {
@@ -47,16 +50,17 @@ p {
     font-size: 0.7em;
     margin-left: 5%;
     margin-right: 5%;
-    color: #58d5ff; 
+    color: #324ab2; 
   }
   h1 {
-  color: #58d5ff; 
+  color: #324ab2; 
   }
   .around {
   align-items: center;
   border-radius: 10px;
   margin-left: 5%; 
   margin-right: 5%;
+
 }
 }
 .center {
@@ -64,24 +68,75 @@ p {
   justify-content: center;
   align-items: center;
 }
+.center img{
+  width: 80%;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+iframe {
+	background-color: black;
+}
 </style>
 </head>
-<body>	
+<body>
 <div class="main">
-	<div class="centerdiv">
-  <br>
-	<br>
+<div class="centerdiv">
 	<div class="around">
 		<div class="center">
-	<iframe frameborder="0" src="https://itch.io/embed/1425556?border_width=5&amp;bg_color=120e23&amp;fg_color=d6e9ff&amp;link_color=d34efe&amp;border_color=3c3c3c" width="100%" height="200"><a href="https://madsirstudio.itch.io/chinchilla-dance-party">Chinchilla Dance Party by Madsir Studio</a></iframe>	
-</div>
-	    <br>
-		<br>
-		<h1>Chinchilla Dance Party</h1>
-                <br>
-		<br>
-		<br>
-		<p>
+<iframe frameborder="0" src="https://itch.io/embed/1425556?linkback=true&amp;bg_color=120e23&amp;fg_color=d6e9ff&amp;link_color=d34efe&amp;border_color=3c3c3c" width="552" height="167"><a href="https://madsirstudio.itch.io/chinchilla-dance-party">Chinchilla Dance Party by Madsir Studio</a></iframe>		<br>
+	</div>
+		<div class="around">
+		<h2>
 		Solve the math problems to help these chinchillas keep their party going.
 		<br>
 		<br>
@@ -106,17 +161,79 @@ p {
 		<br>
 		The challenge time period  is determined by the difficulty setting you choose. (Easy, Medium, Hard, and Expert) <br><br>
 		The higher the difficulty, the more stars you get for beating the challenge.</p>
+		</div>
 		<br>
 		<br>
-		<br>
-	    <br>
-	</div>
-<br>
-<br>
-<br>
-<br>
- </div>
 </div>
+		<br>
+		<br>
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="https://img.itch.zone/aW1hZ2UvMTQyNTU1Ni84MzA3NzE2LnBuZw==/original/pRykbN.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://img.itch.zone/aW1hZ2UvMTQyNTU1Ni84MzA3NzE1LnBuZw==/347x500/Mx4vGm.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://img.itch.zone/aW1hZ2UvMTQyNTU1Ni8xMjM5NTYxOS5wbmc=/347x500/ZTbJY5.png" style="width:100%">
+  </div>
+<div class="mySlides fade">
+    <img src="https://img.itch.zone/aW1hZ2UvMTQyNTU1Ni8xMjM5NTYxNy5wbmc=/347x500/i6ew%2Fu.png" style="width:100%">
+  </div>
+	  <div class="mySlides fade">
+    <img src="https://img.itch.zone/aW1hZ2UvMTQyNTU1Ni8xNzY4Mjk0NS5qcGc=/347x500/1wWrP8.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+<br>
+<br>
+<br>
+<br>
+</div>
+	<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
 </body>
 </html>
-
