@@ -91,13 +91,16 @@ width: 90%;
   padding-top: 1%;
   padding-bottom: 1%;
 }
-		.slideshow-container {
-  max-width: 1000px;
+ .slideshow-container {
+  max-width: 90%;
   position: relative;
   margin: auto;
 }
 .mySlides {
   display: none;
+}
+.iconic button:hover{
+  border: 2px solid #ffc3aa;
 }
 .prev, .next {
   cursor: pointer;
@@ -163,11 +166,11 @@ width: 90%;
 			<div class="center">
 			<div class="bonter">
 					<a href="https://assetstore.unity.com/packages/tools/camera/cutscheme-2d-211649"><img src="/Assets/c2d.png" alt="Cutscheme 2D" style=display:block;margin-left:auto;margin-right:auto></a><br>
-	        <h5><a href="https://assetstore.unity.com/packages/tools/camera/cutscheme-2d-211649"><button>Cutscheme 2D</button></a></h5>
+	        <h5><a href="https://assetstore.unity.com/packages/tools/camera/cutscheme-2d-211649"><button>GET C2D</button></a></h5>
 			</div>
 			<div class="bonter">
 					<a href="https://assetstore.unity.com/packages/tools/camera/cutscheme-3d-273807"><img src="/Assets/c3d.png" alt="Cutscheme 3D" style=display:block;margin-left:auto;margin-right:auto></a><br>		
-					<h5><a href="https://assetstore.unity.com/packages/tools/camera/cutscheme-3d-273807"><button>Cutscheme 3D</button></a></h5>
+					<h5><a href="https://assetstore.unity.com/packages/tools/camera/cutscheme-3d-273807"><button>GET C3D</button></a></h5>
 			</div>
 		</div>
 		</div>
@@ -179,7 +182,7 @@ width: 90%;
 </div>  
 	<div class="slideshow-container">
   <div class="mySlides fade">
-    <img src="https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/d97de7b9-8dec-4877-960e-ed172ef713a4.webp" style="width:100%">
+    <a href="https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/d97de7b9-8dec-4877-960e-ed172ef713a4.webp"><img src="https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/d97de7b9-8dec-4877-960e-ed172ef713a4.webp" style="width:100%"></a>
   </div>
 
   <div class="mySlides fade">
@@ -214,18 +217,8 @@ width: 90%;
 	  <span class="dot" onclick="currentSlide(5)"></span>
   <span class="dot" onclick="currentSlide(6)"></span>
 </div>
-<br>
-<br>
-<br>
-<br>
 </div>
-	 <div class="iconic">
-	 <div class="center">
-	<div class="videoWrapper">				
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=F3lTpmLWUwljj8Pp&amp;list=PLDF7nM2JYQf-r9HL5ct3Q8L1uszcHHCmW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>	
-	</div>
-	 </div>
-	</div>
+
 	<script>
 let slideIndex = 1;
 showSlides(slideIndex);
