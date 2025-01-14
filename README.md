@@ -2,9 +2,9 @@
 
 **GAMES**
 
-Calculation Boogey | Finish the math problems before the sun sets or the boogeyman will get you.
-Space Toots | Eat space jellies, get gas, and propel your way through the spacescapes. Beware the meteors and gravity effectors waiting to knock you off course!
-Chinchilla Dance Party | These chins are so excited about math they decided to throw a dance party! Solve the math problems to keep their party going.
+Calculation Boogey | Finish the math problems before the sun sets or the boogeyman will get you.<br>
+Space Toots | Eat space jellies, get gas, and propel your way through the spacescapes. Beware the meteors and gravity effectors waiting to knock you off course!<br>
+Chinchilla Dance Party | These chins are so excited about math they decided to throw a dance party! Solve the math problems to keep their party going.<br>
 
 
 **DIGITAL ASSETS**
