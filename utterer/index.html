@@ -37,7 +37,7 @@ width: 48%;
   width: 55%;
 }
 
-h5{
+.col h5{
   font-family: Arial, Helvetica, sans-serif;
  font-size: 1.7em;
   margin-left:5%;
@@ -72,9 +72,14 @@ margin-top: 5%;
 overflow: hidden;
 white-space: nowrap;
 }
+	.columns {
+float: center;
+justify-content: center;
+  width: 33%;
+}
 	.row{
   margin-top: 1px;
-  margin-bottom: 10%;
+  margin-bottom: 1%;
   background-color: rgba(0,0,0,0.8);
    border: 2px solid white;
    padding: 20px 50px;
@@ -147,9 +152,6 @@ width: 90%;
   padding-top: 1%;
   padding-bottom: 1%;
  /* background-image: url("/Assets/tough.png")*/
-}
-button {
- width: 100%;
 }
 .iconic button {
  white-space: nowrap;
@@ -234,11 +236,6 @@ button {
   width: 100%;
   height: 100%;
 }
-	.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 </style>
 </head>
 <body>
@@ -254,28 +251,14 @@ button {
 		<a href="/Assets/utterercard.png"><img src="/Assets/utterercard.png" alt="Utterer" style=display:block;margin-left:auto;margin-right:auto></a>
 	</div>
 </div>
-</div>
-	</div>
-		<br>
-		<br><br>
-	<div class="fonter">
-	<div class="center">
-	<div class="bonter">
 	<div class="center">
 		<a href="https://assetstore.unity.com/packages/tools/localization/utterer-215643"><button> Get Utterer </button></a>
 	</div>
-	</div>
-		<div class="bonter">
-			<div class="center">
-			<a href="/utterer/docs"><button> Documentation </button></a>
-		</div>
-	</div>
-	</div>
+</div>
 	</div>
 		<br>
 		<br>
 		<br>
-		<div class="iconic">
 			<details class="details-example">
    		 <summary>Description</summary>
 		  <div class="row">
@@ -289,16 +272,13 @@ button {
 			<div class="columns">
 				<h5>Dynamics stores your custom list of dynamic calls in order to interpolate or color-code certain strings. Interpolation is handled by the system's Dynamics Assistant, which finds all calls in an open scene and switches them with their ID's at runtime.</h5>		
 			</div>
-			  <h5><a href="https://assetstore.unity.com/packages/tools/localization/utterer-215643">Technical Details</a></h5>
+
 		  </div>
-				
+			 <a href="https://assetstore.unity.com/packages/tools/localization/utterer-215643">Technical Details</a><br>
+			  <a href="/utterer/docs">Documentation</a>
 		</details>
-  <br>
 			<br>
 			<br>
-					<br>
-				</div>
-	</div>
 	<br>
 	<br><br>
 	<div class="centerdiv">
