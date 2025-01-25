@@ -134,80 +134,186 @@ description: "Cutscheme (2D/3D) Documentation."
             <ul>
 		    <br>
 		    <br>
-                <li><a href="#CutschemeController">Cutscheme Controller</a></li>
-                <li><a href="#ObjectControl">Object Control</a></li>
+                <li><a href="#GettingStarted">Getting Started</a></li>
+                <li><a href="#CameraShots">Camera Shots</a></li>
                 <li><a href="#CutschemeAudio">Cutscene Audio</a></li>
-                <li><a href="#Cameras">Camera Shots</a></li>
+                <li><a href="#CutschemeOptions">Cutscheme Options</a></li>
+		    <li><a href="#ObjectControl">Object Control</a></li>
 		    <li><a href="#VFXSystems">Visual Effects Systems</a></li>
+		    <li><a href="#Prefabs">Prefabs</a></li>
                 <!-- More navigation items -->
             </ul>
         </nav>
         <main id="documentation">
-            <section id="CutschemeController">
-<h2>Cutscheme Controller</h2>
+            <section id="GettingStarted">
+<h2>Getting Started</h2>
 		<br>
 		<br>
 		<p>
-	<p>Build custom cutscenes using the Cutscheme Controller component.<br><br>
+	<p>
+		1. Add a Cutscheme prefab to your scene (or add a Cutscheme Controller script to an object in your scene).<br><br>
 
-Generate a sequence of camera shots for each of the shots in your cutscene.<br><br>
-Direct a camera (or parent of a camera) through your cutscene using the camera shots' positions.<br><br>
-(Optional) Disable the cutscene's main camera after the cutscene ends.</p>
+Prefab location: Cutscheme/Prefabs<br>
+
+Script location: Cutscheme/Scripts/CutschemeSystem<br><br>
+
+
+2. Add the camera you want to control into Cutscheme Controller's 'Main Camera' field.<br><br>
+
+Cutscheme will use this camera for zooming/filters/etc.<br><br>
+
+3. If the above camera needs to be disabled after the cutscene, check the Disposable Camera toggle.<br><br>
+	
+	The Main Camera for the cutscene will be disabled at the end of the cutscene.<br><br>
+
+4. Add Camera Shots to the Camera Shots array.<br><br>
+
+Cutscheme automatically adds and removes camera transforms to the scene as children of the Cutscheme Controller's game object.<br><br>
+
+
+5. Manually position and rotate each of the Camera Shots into their places for the cutscene.<br><br>
+
+Cutscheme system follows these positions in index order instead of numerical order, so you can reorder the positions.<br><br>
+
+	</p>
             </section>
-            <section id="ObjectControl">
-<h2>Cutscheme Options & Object Control</h2><br>	<br>
-			<p>Fade the cutscene in/out at the beginning and end.<br><br>
-				Choose the amount of time it takes to fade in/out to black.<br><br>
-			Reset the camera back to its original size after the cutscene ends.<br><br>
-      			Reset the camera back to its original transform after the cutscene ends.<br><br>
-			Choose whether the cutscene can be skipped.<br><br>
-			Set the Cutscheme system's timers to ignore the scene's timescale.<br><br>
-			After the cutscene, change to a new Scene via build index.
-	      
-	<br><br><br>
-			Hide Until Cutscene - Objects or Behaviours in this list are automatically disabled in the editor, though can be enabled and disabled manually.<br><br>
-			Hide During Cutscene - Objects or Behaviours in this list are hidden at the start of the cutscene and enabled again after the cutscene.<br><br>
-	Hide After Cutscene - Objects or Behaviours in this list are disabled after the cutscene ends.</p>
+            <section id="Camera Shots">
+<h2>Camera Shots</h2><br>	<br>
+			<p>
+				1. Set the duration of the shot before transitioning.<br><br>
+
+This is how long the camera stays still before transitioning. Duration can be zero and the camera will transition immediately. (Useful for consecutive panning shots.)<br><br>
+
+
+2. Zoom in or out.<br><br>
+
+Setting zoom to true creates fields for the new camera FOV (perspective) and speed of the zoom. Cutscheme will 'zoom' any extra, active cameras in and out by the percent difference between Main Camera's FOV and the camera shot's New FOV.<br><br>
+
+
+3. Shake the camera.<br><br>
+
+Setting shake to true creates a field for the magnitude at which you want the camera to shake. The higher the power the heavier the shake.
+<br><br>
+
+4. Adjust timeScale.<br><br>
+Choose a timeScale between 0.1 - 2 to speed up or slow down time during this shot.<br><br>
+
+
+5. Play an audio clip.<br><br>
+
+This sound will play at the start of the shot. This can be left null.<br><br>
+
+
+6. Cut instantly or pan/rotate to the next shot.<br><br>
+
+Make sure to set cut instantly or set a pan speed/rotate speed for each shot, else the camera will get stuck.<br><br>
+
+			</p>
             </section>	
                         <section id="CutschemeAudio">
 <h2>Cutscheme Audio
 		<br><br>
 	Cutscheme creates its own Audio Source at runtime and places it on the Cutscheme's Main Camera.</h2><br>			
 	<br><p>
-		Choose whether only cutscene audio should play during the cutscene.
-<br><br>Add an audio clip to the Main Audio field to play during the cutscene.
-<br><br>
-			Loop the Cutscheme's Main Audio.<br><br>
-		Choose the volume level for the cutscene's audio.<br><br>
-			Fade the main audio in and/or out.<br><br>
-	Choose the amount of time it takes to fade the audio.</p>
+		Cutscheme creates its own Audio Source at runtime and places it on the Cutscheme's Main Camera. This audio source is set up as follows:<br><br>
+
+	Priority: 1<br>
+	Stereo Pan: 0<br>
+ 	Spatial Blend: 1<br>
+	Reverb Zone Mix: 1<br>
+	Doppler Level: 1<br>
+	Rolloff: Custom (Gradual), Max Distance: 500<br><br>
+
+1. Choose whether only cutscene audio should play during the cutscene.<br><br>
+
+If true, Cutscheme pauses the Audio Listener in the scene. All Cutscheme audio and any objects with AudioSources that are enabled, disabled, or moved with Helpful Scripts will ignore the pause on the listener.<br><br>
+
+
+2. Add an audio clip to the Main Audio field.<br><br>
+
+This audio will play at the start of the cutscene.<br><br>
+
+
+3. Loop the main audio of the cutscene.<br><br>
+
+This will not loop sounds added to Camera Shots.<br><br>
+
+
+4. Choose the volume level for the cutscene.<br><br>
+
+This controls the volume level for the main audio and any sounds in Camera Shots.<br><br>
+
+5. Fade the main audio in and/or out at the beginning and end of the cutscene.<br><br>
+
+
+6. Set the spread angle of Cutscheme audio.
+
+	</p>
 			</section>
-		                        <section id="Cameras">
-<h2>Camera Shots
-		<br><br>
-			    Controls for each camera shot :</h2><br>	<br>
+		                        <section id="CutschemeOptions">
+<h2>Cutscheme Options</h2><br>	<br>
 <br>
 	<br><p>
-            Position of the camera shot.<br><br>
-		Rotation of the camera shot.<br><br>
-		Duration the camera shot stays still before transitioning to the next.<br><br>
-		Zoom in or out to a new FOV at the speed of your choice during the shot.<br><br>
-		Shake the camera at the magnitude of your choice during the shot.<br><br>
-		Play an audio clip at the start of the camera shot.<br><br>
-		Speed up or slow down time during the camera shot.<br><br>
-    Transition to the next camera shot by cutting instantly or panning/rotating at the speed of your choice.</p>
-	<br>
+		1. Fade in and out.<br><br>
 
-	<br><p>
-    Position of the camera shot.<br><br>
-		Rotation of the camera shot.<br><br>
-		Duration the camera shot stays still before transitioning to the next.<br><br>
-		Zoom in or out to a new FOV at the speed of your choice during the shot.<br><br>
-		Shake the camera at the magnitude of your choice during the shot.<br><br>
-		Play an audio clip at the start of the camera shot.<br><br>
-		Speed up or slow down time during the camera shot.<br><br>
-    Transition to the next camera shot by cutting instantly or panning/rotating at the speed of your choice.</p>
+Cutscheme creates a black panel at runtime for this purpose and displays it over the camera via a Canvas.<br>
+
+If no Canvas exists in the scene, Cutscheme will create one at runtime. Created canvases and panels for cutscenes are removed from the scene after the cutscene ends.<br><br>
+
+
+2. Reset camera FOV & position.<br><br>
+
+Cutscheme saves the original size of the controlled camera before the cutscene starts. Reset the camera (or cameras, if multiple) to their original FOV after the cutscene ends.<br><br>
+
+
+3. Make the cutscene skippable.<br><br>
+
+Whether the cutscene can be skipped by the player. If true, Cutscheme skip the cutscene if any key is pressed after three seconds.<br><br>
+
+
+4. Ignore time scale.<br><br>
+
+	If true, Cutscheme's timers ignore time scale by using 	unscaledDeltaTime. If false, Cutscheme's timers use the scene's time scale and use deltaTime.<br><br>
+
+
+5. Change to a new scene.<br><br>
+
+If true, Cutscheme loads new scene via build index after the cutscene ends. If false, cutscheme disables itself after ending.<br><br>
+
+</p>
 			</section>
+		<section id="ObjectControl">
+			<h2>Object Control</h2>
+			<br>
+			<p>
+				Hide or show objects/enabled or disable Behaviours during cutscenes.<br><br>
+
+Hidden Until Cutscene<br>
+
+Objects or their Behaviours that are added to Hidden Until Cutscene are disabled before runtime by the Cutscheme Controller Editor, and enabled on cutscene start.<br>
+
+1.	Add a GameObject to this list. That's all you need to do in order to disable this object until the cutscene.<br>
+2.	Click "Disable Behaviours" in order to enable the Behaviours list. Cutscheme will automatically add all of that object's Behaviours to this list.<br>
+3.	Remove any Behaviours that you do not want Cutscheme to affect. Leave any Behaviours you want to disable/enable.<br><br>
+
+Hidden During Cutscene<br>
+
+Objects or their Behaviours that are added to Hidden During Cutscene are disabled on cutscene start and enabled after the cutscene ends.<br>
+
+1.	Add a GameObject to this list. That's all you need to do in order to disable this object during the cutscene.<br>
+2.	Click "Disable Behaviours" in order to enable the Behaviours list. Cutscheme will automatically add all of that object's Behaviours to this list.<br>
+3.	Remove any Behaviours that you do not want Cutscheme to affect. Leave any Behaviours you want to disable/enable.<br><br>
+
+
+Hidden After Cutscene<br>
+Objects or their Behaviours that are added to Hidden After Cutscene are disabled after the cutscene ends.<br>
+
+1.	Add a GameObject to this list. That's all you need to do in order to disable this object after the cutscene.<br>
+2.	Click "Disable Behaviours" in order to enable the Behaviours list. Cutscheme will automatically add all of that object's Behaviours to this list.<br>
+3.	Remove any Behaviours that you do not want Cutscheme to affect. Leave any Behaviours you want to disable/enable.<br><br>
+
+			</p>
+		</section>
 		                        <section id="VFXSystems">
 <h2>Cutscheme VFX Systems</h2>
 	<br>
@@ -215,22 +321,80 @@ Direct a camera (or parent of a camera) through your cutscene using the camera s
         		<h2>Cutscheme Effect System
 			<br>(Universal Render Pipeline only)</h2><br>				
 	<br><p>
-		The Cutscheme Effect System is fully integrated into Cutscheme 2D and Cutscheme 3D. It will enable automatically when an effect is selected in a Camera Shot and display the effect(s) at runtime during that Camera Shot.<br><br>
-		The System makes a copy of the Scene Volume and uses the copy during the cutscene. After the cutscene, the system re-enables the original Scene Volume and removes the copy.<br><br>
-		Display multiple camera effects during each shot in the cutscene. <br><br>
-		Customize the override values for the copy's Vignette, Bloom, Film Grain, and Color Filter.
-		<br><br><br>
+		Cutscheme Effect System provides premade effects that you can add to your cutscene.<br><br>
 
-	      <br>
+1. Add your scene's volume to the 'Scene Volume' field.<br><br>
+
+The system will make a copy of your current volume, use the copy during the cutscene, and then disable the copy and enable your original scene volume after the cutscene ends.<br><br>
+
+2. Choose one or multiple effects from 'Camera Shots' 'Camera Effects' section.<br><br>
+
+Customization<br>
+
+The override values of Vignette, Grainy, and Hazy can be customized in the Cutscheme Controller.<br><br>
+
+	</p>
+
 		<br>
 			<br>
-<br>
 		<h2>Cutscheme Filter System<br>(Built-In Renderer Pipeline only)</h2><br>				
 	<br><p>
-		The Cutscheme Filter System is fully integrated into Cutscheme 2D and Cutscheme 3D. It will enable automatically when a filter is selected in a Camera Shot and display the filter(s) at runtime during that Camera Shot.<br><br>
-		Display up to two camera filters at a time during each shot in the cutscene.<br><br>
-		Customize with your own filters (Materials) or use the ones that come with the package.</p>
+		Cutscheme Filter System allows you to display up to two camera filters at a time during the cutscene.<br><br>
+
+1. Change the value of the 'Quantity' field to add or remove filters.<br><br>
+
+Drag your own filters (Materials) into the created Material fields, or use the filters that come with this package. Any filters added here will be added to Camera Shots.<br><br>
+
+
+2. Choose up to two filters for each camera position in Camera Shots' 'Camera Filters' section.<br><br>
+</p>
 			</section>
+		<section id="Prefabs">
+			<h2>Prefabs</h2>
+			<p>
+				All Cutscheme prefabs can be found at Cutscheme/Prefabs.<br><br>
+
+Cutscheme<br>
+
+This prefab is for making Cutscheme cutscenes from scratch. See the 'Making a Cutscheme Cutscene' section for instructions.<br><br>
+
+
+DelayedOneShotCutscheme<br>
+
+This prefab is a time-enabled version of OneShotCutscheme. The prefab deactivates its Cutscheme and Camera after its duration and returns focus to the scene's Main Camera.<br>
+
+Drag a DelayedOneShotCutscheme prefab into your scene and position it. Input the amount of Time To Wait before enabling this Cutscheme.<br><br>
+
+
+EnableCutscheme<br>
+        
+The EnableCutscheme prefab lets you enable a Cutscheme cutscene after a period of time.<br>
+
+Drag an EnableCutscheme prefab into your hierarchy. Input the amount of Time To Wait and add the Cutscheme you want to enable to the Obj To Enable field.<br><br>
+
+
+OneShotCutscheme
+<br>
+This prefab is an editable, pre-built Cutscheme intended to display an alternative camera angle for a brief period during runtime. The prefab deactivates its Cutscheme and Camera after its duration and returns focus to the scene's Main Camera.<br>
+
+Drag a OneShotCutscheme prefab into your scene and position it. Its transform will be the position of the camera shot for the cutscene.<br><br>
+
+
+TriggerCutscheme<br>
+
+The TriggerCutscheme prefab lets you trigger a Cutscheme cutscene upon collision with another object.<br>
+Drag a TriggerCutscheme prefab into the scene and position it where another object will collide with it in order to trigger the Cutscheme. Add the Cutscheme you want to trigger into the Obj To Enable field.<br><br>
+
+
+TriggeredOneShotCutscheme
+<br>
+This prefab is the triggerable version of OneShotCutscheme. The prefab deactivates its Cutscheme and Camera after its duration and returns focus to the scene's Main Camera.<br>
+
+
+Drag a TriggeredOneShotCutscheme prefab into your scene and position it. It has a child called TriggerCutscheme. Position TriggerCutscheme where another object will collide with it in order to trigger the Cutscheme.<br><br>
+
+			</p>
+		</section>
         </main>
     </div>
 </body>
