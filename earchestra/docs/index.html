@@ -1,0 +1,198 @@
+---
+layout: default
+title: Cutscheme User Manual and Scripting References
+description: "Cutscheme (2D/3D) Documentation."
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+	body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;   
+    display: flex;
+    flex-direction: column;
+}
+
+.page-header {
+    background-color: #35424a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar {
+    width: 20%;
+    background-color: black;
+   z-index: 996;
+    padding: 15px;
+    height: 100%;
+    overflow: auto;
+    flex-shrink: 0; /* Prevents the navbar from shrinking */
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #1274ef;
+}
+
+#documentation {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #141414;
+}
+
+#documentation section {
+    margin-bottom: 25px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+	margin-right:20%;
+}
+
+#documentation h2 {
+    color: #1274ef;
+    margin-bottom: 15px;
+   font-size: 2.3em;
+  font-family: monospace;
+}
+
+#documentation p {
+    line-height: 1.6;
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .navbar {
+        width: 100%;
+        height: auto;
+        order: -1; /* Moves the navbar to the top */
+    }
+
+    #documentation {
+        width: 100%;
+				margin-right:0;
+    }
+		#documentation section {
+			margin-right:0;
+		}
+		#documentation h2 {
+   	 	margin-bottom: 15px;
+   		font-size: 1.5em;
+  		font-family: monospace;
+		}
+}
+
+@media screen and (max-width: 480px) {
+    .page-header {
+        padding: 10px 0;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar ul li a {
+        padding: 8px;
+    }
+
+    #documentation {
+        padding: 10px;
+    }
+		#documentation section {
+			margin-right:0;
+		}
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+		    <br>
+		    <br>
+                <li><a href="#GettingStarted">Getting Started</a></li>
+                <li><a href="#Sections">Sections</a></li>
+                <li><a href="#Settings">Settings</a></li>
+                <li><a href="#Volumes">Volumes</a></li>
+		    <li><a href="#Ensemble">Ensemble</a></li>
+		    <li><a href="#Maestro">Maestro Methods</a></li>
+            </ul>
+        </nav>
+        <main id="documentation">
+            <section id="Sections">
+<h2>Getting Started</h2>
+		<br>
+		<br>
+		<p>
+	<p>
+
+	</p>
+            </section>
+            <section id="Settings">
+<h2>Camera Shots</h2><br>	<br>
+			<p>
+
+
+			</p>
+            </section>	
+                        <section id="Volumes">
+<h2>Cutscheme Audio
+		<br><br>
+	Cutscheme creates its own Audio Source at runtime and places it on the Cutscheme's Main Camera.</h2><br>			
+	<br><p>
+
+
+	</p>
+			</section>
+		                        <section id="Ensemble">
+<h2>Cutscheme Options</h2><br>	<br>
+<br>
+	<br><p>
+
+</p>
+			</section>
+		<section id="ObjectControl">
+			<h2>Object Control</h2>
+			<br>
+			<p>
+
+			</p>
+		</section>
+		                        <section id="Maestro">
+<h2>Cutscheme VFX Systems</h2>
+	<br>
+	
+        		<h2>Cutscheme Effect System
+			<br>(Universal Render Pipeline only)</h2><br>				
+	<br><p>
+
+</p>
+			</section>
+        </main>
+    </div>
+</body>
+</html>
