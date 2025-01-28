@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Cutscheme User Manual and Scripting References
-description: "Cutscheme (2D/3D) Documentation."
+title: User Manual and Scripting References
+description: "Documentation"
 ---
 <!DOCTYPE html>
 <html>
@@ -134,7 +134,6 @@ description: "Cutscheme (2D/3D) Documentation."
             <ul>
 		    <br>
 		    <br>
-                <li><a href="#GettingStarted">Getting Started</a></li>
                 <li><a href="#Sections">Sections</a></li>
                 <li><a href="#Settings">Settings</a></li>
                 <li><a href="#Volumes">Volumes</a></li>
@@ -144,51 +143,203 @@ description: "Cutscheme (2D/3D) Documentation."
         </nav>
         <main id="documentation">
             <section id="Sections">
-<h2>Getting Started</h2>
+<h2>Sections :</h2>
 		<br>
 		<br>
 		<p>
+			Create playlists and add tracks in each of the three sections.
+For each playlist you can customize the title and track names.<br><br>
+
+Settings for each playlist in each Section:<br>
+
+⦁	Play in index order or mixed order.<br>
+⦁	Fade tracks at the beginning and end.<br>
+⦁	Control the delay between tracks.<br>
+⦁	Loop the playlist.<br><br>
+
+Settings for each track in each playlist:<br>
+
+⦁	Loop the track.<br><br>
+
+
+Music Section<br><br>
+
+The Music section is where you'll create all of your Music playlists.<br><br>
+
+Music Playlist Examples:<br>
+Songs, Underscore, Ambient, Stingers, etc.<br><br>
+
+The Music Section's main audio player is the first child of Earchestra, called MusicPlayer. MusicPlayer contains an AudioSource component. This component's volume is controlled by the Volumes section in Earchestra Sections.<br><br>
+
+
+SFX Section<br><br>
+
+The SFX section is where you'll create all of your sound effects playlists.<br><br>
+
+SFX Playlist Examples:<br>
+Guns, Vehicles, Weather, Explosions, UI, etc.<br><br>
+
+The SFX Section's main audio player is the second child of Earchestra, called SFXPlayer. SFXPlayer contains an AudioSource component. This component's volume is controlled by the Volumes section in Earchestra Sections.<br><br>
+
+
+Speech Section<br><br>
+
+The Speech section is where you'll create all of your speech playlists.<br><br>
+
+Speech Playlist Examples:<br>
+Player, Enemy, Boss, Announcements, Dialogue, etc.<br><br>
+
+The Speech Section's main audio player is the third child of Earchestra, called SpeechPlayer. SpeechPlayer contains an AudioSource component. This component's volume is controlled by the Volumes section in Earchestra Sections. <br><br>
+
 	<p>
 
 	</p>
             </section>
             <section id="Settings">
-<h2>Camera Shots</h2><br>	<br>
+<h2>Settings</h2><br>	<br>
 			<p>
+Perpetual<br><br>
+
+If the Perpetual toggle is on, the current instance of Earchestra will persist throughout each scene in the build index. This setting will destroy any other instances of Earchestra in any scene.<br><br>
+
+3D Sound<br><br>
+
+The 3D Sound toggle is a quick way to change certain audio settings on Earchestra's audio players. When the toggle is on, each audio player in Earchestra is changed to the following settings:<br><br>
+
+Spatial Blend = 1<br>
+Doppler Level = 0.1<br>
+Spread = 100<br>
+Volume Rolloff = Custom<br><br>
+
+When the toggle is off, the above settings are reverted to their original Earchestra values.<br>
+
+These settings are only changed once when the toggle is clicked, so any of these values can be changed manually at any time.
 
 
 			</p>
             </section>	
                         <section id="Volumes">
-<h2>Cutscheme Audio
-		<br><br>
-	Cutscheme creates its own Audio Source at runtime and places it on the Cutscheme's Main Camera.</h2><br>			
+<h2>Volumes</h2><br>			
 	<br><p>
 
+In Editor:<br><br>
+
+Control the master volumes for each Section using sliders in the EarchestraSections inspector. These volumes apply to the main section players as well as each of their Ensemble players.<br><br>
+
+The Earchestra system saves and loads these volume values to a Json file located in the device's persistent files each time a slider's value changes.<br><br>
+
+Runtime User Input:<br><br>
+
+Earchestra includes a prefab called Volume Settings, which is located in the Earchestra/Prefabs folder.<br><br>
+
+This prefab contains Earchestra's Volumes script component. This script has all the methods needed for the Volume Settings system, as well as a public Slider field for each master volume.<br><br>
+
+The Volume Settings object is a Button whose OnValueChanged event uses Volumes' OpenVolumes() method to enable Volume Setting's second child object: MasterVolumes.<br><br>
+
+MasterVolumes has a child object for each Section in Earchestra. These child objects each contain a Slider component and are called MusicVolume, SFXVolume, and SpeechVolume. <br><br>
+
+The VolumeSettings prefab has these three objects placed in their respective public Slider fields in the Volume script.<br><br>
+
+Each Slider's OnValueChanged event uses the Volume script's MusicVolume(), SfxVolume(), and SpeechVolume() methods, respectively.<br><br>
+
+Using these sliders, the user can set the master volumes for each section at runtime. The Volumes script saves and loads these volume values to a Json file in the device's persistent files each time a slider's value changes.
+<br><br>
+MasterVolumes also has a child object called CloseVolumes. This is a Button whose OnValueChanged event uses CloseVolumes() method to disable the MasterVolumes object.
 
 	</p>
 			</section>
 		                        <section id="Ensemble">
-<h2>Cutscheme Options</h2><br>	<br>
+<h2>Ensemble</h2><br>	<br>
 <br>
 	<br><p>
+Clone the main audio players for each Section, making Earchestra capable of handling more complex and dynamic audio demands such as:<br>
+
+⦁	Playing multiple playlists from the same section at the same time.<br>
+⦁	Playing multiple tracks from a Section's playlist at the same time.<br>
+⦁	Making any clip from your playlists play at the position of your choice.<br><br>
+
+Smart Ensemble
+<br><br>
+Let Earchestra build an Ensemble for you. Deactivates after use.<br><br>
+
+For the Music Section, Smart Ensemble creates one audio player per playlist, and then one audio player per track.<br><br>
+
+For the SFX and Speech Sections, Smart Ensemble creates one audio player per playlist, and then three audio players per track.<br><br>
 
 </p>
 			</section>
-		<section id="ObjectControl">
-			<h2>Object Control</h2>
-			<br>
-			<p>
-
-			</p>
-		</section>
 		                        <section id="Maestro">
-<h2>Cutscheme VFX Systems</h2>
+<h2>Maestro Methods</h2>
 	<br>
-	
-        		<h2>Cutscheme Effect System
-			<br>(Universal Render Pipeline only)</h2><br>				
+			
 	<br><p>
+Maestro uses the namespace Earchestra. If you add this assembly reference ( using Earchestra; ) to your scripts, you will not need to use it when calling your methods.<br><br>
+
+
+System Control<br><br>
+Earchestra.Maestro.Stop();<br>
+Earchestra.Maestro.Pause();<br>
+Earchestra.Maestro.Resume();
+<br><br>
+Music Control<br><br>
+Earchestra.Maestro.Music(string playlist, string command, [Optional] Transform position);<br><br>
+
+SFX Control<br><br>
+Earchestra.Maestro.SFX(string playlist, string command, [Optional] Transform position);<br><br>
+
+Speech Control<br><br>
+Earchestra.Maestro.Speech(string playlist, string command, [Optional] Transform position);<br><br>
+
+
+
+Playlist Commands<br><br>
+
+MixOn - Plays tracks in random order<br><br>
+                
+MixOff - Plays tracks in index order<br><br>
+                
+Play - Plays playlist<br><br>
+                                
+Pause - Pauses playlist<br><br>
+                
+Unpause - Unpauses playlist<br><br>
+                
+Stop - Stops all tracks in playlist<br><br>
+                
+LoopOn - Loops playlist         <br><br>      
+                
+LoopOff - Turns off loop for playlist       <br><br>        
+                
+Random - Plays random track        <br><br><br>       
+                
+                
+Track Commands(Where string = Track Name)<br><br>
+              
+Play(string)- Plays track        <br><br>        
+                
+Pause(string)- Pauses track        <br><br>        
+                
+Unpause(string)- Unpauses track<br><br>
+                
+Stop(string)- Stops track<br><br>
+                
+LoopOn(string)- Loops track<br><br>
+                
+LoopOff(string)- Turns off loop for track<br><br><br>
+
+
+
+[Optional] Positions<br><br>
+
+Earchestra can send an audio player to designated positions to play your tracks at location using Earchestra's Maestro Methods.<br><br>
+
+With Ensemble : <br>
+
+Earchestra will send out an audio player clone from the Ensemble to play the audio clip at the position.<br><br>
+
+Without Ensemble :<br>
+
+Earchestra will send the Section's audio player Ensemble to play the audio clip at the position.<br><br>
 
 </p>
 			</section>
