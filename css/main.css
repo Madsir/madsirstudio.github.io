@@ -11,7 +11,7 @@ body {
  #header-text{
       margin: 0;
     font-family:"Lucida Console", 'Monaco', 'monospace';
-    color: 	#A9A9A9;
+    color: 	gray;
  }
 nav
 {
@@ -24,51 +24,51 @@ a {
     color: #5fb2ce;
 }
 a:hover {
-    color: #ffc3aa;
+    color: gray;
     text-shadow: 0 0 2px 1px #ff8e8e;
 }
 h1 {
     font-size: 2em;
     font-family: Verdana, Arial, Tahoma, Serif;
-    color: 	#A9A9A9;
+    color: gray;
     text-align: center;
 }
 h2 {
 
     font-size: 1.3em;
     font-family: Verdana, Arial, Tahoma, Serif;
-    color:	#A9A9A9;
+    color:	gray;
     text-align: left;
 }
 h3 {
 
     font-size: 1.3em;
     font-family: Verdana, Arial, Tahoma, Serif;
-    color: #A9A9A9;
+    color: gray;
     text-align: right;
 }
 h4 {
 
     font-family: Verdana, Arial, Tahoma, Serif;
     font-size: 1.3em;
-    color: #A9A9A9;
+    color: gray;
     text-align: center;
 }
 h5 {
     font-family: Verdana, Arial, Tahoma, monospace;
     font-size: medium;
-    color: #e0e0e0;
+    color: gray;
     text-align: center;
 }
 h6 {
     font-family: Verdana, Arial, Tahoma, monospace;
     font-size: medium;
-    color: #e0e0e0;
+    color: gray;
     text-align: left;
 }
 p {
         font-size: medium;
-    color: #e0e0e0;
+    color: gray;
     font-family: Verdana, Arial, Tahoma, monospace;
     text-align: left;
 }
