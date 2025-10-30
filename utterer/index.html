@@ -8,57 +8,69 @@ description: "Utterer is multi-faceted digital asset designed for use in Unity E
 <head>
 <style>
 .main {
-  border-radius:10px;
-  margin-left: 0; 
-  margin-right: 0;
+  margin-left: 0%; /* Same width as the sidebar + left position in px */
+  margin-right: 0%;
   height: 100%;
-	   background-color: rgb(0 0 0 / 0.7);
+	background-color: rgba(0,0,0,0.7);
 }
 .centerdiv {
-  margin-left: 0;
-  margin-right: 0;
-    background-color: rgb(0 0 0 / 0.8);
+  margin-left: 0%;
+  margin-right: 0%;
+  background-color: rgba(0,0,0,0.8);
 }
-h2 {
-  margin-left: 5%;
-  margin-right: 5%;
-  font-size: 1.7em;
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
 }
-p {
-  margin-left: 5%;
-  margin-right: 5%;
-  font-size: 1.8em;
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.iconic a {
+  font-size: 1.4em;
+  font-color: #17c3ff
+}
+.iconic h5 {
+  font-size: 1.4em;
+  font-color: #17c3ff
 }
 .fonter {
-width: 50%;
+margin-left: 15%;
+margin-right: 15%;;
 }
-.bonter {
-  width: 30%;
- margin-right:5%;
- margin-left:5%;
+.iconic .bonter {
+margin-top: 2%;
+margin-bottom: 2%;
+width: 48%;
 }
-.center .fonter img{
-  width: 35%;
+.iconic .bonter img{
+  width: 55%;
+}
+.fonter img{
+  width: 125%;
 }
 @media (max-width: 600px) {
-  p {
-  font-size: 0.7em;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-h5 {
+.iconic h5 {
   font-size: 0.7em;
 }
-.center .fonter img{
-  width: 75%;
+.iconic a {
+  font-size: 0.7em;
 }
-.bonter a {
-font-size: 0.8em;
-color: white;
+.iconic {
+  margin-left: 1%;
+  margin-right: 1%;
+  border-radius: 5px;
+}
+.iconic .bonter img{
+  width: 65%;
 }
 .iconic button {
   font-size: 1em;
-  border: 1px solid gray;
+  border: 1px solid #01ffce;
 }
 }
 .center {
@@ -66,42 +78,34 @@ color: white;
   justify-content: center;
   align-items: center;
 }
+	.benter {
+  display: block;
+		width: 100%;
+			  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: center;
+  align-items: center;
+}
 .center img{
-width: 100%;
+width: 90%;
 }
 .iconic {
   border-radius:10px;
   margin-left: 10%;
-  margin-right:10%;
+  margin-right: 10%;
   padding-top: 1%;
   padding-bottom: 1%;
-  border-radius: 10px;
-  background-color: rgb(1 1 1 / 0.3);
 }
-.iconic button {
-width: 9 em;
-	 white-space: nowrap;
-   text-align: center;
-  border-radius: 10px;
-  border: 2px solid #01ffce;
-  background-color: #141414;
-  padding: 10px 10px;
-  cursor:pointer;
-  margin-left:5%;
-  margin-right:5%;
-  align-items: center;
- justify-content: center;
-}
-	.iconic button:hover{
-	border: 2px solid gray;
-}
-	.slideshow-container {
-  max-width: 85%;
+ .slideshow-container {
+  max-width: 90%;
   position: relative;
   margin: auto;
 }
 .mySlides {
   display: none;
+}
+.iconic button:hover{
+  border: 2px solid gray;
 }
 .prev, .next {
   cursor: pointer;
@@ -146,6 +150,18 @@ width: 9 em;
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+.iconic button {
+  width: 9em;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid #01ffce;
+  background-color: #011120;
+  padding: 10px 10px;
+  cursor:pointer;
+  align-items: center;
+  justify-content: center;
 }
 </style>
 </head>
