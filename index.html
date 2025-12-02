@@ -7,29 +7,8 @@ description: "Madsir Studio | Games & Digital Assets"
 <!DOCTYPE html>
 <html>
 <head>
-</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.main {
-  height: 115%;
-  margin-left: 10%;
-	margin-right:10%;
-}
-.around {
-  margin-top: 10%;
-  margin-bottom:10%;
-}
-h2 {
-  font-size: 2.5em;
-  padding: 15, 0;
-	margin: 0;
-	color: gray;
-}
-h3 {
-  font-size: 2.5em;
-	  padding: 0, 15;
-	margin: 0;
-	color: gray;
-}
 * {box-sizing: border-box}
 .mySlides1, .mySlides2 {display: none}
 img {vertical-align: middle;}
@@ -68,60 +47,51 @@ img {vertical-align: middle;}
   background-color: #f1f1f1;
   color: black;
 }
-@media (max-width: 600px) {
-h2{
-font-size: 1.2em;
-}
-h3 {
-  font-size:1.2em;
-}
-.around {
-  margin-left:5%;
-  margin-right:5%;
-}
-}
 </style>
+</head>
 <body>
 
 <div class="main">
  <!-- <div class="around">-->
-	<div class="slideshow-container">
+<div class="slideshow-container">
   <div class="mySlides1">
-   <a href="https://madsirstudio.com/spacetoots"><img src="/Assets/spatootsmadsirstudio.png" style="width:100%">></a>
+    <a href="https://madsirstudio.com/spacetoots"><img src="/Assets/spatootsmadsirstudio.png" style="width:100%">></a>
   </div>
+
   <div class="mySlides1">
     <a href="https://madsirstudio.com/calculationboogey"><img src="/Assets/CBIcon.png" style="width:100%"></a>
   </div>
+
   <div class="mySlides1">
     <a href="https://madsirstudio.com/chinchillin"><img src="/Assets/CDPiconE.png" style="width:100%"></a>
   </div>
-<div class="mySlides1">
-    <a href="https://madsirstudio.com/remoteagent"><img src="/Assets/coverArt.png" style="width:100%">></a>
-  </div>
 
+ <div class="mySlides1">
+   <a href="https://madsirstudio.com/remoteagent"><img src="/Assets/coverArt.png" style="width:100%"></a>
+  </div>
+		
   <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
   <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-	</div>
-
+</div>
 			
 		<br>
 		<br>
-
-			
 <div class="slideshow-container">
   <div class="mySlides2">
-   <a href="https://madsirstudio.com/cutscheme"><img src="/Assets/cutscheme.png" style=display:block;padding:inherit;margin:auto;width:75%></a>
+     <a href="https://madsirstudio.com/cutscheme"><img src="/Assets/cutscheme.png" style="width:100%"></a>
   </div>
+
   <div class="mySlides2">
-    <a href="https://madsirstudio.com/utterer"><img src="/Assets/utterer.png" style=display:block;padding:inherit;margin:auto;width:75%></a>
+    <a href="https://madsirstudio.com/utterer"><img src="/Assets/utterer.png" style="width:100%"></a>
   </div>
+
   <div class="mySlides2">
-    <a href="https://madsirstudio.com/earchestra"><img src="/Assets/earchestramadsir.png" style=display:block;padding:inherit;margin:auto;width:75%></a>
+     <a href="https://madsirstudio.com/earchestra"><img src="/Assets/earchestramadsir.png" style="width:100%></a>
   </div>
 
   <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-	</div>
+</div>
 <!--</div>-->
 	<script>
 let slideIndex = [1,1];
@@ -142,6 +112,7 @@ function showSlides(n, no) {
      x[i].style.display = "none";  
   }
   x[slideIndex[no]-1].style.display = "block";  
+}
 </script>
 </div>
 </body>
