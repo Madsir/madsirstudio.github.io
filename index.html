@@ -17,7 +17,7 @@ img {vertical-align: middle;}
 h1{
   padding-top: 1%;
   padding-bottom: 1%;
-  font-size: 3em;
+  font-size: 3.2em;
   color: #FCB001;
 }
 	
@@ -63,6 +63,14 @@ h1{
 /* On hover, add a grey background color */
 .prev:hover, .next:hover {
   color: gray;
+}
+@media (max-width: 600px) {
+  .prev, .next {
+    font-size:2em;
+  }
+  h1{
+	font-size: 2em;
+  }
 }
 </style>
 </head>
