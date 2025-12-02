@@ -22,6 +22,10 @@ description: "RADNESS & MADNESS"
 .center img{
 width: 80%;
 }
+.around {
+  margin-top: 10%;
+  margin-bottom:10%;
+}
 h2 {
   font-size: 2.5em;
   padding: 15, 0;
@@ -40,10 +44,7 @@ h3 {
   position: relative;
   margin: auto;
 }
-.mySlides {
-  display: none;
-}
-	.mySlides1 {
+.mySlides,.mySlides1  {
   display: none;
 }
 .prev, .next {
@@ -107,8 +108,7 @@ h3 {
 }
 .around {
   margin-top: 5%;
-  background-color: rgba(0,0,0,0.75);
-  box-shadow: inset 0 0 5em 1em #000;
+  margin-bottom:5%;
 }
 }
 </style>
@@ -116,6 +116,7 @@ h3 {
 
 <div class="main">
 	<div class="center">
+		<div class="around">
 		<br>
 		<br>
 <div class="slideshow-container">
@@ -172,6 +173,9 @@ h3 {
   <span class="dot" onclick="currentSlide(4)"></span>
 </div>
 	</div>
+			<br>
+			<br>
+		</div>
 	<script>
 var slideIndex = [1,1];
 /* Class the members of each slideshow group with different CSS classes */
@@ -184,17 +188,17 @@ function plusSlides(n, no) {
 }
 
 function currentSlide(n, no) {
-  showSlides(slideIndex = n);
+  showSlides(slideIndex[no] = n);
 }
 
 function showSlides(n, no) {
   var i;
   let slides = document.getElementsByClassName(slideId[no]);
   let dots = document.getElementsByClassName("dot");
- if (n > x.length) {slideIndex[no] = 1} 
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none"; 
+ if (n > slides.length) {slideIndex[no] = 1} 
+  if (n < 1) {slideIndex[no] = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
