@@ -14,14 +14,6 @@ description: "RADNESS & MADNESS"
   margin-left: 10%;
 	margin-right:10%;
 }
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.center img{
-width: 80%;
-}
 .around {
   margin-top: 10%;
   margin-bottom:10%;
@@ -84,16 +76,8 @@ h3 {
   font-size:1.2em;
 }
 .around {
-  margin-left:0;
-  margin-right:0;
-}
-}
-.around img:hover {
-  box-shadow: 0 0 3px 3px gray;
-}
-.around {
-  margin-top: 5%;
-  margin-bottom:5%;
+  margin-left:5%;
+  margin-right:5%;
 }
 }
 </style>
@@ -102,8 +86,6 @@ h3 {
 <div class="main">
 	<div class="center">
 		<div class="around">
-		<br>
-		<br>
 <div class="slideshow-container">
   <div class="mySlides1">
    <a href="https://madsirstudio.com/spacetoots"><img src="/Assets/spatootsmadsirstudio.png" style=display:block;padding:inherit;margin:auto;width:75%></a>
@@ -118,34 +100,30 @@ h3 {
     <a href="https://madsirstudio.com/remoteagent"><img src="/Assets/coverArt.png" style=display:block;padding:inherit;margin:auto;width:75%></a>
   </div>
 
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-<br>
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
 	</div>
+
+			
 		<br>
 		<br>
-		<div class="slideshow-container">
+
+			
+<div class="slideshow-container">
   <div class="mySlides2">
-   <a href="https://madsirstudio.com/spacetoots"><img src="/Assets/spatootsmadsirstudio.png" style=display:block;padding:inherit;margin:auto;width:75%></a>
+   <a href="https://madsirstudio.com/cutscheme"><img src="/Assets/cutscheme.png" style=display:block;padding:inherit;margin:auto;width:75%></a>
   </div>
   <div class="mySlides2">
-    <a href="https://madsirstudio.com/calculationboogey"><img src="/Assets/CBIcon.png" style=display:block;padding:inherit;margin:auto;width:75%></a>
+    <a href="https://madsirstudio.com/utterer"><img src="/Assets/utterer.png" style=display:block;padding:inherit;margin:auto;width:75%></a>
   </div>
   <div class="mySlides2">
-    <a href="https://madsirstudio.com/chinchillin"><img src="/Assets/CDPiconE.png" style=display:block;padding:inherit;margin:auto;width:75%></a>
-  </div>
-<div class="mySlides2">
-    <a href="https://madsirstudio.com/remoteagent"><img src="/Assets/coverArt.png" style=display:block;padding:inherit;margin:auto;width:75%></a>
+    <a href="https://madsirstudio.com/earchestra"><img src="/Assets/earchestramadsir.png" style=display:block;padding:inherit;margin:auto;width:75%></a>
   </div>
 
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-<br>
-
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
 	</div>
-			<br>
-			<br>
-		</div>
+</div>
 	<script>
 let slideIndex = [1,1];
 let slideId = ["mySlides1", "mySlides2"]
