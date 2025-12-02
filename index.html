@@ -35,41 +35,57 @@ h3 {
 	color: gray;
 }
 
-* {box-sizing: border-box}
-.mySlides1, .mySlides2 {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 800px;
+ .slideshow-container {
+  max-width: 90%;
   position: relative;
+  margin: auto;
 }
-
-/* Next & previous buttons */
+.mySlides {
+  display: none;
+}
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 4%;
+  top: 50%;
   width: auto;
-  padding: 16px;
   margin-top: -22px;
+  padding: 16px;
   color: white;
+  font-weight: bold;
+  font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  height:100%;
-  width:49.5%;
 }
-
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
-/* On hover, add a grey background color */
 .prev:hover, .next:hover {
-  color: black;
+  background-color: rgba(0,0,0,0.8);
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 @media (max-width: 600px) {
 h2{
@@ -96,63 +112,60 @@ h3 {
 <body>
 
 <div class="main">
-	<div class="centerdiv">
+	<div class="center">
 <div class="slideshow-container">
-  <div class="mySlides1 fade">
+  <div class="mySlides fade">
    <a href="https://madsirstudio.com/spacetoots"><img src="/Assets/spatootsmadsirstudio.png" style="width:100%"></a>
   </div>
-  <div class="mySlides1 fade">
+  <div class="mySlides fade">
     <a href="https://madsirstudio.com/calculationboogey"><img src="/Assets/CBIcon.png" style="width:100%"></a>
   </div>
-  <div class="mySlides1 fade">
+  <div class="mySlides fade">
     <a href="https://madsirstudio.com/chinchillin"><img src="/Assets/CDPiconE.png" style="width:100%"></a>
   </div>
-<div class="mySlides1 fade">
+<div class="mySlides fade">
     <a href="https://madsirstudio.com/remoteagent"><img src="/Assets/coverArt.png" style="width:100%"></a>
   </div>
 
-
-  <a class="prev" onclick="plusSlides(-1, 0)"></a>
-  <a class="next" onclick="plusSlides(1, 0)"></a>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
-		<br>
-		<br>
-		<br>
-		
-		<div class="slideshow-container">
-  <div class="mySlides2 fade">
-   <a href="https://madsirstudio.com/cutscheme"><img src="/Assets/cutscheme.png" style="width:100%"></a>
-  </div>
-  <div class="mySlides2 fade">
-    <a href="https://madsirstudio.com/utterer"><img src="/Assets/utterer.png" style="width:100%"></a>
-  </div>
-  <div class="mySlides2 fade">
-    <a href="https://madsirstudio.com/earchestra"><img src="/Assets/earchestramadsir.png" style="width:100%"></a>
-  </div>
+<br>
 
-  <a class="prev" onclick="plusSlides(-1, 1)"></a>
-  <a class="next" onclick="plusSlides(1, 1)"></a>
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
 </div>
-
+	</div>
 	<script>
-var slideIndex = [1,1,1];
-var slideId = ["mySlides1", "mySlides2"]
-showSlides(1, 0);
-showSlides(1, 1);
+let slideIndex = 1;
+showSlides(slideIndex);
 
-function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-function showSlides(n, no) {
-  var i;
-  var x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}    
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
   }
-  x[slideIndex[no]-1].style.display = "block";  
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
 }
 </script>
   </div>
