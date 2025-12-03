@@ -83,13 +83,15 @@ filter: brightness(100%);
 }
 .dropdown button{
   padding-left:10px;
-  padding-top: 20%;
+  padding: 5.5;
   border:none;
   background-color: rgba(0, 0, 0, 0);
   font-family: "Audiowide", sans-serif;
   list-style: none;
   font-size: 2.7em;
-  color: #FCB001;
+  color: #00cc9b;
+  filter: brightness(75%);
+  transition: filter 0.5s ease;
   text-align: center;
   cursor:pointer;
   text-align: center;
@@ -111,10 +113,12 @@ filter: brightness(100%);
   padding:5px 15px;
 }
 
-	
+.dropdown-content .button:hover{
+	color: #FCB001;
+	filter: brightness(100%);
+}
 .dropdown-content:hover button{
   display: block;
-  color: gray;
 }
 .dropdown-content {
   z-index:9;
@@ -145,7 +149,6 @@ filter: brightness(100%);
    font-family: "Saira", sans-serif;
   list-style: none;
   font-size: 1.9em;
-  color: #01ffce
   cursor:pointer;
 }
 nav {
