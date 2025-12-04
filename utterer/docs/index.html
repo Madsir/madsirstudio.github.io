@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-.accent { color: #00acff; } 
+.accent { color: #fbc32b; } 
 .page-header {
     background-color: #35424a;
     color: white;
@@ -157,32 +157,32 @@ Compatible with the following components:<br><br><br>
 
 <span class="accent">Utterer Texts</span> - Text Tool which can be added to Text/TextMeshPro components<br><br>
 <span class="accent">Utterer Audio</span> - Audio Tool which can be added to Audio Source components<br><br>
-Utterer Images - Image Tool which can be added to Image components<br><br>
-Utterer Dialogue System<br><br>
-Utterer Captions System<br><br><br></p>
+<span class="accent">Utterer Images</span> - Image Tool which can be added to Image components<br><br>
+<span class="accent">Utterer Dialogue System</span><br><br>
+<span class="accent">Utterer Captions System</span><br><br><br></p>
 		    <H2>SCRIPTING REFERENCES</H2> <p>
 		    Utterer.UttererLanguages | ScriptableObject<br><br><br>
 
-_LanguageData - a list of type Utterer.UttererLanguages.LanguageData that contains all languages used with this asset<br>
-instance - static instance of this UttererLanguages<br>
-selectLanguage - a list of all the English names of available languages<br>
-codes - a list of all the ISO codes of available languages<br>
-displayNames - a list of all the Native names of available languages<br>
-languages - list of strings containing all english names of the Languages In Use list<br>
-RTL - list of the int indices of all right-to-left languages in the Languages in Use list<br>
-current - int index of the current language in use<br>
-currentLanguage - string of the English name of the current language in use<br><br><br>
+<span class="accent">_LanguageData</span> - a list of type Utterer.UttererLanguages.LanguageData that contains all languages used with this asset<br>
+<span class="accent">instance</span> - static instance of this UttererLanguages<br>
+<span class="accent">selectLanguage</span> - a list of all the English names of available languages<br>
+<span class="accent">codes</span> - a list of all the ISO codes of available languages<br>
+<span class="accent">displayNames</span> - a list of all the Native names of available languages<br>
+<span class="accent">languages</span> - list of strings containing all english names of the Languages In Use list<br>
+<span class="accent">RTL</span> - list of the int indices of all right-to-left languages in the Languages in Use list<br>
+<span class="accent">current</span> - int index of the current language in use<br>
+<span class="accent">currentLanguage</span> - string of the English name of the current language in use<br><br><br>
 
 
 Utterer.UttererLanguages.LanguageData<br><br><br>
 
-languages - a list of class Utterer.UttererLanguages.LanguageList which contains all languages used with this asset<br><br><br>
+<span class="accent">languages</span>  - a list of class Utterer.UttererLanguages.LanguageList which contains all languages used with this asset<br><br><br>
 
 
 Utterer.UttererLanguages.LanguagesList
 <br><br><br>
-language - string for the English name of this language<br>
-inUse - bool determining whether or not this language is the current language in use<br><br><br>
+<span class="accent">language</span>  - string for the English name of this language<br>
+<span class="accent">inUse</span>  - bool determining whether or not this language is the current language in use<br><br><br>
 	    </P>
             </section>
             <section id="Dialogue">
@@ -190,27 +190,27 @@ inUse - bool determining whether or not this language is the current language in
                 <p> Easily create a linear or dynamic dialogue sequence and customize the appearance of the system and its elements. Each individual part in the sequence has its own controls and settings.
 <br><br><br>
 Settings:<br><br>
-Content Fade - If true, causes any enabled content (icon, speaker, dialogue, button) to fade in and out at the beginning and end of each dialogue in the sequence<br><br>
-Style Fade - If true, causes any enabled style (background, outline, scrollbar) to fade in and out at the beginning and end of each dialogue in the sequence<br><br>
-Paint On - If true, causes the system to add one letter or word at a time, depending on the type setting. Creates a bool to control word vs letter, and a float field for you to control the rate at which the letter/word appears<br><br>
-Freeze Scene - If true, changes the time scale to zero at the beginning of the dialogue sequence and then resets time scale to its original value at the end of the sequence<br><br>
-Positions - allows for the positioning of each dialogue part in the sequence (TMP Object only)<br><br><br>
+<span class="accent">Content Fade</span> - If true, causes any enabled content (icon, speaker, dialogue, button) to fade in and out at the beginning and end of each dialogue in the sequence<br><br>
+<span class="accent">Style Fade</span> - If true, causes any enabled style (background, outline, scrollbar) to fade in and out at the beginning and end of each dialogue in the sequence<br><br>
+<span class="accent">Paint On</span> - If true, causes the system to add one letter or word at a time, depending on the type setting. Creates a bool to control word vs letter, and a float field for you to control the rate at which the letter/word appears<br><br>
+<span class="accent">Freeze Scene</span> - If true, changes the time scale to zero at the beginning of the dialogue sequence and then resets time scale to its original value at the end of the sequence<br><br>
+<span class="accent">Positions</span>- allows for the positioning of each dialogue part in the sequence (TMP Object only)<br><br><br>
 
 Options:<br><br>
-Outline - If true, shows the outline of the system and creates style fields for its image and color<br>
-Outline Full - If true, the outline expands to contains all responses<br>
-Background - If true, shows the background of the system and creates style fields for the its image and color<br>
-Speaker - If true, shows the system's speaker and creates style fields for its font and color<br>
-Icon - If true, shows the icon if one is available in the dialogue sequence<br>
-Scrollbar - If true, shows a scrollbar for the dialogue and creates style fields for its back and handle images and colors<br>
-Button - If true, shows the system's advance button and creates style fields for its image and color<br>
-Response Back - If true, shows the backdrop for the responses<br>
-Fill Center - If true, fills the center of the response backdrop's Image. If false, only shows the "outline" of the response backdrop<br><br><br><br>
+<span class="accent">Outline</span> - If true, shows the outline of the system and creates style fields for its image and color<br>
+<span class="accent">Outline Full</span> - If true, the outline expands to contains all responses<br>
+<span class="accent">Background</span> - If true, shows the background of the system and creates style fields for the its image and color<br>
+<span class="accent">Speaker</span> - If true, shows the system's speaker and creates style fields for its font and color<br>
+<span class="accent">Icon</span> - If true, shows the icon if one is available in the dialogue sequence<br>
+<span class="accent">Scrollbar </span>- If true, shows a scrollbar for the dialogue and creates style fields for its back and handle images and colors<br>
+<span class="accent">Button</span> - If true, shows the system's advance button and creates style fields for its image and color<br>
+<span class="accent">Response Back</span> - If true, shows the backdrop for the responses<br>
+<span class="accent">Fill Center </span>- If true, fills the center of the response backdrop's Image. If false, only shows the "outline" of the response backdrop<br><br><br><br>
 Styles:<br><br>
-Background Style - refers to the background, outline, scrollbar, and advance button. Choose the color and texture (sprite/image) for each enabled element<br><br>
-Speaker Style - contains font, font size, font style, font color, font outline, and outline color settings for the speaker font, as well as a spacing setting to control the space between the speaker text and the dialogue text.<br><br>
-Dialogue Style - contains font, font size, font style, font color, font outline, and outline color settings for the dialogue font<br><br>
-Response Style - contains font, font size, font style, font color, font outline, and outline color settings for the response font. It also includes a Target Image bool to determine which graphic the button should target, a color field for the button background, and a color field for button's highlight color
+<span class="accent">Background Style</span> - refers to the background, outline, scrollbar, and advance button. Choose the color and texture (sprite/image) for each enabled element<br><br>
+<span class="accent">Speaker Style</span> - contains font, font size, font style, font color, font outline, and outline color settings for the speaker font, as well as a spacing setting to control the space between the speaker text and the dialogue text.<br><br>
+<span class="accent">Dialogue Style</span> - contains font, font size, font style, font color, font outline, and outline color settings for the dialogue font<br><br>
+<span class="accent">Response Style</span> - contains font, font size, font style, font color, font outline, and outline color settings for the response font. It also includes a Target Image bool to determine which graphic the button should target, a color field for the button background, and a color field for button's highlight color
 <br><br><br>
 Dialogue Tool :<br><br>
 All Dialogue and Response windows will be displayed in this workspace<br>
@@ -223,209 +223,209 @@ Quick-position the windows in rows, columns, or diagonally<br>
 Controls which inputs can interact with the system<br>
 Import/export strings from txt/csv files<br><br><br><br>
 
-Dialogue Tool - Dialogue Window<br><br>
+<span class="accent">Dialogue Tool - Dialogue Window</span><br><br>
 Each window contains the following controls:<br><br>
 
-Response Input - A Dialogue window's Response Input is used to receive input from responses within the sequence and determine which part of the dialogue to display next.<br><br>
-Speaker - The speaker text area is where you'll input the text for the name of the speaker.<br>
+<span class="accent">Response Input</span> - A Dialogue window's Response Input is used to receive input from responses within the sequence and determine which part of the dialogue to display next.<br><br>
+<span class="accent">Speaker</span> - The speaker text area is where you'll input the text for the name of the speaker.<br>
 This field is hidden if the Speaker option is not enabled.<br><br>
-Dialogue - The dialogue text area is where you'll input the text for this piece of dialogue in the sequence.<br><br>
-Icon - Adding a sprite to the icon field will display an icon on the left of the dialogue system for this piece of dialogue.<br><br>
-Sound - Adding an audio clip to this field will play that clip during this piece of the dialogue.<br>
+<span class="accent">Dialogue</span> - The dialogue text area is where you'll input the text for this piece of dialogue in the sequence.<br><br>
+<span class="accent">Icon</span> - Adding a sprite to the icon field will display an icon on the left of the dialogue system for this piece of dialogue.<br><br>
+<span class="accent">Sound </span>- Adding an audio clip to this field will play that clip during this piece of the dialogue.<br>
 This audio clip will be played by the dialogue system's audio source.<br><br>
-Interact - When set to true, the dialogue system will proceed based on user input.<br>You can control which inputs are used by opening the Inputs window.<br><br>
-Time - The amount of time you would like this part of the dialogue to display itself.<br>
+<span class="accent">Interact</span> - When set to true, the dialogue system will proceed based on user input.<br>You can control which inputs are used by opening the Inputs window.<br><br>
+<span class="accent">Time</span> - The amount of time you would like this part of the dialogue to display itself.<br>
 This field and the delay field are hidden if this Dialogue is set to have Responses<br><br>
-Delay - The amount of time you want to wait to display the next dialogue into the delay field.<br>
+<span class="accent">Delay</span> - The amount of time you want to wait to display the next dialogue into the delay field.<br>
 Utterer will display nothing during this break<br><br>
-Responses - Turning this toggle on allows you to add up to four responses to this dialogue.<br><br>
-Positions - If the Positions setting is true, two Vector 3 fields will appear. One for position and one for rotation. (TMP 3D objects only)<br><br><br><br><br>
+<span class="accent">Responses</span> - Turning this toggle on allows you to add up to four responses to this dialogue.<br><br>
+<span class="accent">Positions</span> - If the Positions setting is true, two Vector 3 fields will appear. One for position and one for rotation. (TMP 3D objects only)<br><br><br><br><br>
 
 
 
 Dialogue Tool - Response Windows<br><br>
 Each Response window has the following controls:<br><br>
 
-Response - The response text area is where you'll input the text for this response to the Dialogue.<br>
-Behaviour - Adding a game object to this field creates a list of available Monobehaviours to choose from.<br>
-Function Name - This string should be the name of a function in the chosen Monobehaviour. The string will be used in an Invoke method if this response is chosen.<br>
-Response Output - If this toggle is active and connected to another Dialogue's Response Input field, then that Dialogue will display next if this response is chosen.<br><br></p>
+<span class="accent">Response </span>- The response text area is where you'll input the text for this response to the Dialogue.<br>
+<span class="accent">Behaviour </span>- Adding a game object to this field creates a list of available Monobehaviours to choose from.<br>
+<span class="accent">Function Name</span> - This string should be the name of a function in the chosen Monobehaviour. The string will be used in an Invoke method if this response is chosen.<br>
+<span class="accent">Response Output</span> - If this toggle is active and connected to another Dialogue's Response Input field, then that Dialogue will display next if this response is chosen.<br><br></p>
 		    <h2>SCRIPTING REFERENCES</h2>
 <p>
 Utterer.UttererDialogueSystem<br><br>
 
 UTTERER LANGUAGES<br>
-language - the reference for the UttererLanguages asset used by this system (if applicable)<br><br><br>
+<span class="accent">language</span> - the reference for the UttererLanguages asset used by this system (if applicable)<br><br><br>
 
 DIALOGUES<br>
-dialogues - A list of type Utterer.UttererDialogueSystem.Dialogues which contains each dialogue part in the sequence<br><br><br>
+<span class="accent">dialogues</span> - A list of type Utterer.UttererDialogueSystem.Dialogues which contains each dialogue part in the sequence<br><br><br>
 
 BACKDROP<br><br>
-icon - Image component used for icons in the dialogue<br>
-nextButton - GameObject that contains the button that advances the dialog on click<br>
-nextButt - Image for the advancement button<br>
-back - Image for the backdrop<br>
-outline - Image for the outline of the backdrop<br>
-scrollb - Scrollbar for the dialogue<br>
-scroller - ScrollRect that uses the ScrollBar<br>
-style - the first child of the system (Backdrop gameobject)<br>
-content - the second child of the system (Content gameobject)<br>
-respond - the third child of the system (Responses gameobject)<br>
-canvasrend - the Canvas Renderer of respond<br><br>
+<span class="accent">icon</span> - Image component used for icons in the dialogue<br>
+<span class="accent">nextButton</span> - GameObject that contains the button that advances the dialog on click<br>
+<span class="accent">nextButt</span> - Image for the advancement button<br>
+<span class="accent">back</span> - Image for the backdrop<br>
+<span class="accent">outline</span> - Image for the outline of the backdrop<br>
+<span class="accent">scrollb </span>- Scrollbar for the dialogue<br>
+<span class="accent">scroller</span> - ScrollRect that uses the ScrollBar<br>
+<span class="accent">style </span>- the first child of the system (Backdrop gameobject)<br>
+<span class="accent">content</span> - the second child of the system (Content gameobject)<br>
+<span class="accent">respond </span>- the third child of the system (Responses gameobject)<br>
+<span class="accent">canvasrend</span> - the Canvas Renderer of respond<br><br>
 
-TMPobj - bool to tell the system whether or not the system is UI or 3D object<br><br>
+<span class="accent">TMPobj</span> - bool to tell the system whether or not the system is UI or 3D object<br><br>
 
 SPEAKER<br>
-speaker - Text (Legacy) component for the speaker<br>
-outs - Outline for the speaker text<br>
-speakerTMP - TextMeshProUGUI component for the speaker<br>
-speakFontSizeTMP - float font size for the speaker text<br>
-speakerFontTMP - font for the TextMeshPro/UGUI speaker text<br>
-speakerObj - TextMeshPro 3D Object for the speaker<br>
-speakPos - RectTransform of the speaker<br>
-speakWidth - float for the sizeDelta.x of the speaker text (used for Spacing)<br><br>
+<span class="accent">speaker</span> - Text (Legacy) component for the speaker<br>
+<span class="accent">outs</span> - Outline for the speaker text<br>
+<span class="accent">speakerTMP</span> - TextMeshProUGUI component for the speaker<br>
+<span class="accent">speakFontSizeTMP</span> - float font size for the speaker text<br>
+<span class="accent">speakerFontTMP</span> - font for the TextMeshPro/UGUI speaker text<br>
+<span class="accent">speakerObj</span> - TextMeshPro 3D Object for the speaker<br>
+<span class="accent">speakPos</span> - RectTransform of the speaker<br>
+<span class="accent">speakWidth</span> - float for the sizeDelta.x of the speaker text (used for Spacing)<br><br>
 
 DIALOGUE<br>
-dialogue - Text (Legacy) component for the dialogue<br>
-outd - Outline component for the dialogue text<br>
-dialPos - RectTransform of the dialogue text<br>
-dialogueTMP - TextMeshProUGUI component for the dialogue<br>
-dialogueObj - TextMeshPro component for the dialogue<br>
-dialFontSizeTMP - font size for the TextMeshPro/UGUI dialogue text<br>
-dialogueFontTMP - font for the TextMeshPro/UGUI dialogue text<br><br>
+<span class="accent">dialogue</span> - Text (Legacy) component for the dialogue<br>
+<span class="accent">outd</span> - Outline component for the dialogue text<br>
+<span class="accent">dialPos</span> - RectTransform of the dialogue text<br>
+<span class="accent">dialogueTMP</span> - TextMeshProUGUI component for the dialogue<br>
+<span class="accent">dialogueObj</span> - TextMeshPro component for the dialogue<br>
+<span class="accent">dialFontSizeTMP</span> - font size for the TextMeshPro/UGUI dialogue text<br>
+<span class="accent">dialogueFontTMP</span> - font for the TextMeshPro/UGUI dialogue text<br><br>
 
 RESPONSES<br>
-responds - list of Text (Legacy) components for responses<br>
-respondsTMP - list of TextMeshProUGUI components for responses<br>
-respFontTMP - font for the TextMeshProUGUI responses text<br>
-respFontSizeTMP - font size for TextMeshProUGUI responses text<br>
-outr - list of Outlines for Text (Legacy) responses texts<br>
-resrect - RectTransform for the Responses object<br>
-contentRect - RectTransform for the Content object<br>
-bottom - float to gauge the bottom position of the content rect<br><br>
+<span class="accent">responds</span> - list of Text (Legacy) components for responses<br>
+<span class="accent">respondsTMP</span> - list of TextMeshProUGUI components for responses<br>
+<span class="accent">respFontTMP</span> - font for the TextMeshProUGUI responses text<br>
+<span class="accent">respFontSizeTMP</span> - font size for TextMeshProUGUI responses text<br>
+<span class="accent">outr</span> - list of Outlines for Text (Legacy) responses texts<br>
+<span class="accent">resrect</span> - RectTransform for the Responses object<br>
+<span class="accent">contentRect </span>- RectTransform for the Content object<br>
+<span class="accent">bottom </span>- float to gauge the bottom position of the content rect<br><br>
 
 SETTINGS<br>
-delayResp - amount of time to delay the responses from showing after each dialogue is displayed<br>
-systemFade - fade the Backdrop elements<br>
-contentFade - fade the Content elements<br>
-fadetime - the amount of time it takes to fade the system/content in/out<br>
-typingAnimation - Paint On Effect<br>
-typeSpeed- the rate at which words/letter are displayed when using the Paint On Effect<br>
-word - bool to configure whether Paint On adds a word or a letter at a time<br>
-positions - bool for TextMeshPro 3D systems that allows for a unique position and rotation for each dialogue part<br>
-pauseScene - sets time scale to zero at the beginning of the dialogue sequence, and resets it to its previous value at the end of the sequence<br><br>
-autoLayout - maintain spacing and positioning of system's components<br><br>
+<span class="accent">delayResp</span> - amount of time to delay the responses from showing after each dialogue is displayed<br>
+<span class="accent">systemFade</span> - fade the Backdrop elements<br>
+<span class="accent">contentFade</span> - fade the Content elements<br>
+<span class="accent">fadetime</span> - the amount of time it takes to fade the system/content in/out<br>
+<span class="accent">typingAnimation</span> - Paint On Effect<br>
+<span class="accent">typeSpeed</span> - the rate at which words/letter are displayed when using the Paint On Effect<br>
+<span class="accent">word</span> - bool to configure whether Paint On adds a word or a letter at a time<br>
+<span class="accent">positions</span> - bool for TextMeshPro 3D systems that allows for a unique position and rotation for each dialogue part<br>
+<span class="accent">pauseScene</span> - sets time scale to zero at the beginning of the dialogue sequence, and resets it to its previous value at the end of the sequence<br><br>
+<span class="accent">autoLayout</span> - maintain spacing and positioning of system's components<br><br>
 
 INPUTS<br>
-anyKey - bool that is set by adding anyKey to the Inputs list. Allows the dialogue to progress by pressing any key<br>
-Inputs - list of Key names that you can add to the system that determine which inputs progress the dialogue <br>
+<span class="accent">anyKey</span> - bool that is set by adding anyKey to the Inputs list. Allows the dialogue to progress by pressing any key<br>
+<span class="accent">Inputs</span> - list of Key names that you can add to the system that determine which inputs progress the dialogue <br>
 (Unity List of Keys - https://docs.unity3d.com/Manual/class-InputManager.html)<br><br>
 
 NEW INPUT SYSTEM reference<br>
-moveToNext - bool that tells the system to move to the next dialogue part in the sequence<br>
-Reference moveToNext to apply your own inputs:<br>
-Set moveToNext to true to perform the input, and set moveToNext false after you perform the input<br><br>
+<span class="accent">moveToNext</span> - bool that tells the system to move to the next dialogue part in the sequence<br>
+Reference<span class="accent"> moveToNext </span>to apply your own inputs:<br>
+Set<span class="accent"> moveToNext</span> to true to perform the input, and set false after you perform the input<br><br>
 
 
 OPTIONS<br>
-showIcons - bool to determine whether or not to show the Icon<br>
-showBackground - bool to determine whether or not to show the Backdrop<br>
-showOutline - bool to determine whether or not to show the Backdrop's Outline<br>
-showSpeaker - bool to determine whether or not to show the Speaker<br>
-showNextButton - bool to determine whether or not to show the advancement Button<br>
-showScrollbar - bool to determine whether or not to show the Scrollbar<br>
-outlineContainsResponses - bool that determines whether or not the Backdrop's outline contains the responses at runtime<br>
-fillCenter - true - Fills the center of the Responses Image<br>
-showRespBack - bool to determine whether or not to display the Responses background Image<br><br>
+<span class="accent"> showIcons</span> - bool to determine whether or not to show the Icon<br>
+<span class="accent"> showBackground</span> - bool to determine whether or not to show the Backdrop<br>
+<span class="accent"> showOutline</span> - bool to determine whether or not to show the Backdrop's Outline<br>
+<span class="accent"> showSpeaker</span> - bool to determine whether or not to show the Speaker<br>
+<span class="accent"> showNextButton</span> - bool to determine whether or not to show the advancement Button<br>
+<span class="accent"> showScrollbar</span> - bool to determine whether or not to show the Scrollbar<br>
+<span class="accent"> outlineContainsResponses</span> - bool that determines whether or not the Backdrop's outline contains the responses at runtime<br>
+<span class="accent"> fillCenter</span> - true - Fills the center of the Responses Image<br>
+<span class="accent"> showRespBack</span> - bool to determine whether or not to display the Responses background Image<br><br>
 
 
 BACKDROP STYLES<br>
-backgroundColor - the Color of the backdrop Image (UI systems only)<br>
-backgroundImage - the Sprite component of the backImage (UI systems only)<br>
-outlineColor - the Color of the outline Image<br>
-outlineImage - the Sprite for the backdrop's outline Image<br>
-nextButtonColor - Color for the advancement Button's Image<br>
-nextButtonImage - Sprite for the advancement Button's Image<br>
-buttHighlight - Color for the advancement Button's highlight color<br>
-nbo - bool for showing an Outline for the Next Button's Image<br>
-nextOutColor - Color for the advancement Button's Outline<br>
-scrollbackColor - Color for the Scrollbar's background Image<br>
-scrollbackImage - Sprite for the Scrollbar's background Image<br>
-handleColor - Color for the Scrollbar's handle<br>
-handleImage - Sprite for the Scrollbar's handle Image<br>
-responseBackground - the Sprite of the Responses Image component<br>
-responseBackColor - Color for the Responses background Image<br><br>
+<span class="accent"> backgroundColor</span> - the Color of the backdrop Image (UI systems only)<br>
+<span class="accent"> backgroundImage</span> - the Sprite component of the backImage (UI systems only)<br>
+<span class="accent"> outlineColo</span>r - the Color of the outline Image<br>
+<span class="accent"> outlineImage</span> - the Sprite for the backdrop's outline Image<br>
+<span class="accent"> nextButtonColor</span> - Color for the advancement Button's Image<br>
+<span class="accent"> nextButtonImage</span> - Sprite for the advancement Button's Image<br>
+<span class="accent"> buttHighlight</span> - Color for the advancement Button's highlight color<br>
+<span class="accent"> nbo</span> - bool for showing an Outline for the Next Button's Image<br>
+<span class="accent"> nextOutColor</span> - Color for the advancement Button's Outline<br>
+<span class="accent"> scrollbackColor</span> - Color for the Scrollbar's background Image<br>
+<span class="accent"> scrollbackImage</span> - Sprite for the Scrollbar's background Image<br>
+<span class="accent"> handleColor</span> - Color for the Scrollbar's handle<br>
+<span class="accent"> handleImage </span>- Sprite for the Scrollbar's handle Image<br>
+<span class="accent"> responseBackground</span> - the Sprite of the Responses Image component<br>
+<span class="accent"> responseBackColor</span> - Color for the Responses background Image<br><br>
 
 
 SPEAKER STYLE<br>
-speakerColor - Color for the speaker text<br>
-speakerFont - font for the speaker text<br>
-speakFontSize - speaker font size<br>
-Spacing - the distance between the speaker text and the dialogue text (UI systems only)<br><br>
+<span class="accent">speakerColor</span> - Color for the speaker text<br>
+<span class="accent">speakerFont</span> - font for the speaker text<br>
+<span class="accent">speakFontSize</span> - speaker font size<br>
+<span class="accent">Spacing</span> - the distance between the speaker text and the dialogue text (UI systems only)<br><br>
 
 DIALOGUE STYLE<br>
-dialogueColor - Color for the dialogue text<br>
-dialogueFont - font for the dialogue text<br>
-dialFontSize - dialogue font size
+<span class="accent">dialogueColor</span> - Color for the dialogue text<br>
+<span class="accent">dialogueFont</span> - font for the dialogue text<br>
+<span class="accent">dialFontSize</span> - dialogue font size
 <br><br>
 RESPONSE STYLE<br>
-respFontSize - responses font size<br>
-respFont - font for the responses texts<br>
-respButtonColor - the Color of the Buttons on the responses objects<br>
-targetImage - bool to determine whether each Response Button should target the response image or the response text<br>
-respColor - Color for the responses texts<br>
-respHighlight - Color for the Responses Button's highlight color<br><br>
+<span class="accent">respFontSize</span> - responses font size<br>
+<span class="accent">respFont</span> - font for the responses texts<br>
+<span class="accent">respButtonColor</span> - the Color of the Buttons on the responses objects<br>
+<span class="accent">targetImage</span> - bool to determine whether each Response Button should target the response image or the response text<br>
+<span class="accent">respColor</span> - Color for the responses texts<br>
+<span class="accent">respHighlight</span> - Color for the Responses Button's highlight color<br><br>
 
 CONTROLLER VARIABLES<br>
-source - the system's Audio Source component<br>
-viewport - the viewport for the Scroll Rect that contains the dialogue<br>
-sideSwitcher - bool that when true switches the system from left to right to right to left and vice versa<br><br><br>
+<span class="accent">source</span> - the system's Audio Source component<br>
+<span class="accent">viewport</span> - the viewport for the Scroll Rect that contains the dialogue<br>
+<span class="accent">sideSwitcher</span> - bool that when true switches the system from left to right to right to left and vice versa<br><br><br>
 
 Utterer.UttererDialogueSystem.Dialogues
 <br><br><br>
-icon - sprite used for the icon during this part of the sequence<br>
-speaker - string for the speaker text displayed during this part of the sequence<br>
-dialogue - string for the dialogue text displayed during this part of the sequence<br>
-sound - the audioclip to be played during this part of the sequence<br>
-choice - a bool that controls whether or not the system uses responses for this part of the sequence<br>
-choices - a list of type Utterer.UttererDialogueSystem.Response, which contains all the responses available in this part of the sequence<br>
-duration -  the amount of time to display this part of the sequence<br>
-breakBetween - the amount of time to wait before displaying the next part of the sequence<br>
-position - the position of the system during this part of the sequence (TMP 3D object only)<br>
-rotation - the rotation of the system during this part of the sequence(TMP 3D object only)<br>
+<span class="accent">icon</span> - sprite used for the icon during this part of the sequence<br>
+<span class="accent">speaker</span> - string for the speaker text displayed during this part of the sequence<br>
+<span class="accent">dialogue</span> - string for the dialogue text displayed during this part of the sequence<br>
+<span class="accent">sound</span> - the audioclip to be played during this part of the sequence<br>
+<span class="accent">choice</span> - a bool that controls whether or not the system uses responses for this part of the sequence<br>
+<span class="accent">choices</span> - a list of type Utterer.UttererDialogueSystem.Response, which contains all the responses available in this part of the sequence<br>
+<span class="accent">duration </span>-  the amount of time to display this part of the sequence<br>
+<span class="accent">breakBetween</span> - the amount of time to wait before displaying the next part of the sequence<br>
+<span class="accent">position</span> - the position of the system during this part of the sequence (TMP 3D object only)<br>
+<span class="accent">rotation</span> - the rotation of the system during this part of the sequence(TMP 3D object only)<br>
 If using UttererLanguages<br>
-speaks - list of strings, one for each language in the Languages asset, which controls what the speaker text displays during this dialogue<br>
-dials - list of strings, one for each language in the Languages asset which controls what the dialogue text displays during this dialogue<br>
-sounds - a list of type AudioClip, one for each language in the Languages asset which controls what audioclip plays during this dialogue<br><br><br>
+<span class="accent">speaks</span> - list of strings, one for each language in the Languages asset, which controls what the speaker text displays during this dialogue<br>
+<span class="accent">dials</span> - list of strings, one for each language in the Languages asset which controls what the dialogue text displays during this dialogue<br>
+<span class="accent">sounds</span> - a list of type AudioClip, one for each language in the Languages asset which controls what audioclip plays during this dialogue<br><br><br>
 
 Utterer.UttererDialogueSystem.Response<br><br><br>
 
-response - a string the controls this response's text<br>
-behave - a gameobject that contains a script with a function to call if this response is chosen<br>
-script - of type Behaviour is the script from the behave object that contains the function to call<br>
-funct - the string name of the function to call in script<br>
-nextDialogue - int for the serialized index of the next dialogue in the sequence (set in the Dialogue Tool)<br>
+<span class="accent">response</span> - a string the controls this response's text<br>
+<span class="accent">behave</span> - a gameobject that contains a script with a function to call if this response is chosen<br>
+<span class="accent">script</span> - of type Behaviour is the script from the behave object that contains the function to call<br>
+<span class="accent">funct </span>- the string name of the function to call in script<br>
+<span class="accent">nextDialogue</span> - int for the serialized index of the next dialogue in the sequence (set in the Dialogue Tool)<br>
 If using UttererLanguages<br>
-responses - a list of strings for each language in the Languages asset, which controls what this response text displays<br><br><br></p>
+<span class="accent">responses</span> - a list of strings for each language in the Languages asset, which controls what this response text displays<br><br><br></p>
             </section>	
 <section id="Captions">
                 <h2>Captions</h2>
                 <p>The Captions System lets you create and control a timed sequence of captions that will format itself based on your input. Like the Dialogue System, you can easily customize the system and its elements. <br><br><br>
 
 Settings<br>
-Content Fade<br>
+<span class="accent">Content Fade</span><br>
 Content Fade is a bool which when set to true causes any enabled content (caption text) to fade in and out at the beginning and end of each caption in the sequence<br><br>
 
 
-Style Fade<br>
+<span class="accent">Style Fade</span><br>
 Style Fade is a bool which when set to true causes any enabled style (background, outline) to fade in and out at the beginning and end of each caption in the sequence<br><br>
 
 
-Paint On<br>
+<span class="accent">Paint On</span><br>
 Paint On is a bool which when set to true causes the system to add one letter or word at a time, depending on the type setting. Creates a bool to control word vs letter, and a float field for you to control the rate at which the letter/word appears<br><br>
 
 
-Positions<br>
+<span class="accent">Positions</span><br>
 If using a TextMeshPro Object, this setting allows for the positioning of each caption in the sequence<br><br>
 
 
@@ -433,11 +433,11 @@ If using a TextMeshPro Object, this setting allows for the positioning of each c
 Options<br>
 
 
-Background Style<br>
+<span class="accent">Background Style</span><br>
 Background style refers to the background & outline. Choose the color and texture (sprite/image) for the enabled<br><br>
 
 
-Captions Style<br>
+<span class="accent">Captions Style</span><br>
 Contains settings for the captions font<br><br>
 
 <br><br>
