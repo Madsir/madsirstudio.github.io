@@ -148,9 +148,9 @@ body {
         <main id="documentation">
             <section id="Languages">
                 <h2>Utterer Languages - Localization Framework</h2>
-                <p>Utterer Languages is a scriptable object asset which stores language information and guides the components connected to it. Localize Text, Image, and Audio Source components as well as the Utterer Dialogue System and Utterer Captions System. RTL languages supported.
+                <p><span class="accent">Utterer Languages</span> is a scriptable object asset which stores language information and guides the components connected to it. Localize Text, Image, and Audio Source components as well as the Utterer Dialogue System and Utterer Captions System. RTL languages supported.
 <br><br>
-			Utterer Languages comes with a Language Chooser script for syncing dropdown components with the Languages In Use list.<br><br>
+			<span class="accent">Utterer Languages</span> comes with a <span class="accent">Language Chooser</span> script for syncing dropdown components with the Languages In Use list.<br><br>
 
 <span class="accent">Language Chooser</span> allows the user to choose a language at runtime. The Utterer Languages asset will save any changes made, guiding its connected components to reflect those changes.<br><br>
 Compatible with the following components:<br><br><br>
@@ -161,7 +161,7 @@ Compatible with the following components:<br><br><br>
 <span class="accent">Utterer Dialogue System</span><br><br>
 <span class="accent">Utterer Captions System</span><br><br><br></p>
 		    <H2>SCRIPTING REFERENCES</H2> <p>
-		    Utterer.UttererLanguages | ScriptableObject<br><br><br>
+		   <span class="accent"> Utterer.UttererLanguages | ScriptableObject</span><br><br><br>
 
 <span class="accent">_LanguageData</span> - a list of type Utterer.UttererLanguages.LanguageData that contains all languages used with this asset<br>
 <span class="accent">instance</span> - static instance of this UttererLanguages<br>
@@ -174,12 +174,12 @@ Compatible with the following components:<br><br><br>
 <span class="accent">currentLanguage</span> - string of the English name of the current language in use<br><br><br>
 
 
-Utterer.UttererLanguages.LanguageData<br><br><br>
+<span class="accent">Utterer.UttererLanguages.LanguageData</span><br><br><br>
 
 <span class="accent">languages</span>  - a list of class Utterer.UttererLanguages.LanguageList which contains all languages used with this asset<br><br><br>
 
 
-Utterer.UttererLanguages.LanguagesList
+<span class="accent">Utterer.UttererLanguages.LanguagesList</span>
 <br><br><br>
 <span class="accent">language</span>  - string for the English name of this language<br>
 <span class="accent">inUse</span>  - bool determining whether or not this language is the current language in use<br><br><br>
@@ -212,8 +212,8 @@ Styles:<br><br>
 <span class="accent">Dialogue Style</span> - contains font, font size, font style, font color, font outline, and outline color settings for the dialogue font<br><br>
 <span class="accent">Response Style</span> - contains font, font size, font style, font color, font outline, and outline color settings for the response font. It also includes a Target Image bool to determine which graphic the button should target, a color field for the button background, and a color field for button's highlight color
 <br><br><br>
-Dialogue Tool :<br><br>
-All Dialogue and Response windows will be displayed in this workspace<br>
+<span class="accent">Dialogue Tool </span><br><br>
+All dialogue and response windows will be displayed in this workspace<br>
 Dialogue and response windows are draggable<br>
 You can scroll the workspace with the mouse or keyboard arrows<br>
 You can drag the workspace area by clicking the center mouse button<br>
@@ -223,7 +223,7 @@ Quick-position the windows in rows, columns, or diagonally<br>
 Controls which inputs can interact with the system<br>
 Import/export strings from txt/csv files<br><br><br><br>
 
-<span class="accent">Dialogue Tool - Dialogue Window</span><br><br>
+<span class="accent">Dialogue Tool</span - Dialogue Window<br><br>
 Each window contains the following controls:<br><br>
 
 <span class="accent">Response Input</span> - A Dialogue window's Response Input is used to receive input from responses within the sequence and determine which part of the dialogue to display next.<br><br>
@@ -243,8 +243,8 @@ Utterer will display nothing during this break<br><br>
 
 
 
-Dialogue Tool - Response Windows<br><br>
-Each Response window has the following controls:<br><br>
+<span class="accent">Dialogue Tool</span> - Response Windows<br><br>
+Each response window has the following controls:<br><br>
 
 <span class="accent">Response </span>- The response text area is where you'll input the text for this response to the Dialogue.<br>
 <span class="accent">Behaviour </span>- Adding a game object to this field creates a list of available Monobehaviours to choose from.<br>
@@ -252,7 +252,7 @@ Each Response window has the following controls:<br><br>
 <span class="accent">Response Output</span> - If this toggle is active and connected to another Dialogue's Response Input field, then that Dialogue will display next if this response is chosen.<br><br></p>
 		    <h2>SCRIPTING REFERENCES</h2>
 <p>
-Utterer.UttererDialogueSystem<br><br>
+<span class="accent">Utterer.UttererDialogueSystem</span><br><br>
 
 UTTERER LANGUAGES<br>
 <span class="accent">language</span> - the reference for the UttererLanguages asset used by this system (if applicable)<br><br><br>
@@ -393,36 +393,36 @@ Utterer.UttererDialogueSystem.Dialogues
 <span class="accent">breakBetween</span> - the amount of time to wait before displaying the next part of the sequence<br>
 <span class="accent">position</span> - the position of the system during this part of the sequence (TMP 3D object only)<br>
 <span class="accent">rotation</span> - the rotation of the system during this part of the sequence(TMP 3D object only)<br>
-If using UttererLanguages<br>
+If using <span class="accent">UttererLanguages</span><br>
 <span class="accent">speaks</span> - list of strings, one for each language in the Languages asset, which controls what the speaker text displays during this dialogue<br>
 <span class="accent">dials</span> - list of strings, one for each language in the Languages asset which controls what the dialogue text displays during this dialogue<br>
 <span class="accent">sounds</span> - a list of type AudioClip, one for each language in the Languages asset which controls what audioclip plays during this dialogue<br><br><br>
 
-Utterer.UttererDialogueSystem.Response<br><br><br>
+<span class="accent">Utterer.UttererDialogueSystem.Response</span><br><br><br>
 
 <span class="accent">response</span> - a string the controls this response's text<br>
 <span class="accent">behave</span> - a gameobject that contains a script with a function to call if this response is chosen<br>
 <span class="accent">script</span> - of type Behaviour is the script from the behave object that contains the function to call<br>
 <span class="accent">funct </span>- the string name of the function to call in script<br>
 <span class="accent">nextDialogue</span> - int for the serialized index of the next dialogue in the sequence (set in the Dialogue Tool)<br>
-If using UttererLanguages<br>
+If using <span class="accent">UttererLanguages</span><br>
 <span class="accent">responses</span> - a list of strings for each language in the Languages asset, which controls what this response text displays<br><br><br></p>
             </section>	
 <section id="Captions">
                 <h2>Captions</h2>
-                <p>The Captions System lets you create and control a timed sequence of captions that will format itself based on your input. Like the Dialogue System, you can easily customize the system and its elements. <br><br><br>
+                <p>The <span class="accent">Captions System</span> lets you create and control a timed sequence of captions that will format itself based on your input. Like the <span class="accent">Dialogue System</span>, you can easily customize the system and its elements. <br><br><br>
 
 Settings<br>
 <span class="accent">Content Fade</span><br>
-Content Fade is a bool which when set to true causes any enabled content (caption text) to fade in and out at the beginning and end of each caption in the sequence<br><br>
+A bool which when set to true causes any enabled content (caption text) to fade in and out at the beginning and end of each caption in the sequence<br><br>
 
 
 <span class="accent">Style Fade</span><br>
-Style Fade is a bool which when set to true causes any enabled style (background, outline) to fade in and out at the beginning and end of each caption in the sequence<br><br>
+A bool which when set to true causes any enabled style (background, outline) to fade in and out at the beginning and end of each caption in the sequence<br><br>
 
 
 <span class="accent">Paint On</span><br>
-Paint On is a bool which when set to true causes the system to add one letter or word at a time, depending on the type setting. Creates a bool to control word vs letter, and a float field for you to control the rate at which the letter/word appears<br><br>
+A bool which when set to true causes the system to add one letter or word at a time, depending on the type setting. Creates a bool to control word vs letter, and a float field for you to control the rate at which the letter/word appears<br><br>
 
 
 <span class="accent">Positions</span><br>
@@ -442,8 +442,8 @@ Contains settings for the captions font<br><br>
 
 <br><br>
 
-The Captions Tool
-<br><br>
+<span class="accent">The Captions Tool</span>
+<br>
 
 All windows will be displayed in this workspace.<br>
 Windows are draggable.<br>
@@ -452,85 +452,85 @@ Add & Remove captions<br>
 Import or export text from documents in your project<br><br><br>
 
 
-Captions Tool - Caption Windows
+<span class="accent">Captions Too</span>l - Caption Windows
 <br><br>
-Caption : Text Area<br>
+<span class="accent">Caption : Text Area</span><br>
 The caption text area is where you'll input the text for this caption in the sequence.<br><br>
 
-Time : Float Field<br>
+<span class="accent">Time : Float Field</span><br>
 The amount of time you would like this caption to display itself.<br>
 This time includes start fade in and end fadeout, if applicable
 <br><br>
-Delay : Float Field<br>
+<span class="accent">Delay : Float Field</span><br>
 The amount of time you want to wait before displaying the next caption.<br>
-Utterer Captions System will display no text during this break<br><br><br></p>
+<span class="accent">Utterer Captions System</span> will display no text during this break<br><br><br></p>
 	<H2>SCRIPTING REFERENCES</H2>
 <p>
-Utterer.UttererCaptionsSystem<br><br><br>
+<span class="accent">Utterer.UttererCaptionsSystem</span><br><br><br>
 
-captions - a list of type Utterer.UttererCaptionsSystem.Captions which contains all controls for each caption in the sequence<br>
-currentCap - the index of the currently displayed caption in the sequence<br><br>
+<span class="accent">captions</span> - a list of type <span class="accent">Utterer.UttererCaptionsSystem.Captions</span> which contains all controls for each caption in the sequence<br>
+<span class="accent">currentCap</span> - the index of the currently displayed caption in the sequence<br><br>
 
 UTTERER LANGUAGES<br>
-language - the Utterer Languages asset that is attached to this system (if applicable)<br><br>
+<span class="accent">language</span> - the <span class="accent">Utterer Languages</span> asset that is attached to this system (if applicable)<br><br>
 
 CAPTIONS<br>
-captionObjectTMP - TextMeshPro component for the caption<br>
-captionTMP - TextMeshProUGUI component for the caption<br>
-capFontSizeTMP - TextMeshPro/UGUI font size for the caption text<br>
-captionFontTMP - TextMeshPro/UGUI font asset for the caption text<br>
-caption - Text Legacy component for the caption<br>
-outc - Outline component for the Text Legacy caption text<br><br>
+<span class="accent">captionObjectTMP</span> - TextMeshPro component for the caption<br>
+<span class="accent">captionTMP</span> - TextMeshProUGUI component for the caption<br>
+<span class="accent">capFontSizeTMP</span> - TextMeshPro/UGUI font size for the caption text<br>
+<span class="accent">captionFontTMP</span> - TextMeshPro/UGUI font asset for the caption text<br>
+<span class="accent">caption</span> - Text Legacy component for the caption<br>
+<span class="accent">outc</span> - Outline component for the Text Legacy caption text<br><br>
 
 SETTINGS<br>
-scaleToText - scales the backdrop to fit the text if true<br>
-systemFade - fade the Backdrop elements<br>
-contentFade - fade the Content elements<br>
-fadeTime - the amount of time it takes to fade the system/content in/out<br>
-typingAnimation - Paint On Effect<br>
-typeSpeed- the rate at which words/letter are displayed when using the Paint On Effect<br>
-paintOn - bool to configure whether Paint On adds a word or a letter at a time<br>
-Positions - bool for TextMeshPro 3D systems that allows for a unique position and rotation for each dialogue part<br><br>
+<span class="accent">scaleToText</span> - scales the backdrop to fit the text if true<br>
+<span class="accent">systemFade</span> - fade the Backdrop elements<br>
+<span class="accent">contentFade</span> - fade the Content elements<br>
+<span class="accent">fadeTime</span> - the amount of time it takes to fade the system/content in/out<br>
+<span class="accent">typingAnimation</span> - Paint On Effect<br>
+<span class="accent">typeSpeed</span> - the rate at which words/letter are displayed when using the Paint On Effect<br>
+<span class="accent">paintOn</span> - bool to configure whether Paint On adds a word or a letter at a time<br>
+<span class="accent">Positions</span> - bool for TextMeshPro 3D systems that allows for a unique position and rotation for each dialogue part<br><br>
 
 
 OPTIONS<br>
-noBackground - bool whether or not to show the background<br>
-noOutline - bool whether or not to show the background's outline<br><br>
+<span class="accent">noBackground</span> - bool whether or not to show the background<br>
+<span class="accent">noOutline</span> - bool whether or not to show the background's outline<br><br>
 
 BACKDROP STYLE<br>
-back - Image for the background<br>
-outline - Image for the background's outline<br>
-backgroundColor - Color for the back's Image<br>
-backgroundImage - Sprite for the back's Image<br>
-outlineColor - Color for the outline's Image<br>
-outlineImage - Sprite for the outline's Image<br><br>
+<span class="accent">back</span> - Image for the background<br>
+<span class="accent">outline</span> - Image for the background's outline<br>
+<span class="accent">backgroundColor</span> - Color for the back's Image<br>
+<span class="accent">backgroundImage</span> - Sprite for the back's Image<br>
+<span class="accent">outlineColor</span> - Color for the outline's Image<br>
+<span class="accent">outlineImage</span> - Sprite for the outline's Image<br><br>
 
 CAPTION STYLE<br>
-captionColor - Color for the caption text<br>
-capFontSize - font size for the Text Legacy caption text<br>
-captionFont - font for the TextLegacy caption text<br><br><br>
+<span class="accent">captionColor</span> - Color for the caption text<br>
+<span class="accent">capFontSize</span> - font size for the Text Legacy caption text<br>
+<span class="accent">captionFont</span> - font for the TextLegacy caption text<br><br><br>
 
 
 
-Utterer.UttererCaptionsSystem.Captions<br><br><br>
+<span class="accent">Utterer.UttererCaptionsSystem.Captions<br><br><br>
 
-caption - the string that the caption text will display during this part of the sequence<br>
-duration -  the amount of time to display this part of the sequence<br>
-breakBetween - the amount of time to wait before displaying the next part of the sequence<br>
-position - the position of the system during this part of the sequence (TMP 3D object only)<br>
-rotation - the rotation of the system during this part of the sequence(TMP 3D object only)<br>
-positionGiver - Transform to set an initial position for this part of the sequence<br>
-If using Utterer Languages<br>
-caps - list of strings, one for each language in the Languages asset for the caption<br><br><br>
+<span class="accent">caption</span> - the string that the caption text will display during this part of the sequence<br>
+<span class="accent">duration </span>-  the amount of time to display this part of the sequence<br>
+<span class="accent">breakBetween </span>- the amount of time to wait before displaying the next part of the sequence<br>
+<span class="accent">position</span> - the position of the system during this part of the sequence (TMP 3D object only)<br>
+<span class="accent">rotation</span> - the rotation of the system during this part of the sequence(TMP 3D object only)<br>
+<span class="accent">positionGiver</span> - Transform to set an initial position for this part of the sequence<br>
+If using<span class="accent"> Utterer Languages</span><br>
+<span class="accent">caps</span> - list of strings, one for each language in the Languages asset for the caption<br><br><br>
 </p>
             </section>
                         <section id="Dynamics">
                 <h2>Dynamics - String Interpolation</h2>
 				<p>
-	Utterer Dynamics uses a scriptable object asset to store your list of dynamic calls in order to interpolate or color-code certain strings.<br>Interpolation is handled by the system's Dynamics Assistant, which finds all calls in an open scene and switches them with their ID's at runtime.<br><br>
-	Utterer Dynamics replaces any "call" (a string or part of a string surrounded by < and > - Ex. <PlayerName> ) with its associated "ID" (Ex. "Madsir"). <br><br>
+	<span class="accent">Utterer Dynamics</span> uses a scriptable object asset to store your list of dynamic calls in order to interpolate or color-code certain strings.<br>Interpolation is handled by the system's <span class="accent">Dynamics Assistant</span>, which finds all calls in an open scene and switches them with their ID's at runtime.<br><br>
+	<span class="accent">Utterer Dynamics</span> replaces any "<span class="accent">call</span>" (a string or part of a string surrounded by "<" and ">") with its associated "<span class="accent">ID</span>". <br><br>
 
-If a call's ID is "color", a color field will appear and you can choose a color and the system will change the string inside the call to your chosen color (ex. Call: <Player> , ID :"color")<br><br>
+If a <span class="accent">call</span> has the <span class="accent">ID</span> "color", a color field will appear and you can choose a color and the system will change the string inside the call to your chosen color. <br><br>
 
 
 Calls are interpolated with their IDs/colors/values once when they are enabled in the scene.<br><br>
@@ -538,28 +538,28 @@ Calls are interpolated with their IDs/colors/values once when they are enabled i
 	<h2>SCRIPTING REFERENCES</h2>
 
 <p>
-Utterer.DynamicsManager | ScriptableObject<br><br><br>
+<span class="accent">Utterer.DynamicsManager</span> | ScriptableObject<br><br><br>
 
-_DynamicsList-  a list of class Utterer.DynamicsManager.DynamicsList that contains all the dynamics in the list<br><br><br>
+<span class="accent">_DynamicsList</span> -  a list of class <span class="accent">Utterer.DynamicsManager.DynamicsList</span> that contains all the dynamics in the list<br><br><br>
 
 
-Utterer.DynamicsManager.DynamicsList
+<span class="accent">Utterer.DynamicsManager.DynamicsList</span>
 <br><br><br>
-dynamics - a list of class Utterer.DynamicsManager.Dynamics that contains all the controls for each dynamic in the list<br><br><br>
+<span class="accent">dynamics</span> - a list of class <span class="accent">Utterer.DynamicsManager.Dynamics</span> that contains all the controls for each dynamic in the list<br><br><br>
 
 
-Utterer.DynamicsManager.Dynamics<br><br><br>
+<span class="accent">Utterer.DynamicsManager.Dynamics</span><br><br><br>
 
-call - string that is to be replaced by the ID at runtime, always surrounded by < > (ex. <Player Name>)<br>
-ID - string that replaces the call at runtime<br>
-col - Color for the call if ID is "color"<br><br><br>
+<span class="accent">call</span> - string that is to be replaced by the ID at runtime, always surrounded by < > (ex. <Player Name>)<br>
+<span class="accent">ID</span> - string that replaces the call at runtime<br>
+<span class="accent">col</span> - Color for the call if ID is "color"<br><br><br>
 
 
-Utterer.UttererDynamics<br><br><br>
+<span class="accent">Utterer.UttererDynamics</span><br><br><br>
 
-manager - reference of type DynamicsManager for the Dynamics Asset attached to this<br>
-public void DynamicsInput(TMP_InputField obj)<br>
-public void DynamicsInput(InputField obj)<br><br>
+<span class="accent">manager</span> - reference of type DynamicsManager for the Dynamics Asset attached to this<br>
+<span class="accent">public void DynamicsInput(TMP_InputField obj)</span><br>
+<span class="accent">public void DynamicsInput(InputField obj)</span><br><br>
 </p>
 			</section>
         </main>
