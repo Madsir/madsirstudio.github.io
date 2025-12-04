@@ -7,14 +7,14 @@ description: "Utterer Documentation"
 <html>
 <head>
     <style>
-	body {
+body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;   
     display: flex;
     flex-direction: column;
 }
-
+.accent { color: #00acff; } 
 .page-header {
     background-color: #35424a;
     color: white;
@@ -149,17 +149,15 @@ description: "Utterer Documentation"
         <main id="documentation">
             <section id="Languages">
                 <h2>Utterer Languages - Localization Framework</h2>
-                <p>Utterer Languages is a scriptable object asset which stores language information and guides the components connected to it. Localize Text, Image, and Audio Source components as well as the Utterer Dialogue System and Utterer Captions System.
+                <p>Utterer Languages is a scriptable object asset which stores language information and guides the components connected to it. Localize Text, Image, and Audio Source components as well as the Utterer Dialogue System and Utterer Captions System. RTL languages supported.
 <br><br>
-			Utterer Languages comes with a Language Chooser script for syncing dropdown components with the Languages In Use list.<br><br></p>
+			Utterer Languages comes with a Language Chooser script for syncing dropdown components with the Languages In Use list.<br><br>
 
-<p style = "color: #00acff;">Language Chooser</p> <p>allows the user to choose a language at runtime. The Utterer Languages asset will save any changes made, guiding its related components to reflect those changes.<br><br>
-Control which languages are used in your project<br>
-Provides RTL support<br>
+<span class="accent">Language Chooser</span> allows the user to choose a language at runtime. The Utterer Languages asset will save any changes made, guiding its connected components to reflect those changes.<br><br>
 Compatible with the following components:<br><br><br>
 
-Utterer Texts - Text Tool which can be added to Text/TextMeshPro components<br><br>
-Utterer Audio - Audio Tool which can be added to Audio Source components<br><br>
+<span class="accent">Utterer Texts</span> - Text Tool which can be added to Text/TextMeshPro components<br><br>
+<span class="accent">Utterer Audio</span> - Audio Tool which can be added to Audio Source components<br><br>
 Utterer Images - Image Tool which can be added to Image components<br><br>
 Utterer Dialogue System<br><br>
 Utterer Captions System<br><br><br></p>
