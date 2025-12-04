@@ -6,15 +6,14 @@ description: "Documentation for Earchestra."
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-	body {
-    font-family: 'Arial', sans-serif;
+ <style>
+body {
     margin: 0;
     padding: 0;   
     display: flex;
     flex-direction: column;
 }
-
+.accent { color: #fbc32b; } 
 .page-header {
     background-color: #35424a;
     color: white;
@@ -55,7 +54,7 @@ description: "Documentation for Earchestra."
 }
 
 #documentation {
-    flex-grow: 1;
+    width:70%;
     padding: 20px;
     background-color: #0D0D2C;
 }
@@ -64,18 +63,18 @@ description: "Documentation for Earchestra."
     margin-bottom: 25px;
     border-bottom: 2px solid #00acff;
     padding-bottom: 20px;
-	margin-right:20%;
 }
 
 #documentation h2 {
-    color: #00acff;
+   color: #00acff;
     margin-bottom: 15px;
    font-size: 2.3em;
   font-family: monospace;
 }
 
 #documentation p {
-    line-height: 150%;
+    line-height: 200%;
+	font-size: 1.5em;
     color: white;
 }
 
@@ -103,6 +102,9 @@ description: "Documentation for Earchestra."
    		font-size: 1.5em;
   		font-family: monospace;
 		}
+	p {
+	  font-size: 1em;
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -162,34 +164,34 @@ Settings for each track in each playlist:<br>
 ⦁	Loop the track.<br><br>
 
 
-Music Section<br><br>
+<span class="accent">Music Section</span><br><br>
 
 The Music section is where you'll create all of your Music playlists.<br><br>
 
 Music Playlist Examples:<br>
 Songs, Underscore, Ambient, Stingers, etc.<br><br>
 
-The Music Section's main audio player is the first child of Earchestra, called MusicPlayer. MusicPlayer contains an AudioSource component. This component's volume is controlled by the Volumes section in Earchestra Sections.<br><br>
+The Music Section's main audio player is the first child of Earchestra, called <span class="accent">MusicPlayer</span> which contains an AudioSource component. This component's volume is controlled by the <span class="accent">Volumes</span> section in <span class="accent">Earchestra Sections</span>.<br><br>
 
 
-SFX Section<br><br>
+<span class="accent">SFX Section</span><br><br>
 
 The SFX section is where you'll create all of your sound effects playlists.<br><br>
 
 SFX Playlist Examples:<br>
 Guns, Vehicles, Weather, Explosions, UI, etc.<br><br>
 
-The SFX Section's main audio player is the second child of Earchestra, called SFXPlayer. SFXPlayer contains an AudioSource component. This component's volume is controlled by the Volumes section in Earchestra Sections.<br><br>
+The SFX Section's main audio player is the second child of Earchestra, called<span class="accent"> SFXPlayer</span>. SFXPlayer contains an AudioSource component. This component's volume is controlled by the <span class="accent">Volumes</span> section in <span class="accent">Earchestra Sections</span>.<br><br>
 
 
-Speech Section<br><br>
+<span class="accent">Speech Section</span><br><br>
 
 The Speech section is where you'll create all of your speech playlists.<br><br>
 
 Speech Playlist Examples:<br>
 Player, Enemy, Boss, Announcements, Dialogue, etc.<br><br>
 
-The Speech Section's main audio player is the third child of Earchestra, called SpeechPlayer. SpeechPlayer contains an AudioSource component. This component's volume is controlled by the Volumes section in Earchestra Sections. <br><br>
+The Speech Section's main audio player is the third child of Earchestra, called <span class="accent">SpeechPlayer</span>. SpeechPlayer contains an AudioSource component. This component's volume is controlled by the <span class="accent">Volumes</span> section in <span class="accent">Earchestra Sections</span>. <br><br>
 
 	<p>
 
@@ -198,11 +200,11 @@ The Speech Section's main audio player is the third child of Earchestra, called 
             <section id="Settings">
 <h2>Settings</h2><br>	<br>
 			<p>
-Perpetual<br><br>
+<span class="accent">Perpetual</span><br><br>
 
 If the Perpetual toggle is on, the current instance of Earchestra will persist throughout each scene in the build index. This setting will destroy any other instances of Earchestra in any scene.<br><br>
 
-3D Sound<br><br>
+<span class="accent">3D Sound</span><br><br>
 
 The 3D Sound toggle is a quick way to change certain audio settings on Earchestra's audio players. When the toggle is on, each audio player in Earchestra is changed to the following settings:<br><br>
 
@@ -222,29 +224,29 @@ These settings are only changed once when the toggle is clicked, so any of these
 <h2>Volumes</h2><br>			
 	<br><p>
 
-In Editor:<br><br>
+<span class="accent">In Editor</span><br><br>
 
-Control the master volumes for each Section using sliders in the EarchestraSections inspector. These volumes apply to the main section players as well as each of their Ensemble players.<br><br>
+Control the master volumes for each Section using sliders in the <span class="accent">EarchestraSections</ inspector. These volumes apply to the main section players as well as each of their <span class="accent">Ensemble</span> players.<br><br>
 
 The Earchestra system saves and loads these volume values to a Json file located in the device's persistent files each time a slider's value changes.<br><br>
 
-Runtime User Input:<br><br>
+<span class="accent">Runtime User Input</span><br><br>
 
-Earchestra includes a prefab called Volume Settings, which is located in the Earchestra/Prefabs folder.<br><br>
+Earchestra includes a prefab called<span class="accent"> Volume Settings</span>, which is located in the Earchestra/Prefabs folder.<br><br>
 
-This prefab contains Earchestra's Volumes script component. This script has all the methods needed for the Volume Settings system, as well as a public Slider field for each master volume.<br><br>
+This prefab contains Earchestra's <span class="accent">Volumes</span> script component. This script has all the methods needed for the <span class="accent">Volume Settings</span> system, as well as a public Slider field for each master volume.<br><br>
 
-The Volume Settings object is a Button whose OnValueChanged event uses Volumes' OpenVolumes() method to enable Volume Setting's second child object: MasterVolumes.<br><br>
+The<span class="accent"> Volume Settings</span> object is a Button whose OnValueChanged event uses <span class="accent">Volumes'</span> <span class="accent">OpenVolumes()</span> method to enable <span class="accent">Volume Setting</span>'s second child object: <span class="accent">MasterVolumes</span>.<br><br>
 
-MasterVolumes has a child object for each Section in Earchestra. These child objects each contain a Slider component and are called MusicVolume, SFXVolume, and SpeechVolume. <br><br>
+<span class="accent">MasterVolumes</span> has a child object for each<span class="accent"> Section</span> in Earchestra. These child objects each contain a Slider component and are called<span class="accent"> MusicVolume</span>, <span class="accent">SFXVolume</span>, and <span class="accent">SpeechVolume</span>. <br><br>
 
-The VolumeSettings prefab has these three objects placed in their respective public Slider fields in the Volume script.<br><br>
+The <span class="accent">VolumeSettings</span> prefab has these three objects placed in their respective public Slider fields in the Volume script.<br><br>
 
-Each Slider's OnValueChanged event uses the Volume script's MusicVolume(), SfxVolume(), and SpeechVolume() methods, respectively.<br><br>
+Each Slider's OnValueChanged event uses the Volume script's <span class="accent">MusicVolume(), SfxVolume(), and SpeechVolume()</span> methods, respectively.<br><br>
 
 Using these sliders, the user can set the master volumes for each section at runtime. The Volumes script saves and loads these volume values to a Json file in the device's persistent files each time a slider's value changes.
 <br><br>
-MasterVolumes also has a child object called CloseVolumes. This is a Button whose OnValueChanged event uses CloseVolumes() method to disable the MasterVolumes object.
+<span class="accent">MasterVolumes</span> also has a child object called <span class="accent">CloseVolumes</span>. This is a Button whose OnValueChanged event uses <span class="accent">CloseVolumes()</span> method to disable the object.
 
 	</p>
 			</section>
@@ -252,19 +254,19 @@ MasterVolumes also has a child object called CloseVolumes. This is a Button whos
 <h2>Ensemble</h2><br>	<br>
 <br>
 	<br><p>
-Clone the main audio players for each Section, making Earchestra capable of handling more complex and dynamic audio demands such as:<br>
+Clone the main audio players for each <span class="accent">Section</span>, making Earchestra capable of handling more complex and dynamic audio demands such as:<br>
 
 ⦁	Playing multiple playlists from the same section at the same time.<br>
 ⦁	Playing multiple tracks from a Section's playlist at the same time.<br>
 ⦁	Making any clip from your playlists play at the position of your choice.<br><br>
 
-Smart Ensemble
+<span class="accent">Smart Ensemble</span>
 <br><br>
-Let Earchestra build an Ensemble for you. Deactivates after use.<br><br>
+Let Earchestra build an <span class="accent">Ensemble</span> for you. Deactivates after use.<br><br>
 
-For the Music Section, Smart Ensemble creates one audio player per playlist, and then one audio player per track.<br><br>
+For the <span class="accent">Music Section, Smart Ensemble</span> creates one audio player per playlist, and then one audio player per track.<br><br>
 
-For the SFX and Speech Sections, Smart Ensemble creates one audio player per playlist, and then three audio players per track.<br><br>
+For the <span class="accent">SFX</span> and <span class="accent">Speech Sections</span>, <span class="accent">Smart Ensemble</span> creates one audio player per playlist, and then three audio players per track.<br><br>
 
 </p>
 			</section>
@@ -273,10 +275,10 @@ For the SFX and Speech Sections, Smart Ensemble creates one audio player per pla
 	<br>
 			
 	<br><p>
-Maestro uses the namespace Earchestra. If you add this assembly reference ( using Earchestra; ) to your scripts, you will not need to use it when calling your methods.<br><br>
+<span class="accent">Maestro</span> uses the namespace Earchestra. If you add this assembly reference ( <span class="accent">using Earchestra;</span> ) to your scripts, you will not need to use it when calling your methods.<br><br>
 
 
-System Control<br><br>
+<span class="accent">System Control<br><br>
 Earchestra.Maestro.Stop();<br>
 Earchestra.Maestro.Pause();<br>
 Earchestra.Maestro.Resume();
@@ -289,43 +291,44 @@ Earchestra.Maestro.SFX(string playlist, string command, [Optional] Transform pos
 
 Speech Control<br><br>
 Earchestra.Maestro.Speech(string playlist, string command, [Optional] Transform position);<br><br>
+</span>
 
 
 
-Playlist Commands<br><br>
+<span class="accent">Playlist Commands</span><br><br>
 
-MixOn - Plays tracks in random order<br><br>
+<span class="accent">MixOn</span> - Plays tracks in random order<br><br>
                 
-MixOff - Plays tracks in index order<br><br>
+<span class="accent">MixOff</span> - Plays tracks in index order<br><br>
                 
-Play - Plays playlist<br><br>
+<span class="accent">Play</span> - Plays playlist<br><br>
                                 
-Pause - Pauses playlist<br><br>
+<span class="accent">Pause</span> - Pauses playlist<br><br>
                 
-Unpause - Unpauses playlist<br><br>
+<span class="accent">Unpause</span> - Unpauses playlist<br><br>
                 
-Stop - Stops all tracks in playlist<br><br>
+<span class="accent">Stop</span> - Stops all tracks in playlist<br><br>
                 
-LoopOn - Loops playlist         <br><br>      
+<span class="accent">LoopOn</span> - Loops playlist         <br><br>      
                 
-LoopOff - Turns off loop for playlist       <br><br>        
+<span class="accent">LoopOff</span> - Turns off loop for playlist       <br><br>        
                 
-Random - Plays random track        <br><br><br>       
+<span class="accent">Random</span> - Plays random track        <br><br><br>       
                 
                 
 Track Commands(Where string = Track Name)<br><br>
               
-Play(string)- Plays track        <br><br>        
+<span class="accent">Play(string) </span>- Plays track        <br><br>        
                 
-Pause(string)- Pauses track        <br><br>        
+<span class="accent">Pause(string)</span> - Pauses track        <br><br>        
                 
-Unpause(string)- Unpauses track<br><br>
+<span class="accent">Unpause(string)</span> - Unpauses track<br><br>
                 
-Stop(string)- Stops track<br><br>
+<span class="accent">Stop(string)</span> - Stops track<br><br>
                 
-LoopOn(string)- Loops track<br><br>
+<span class="accent">LoopOn(string)</span> - Loops track<br><br>
                 
-LoopOff(string)- Turns off loop for track<br><br><br>
+<span class="accent">LoopOff(string)</span> - Turns off loop for track<br><br><br>
 
 
 
@@ -333,11 +336,11 @@ LoopOff(string)- Turns off loop for track<br><br><br>
 
 Earchestra can send an audio player to designated positions to play your tracks at location using Earchestra's Maestro Methods.<br><br>
 
-With Ensemble : <br>
+<span class="accent">With Ensemble :</span> <br>
 
 Earchestra will send out an audio player clone from the Ensemble to play the audio clip at the position.<br><br>
 
-Without Ensemble :<br>
+<span class="accent">Without Ensemble :</span><br>
 
 Earchestra will send the Section's audio player Ensemble to play the audio clip at the position.<br><br>
 
