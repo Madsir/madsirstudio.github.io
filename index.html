@@ -13,7 +13,16 @@ description: "Madsir Studio's Games & Digital Assets"
 .mySlides1, .mySlides2 {display: none}
 	
 img {vertical-align: middle;}
-	
+.centerdiv {
+  background-color: rgba(0,0,0,0.5);
+  box-shadow: inset 0 0 5em 3em #000;
+}
+p {
+  margin-left: 5%;
+  margin-right: 5%
+  line-height: 1.8;
+  font-size: 1.6em;
+}
 h1{
   padding-top: 1%;
   padding-bottom: 1%;
@@ -24,12 +33,17 @@ h1{
 .main {
   height: 115%;
  }
-	
+h2 {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 2em;
+	color: #FCB001;
+}
 .around {
-  padding-top: 5%;
-  padding-bottom: 5%;
-  background-color: rgba(0,0,0, 0.5);
-	box-shadow: inset 0 0 5em 3em #000;
+  border-radius: 15px;
+  margin-left: 30%; 
+  margin-right: 30%;
+  margin-bottom: 2%;
 }
 	
 /* Slideshow container */
@@ -72,6 +86,21 @@ h1{
   h1{
 	font-size: 2em;
   }
+  .around{
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  h2 {
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
 }
 .center {
   display: flex;
@@ -88,13 +117,28 @@ width: 48%;
 <body>
 
 <div class="main">
- <!-- <div class="around">-->
-	<br>
-	<br>
-	<br>
-	<br>
-	<div class="around">
-	<!--<h1>VIDEO GAMES</h1>-->
+<div class="centerdiv">
+		<div class="around">
+		<br>
+			<br>
+				<br>
+				  <p>Madsir Studio represents a collection of radness and madness created by H B Bird.</p>		
+					<h2>VIDEO GAMES</h2>
+					<br>
+					  <br>
+						<P>A good mix so far: A procedurally generated, infinite arcade-style platformer for PC & Android, and two casual math-practice games. Currently developing Remote Agent, an adventure platformer.</P>
+					  <br>
+					<br>
+					<h2>DIGITAL ASSETS</h2>	
+					<P>A set of tools to assist you in easily adding creative aspects to your Unity games. Currently available tools include dialog, subtitles, localization, dynamic string interpolation, sound management, and cinematics. </P>
+			  		 <br>
+			     <br>
+			   		<br>
+		</div>
+</div>
+<div class="center">
+	<div class="bonter">
+	<div class="center">
 <div class="slideshow-container">
   <div class="mySlides1">
     <a href="https://madsirstudio.com/spacetoots"><img src="/Assets/spatootsmadsirstudio.png" style=display:block;padding:inherit;margin:auto;width:55%></a>
@@ -115,16 +159,10 @@ width: 48%;
   <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
 </div>
 	</div>
-			
-		<br>
-		<br>
-		<br>
-		<br>
-	<br>
-	<br>
-	<br>
-	<div class="around">
-		<!--<h1>DIGITAL ASSETS</h1>-->
+	</div>
+
+		<div class="bonter">
+	<div class="center">
 <div class="slideshow-container">
   <div class="mySlides2">
      <a href="https://madsirstudio.com/cutscheme"><img src="/Assets/cutscheme.png" style=display:block;padding:inherit;margin:auto;width:55%></a>
@@ -142,10 +180,12 @@ width: 48%;
   <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
 </div>
 	</div>
+		</div>
 		<br>
 	<br>
 	<br>
 	<br>
+</div>
 <!--</div>-->
 	<script>
 let slideIndex = [1,1];
