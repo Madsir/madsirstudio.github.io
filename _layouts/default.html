@@ -131,8 +131,8 @@ filter: brightness(125%);
 @media (max-width: 600px) {
   body {
   margin: 0;
-  background-image: url("/Assets/roots.jpg");
-  box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+  background-color: #0D0D2C;
+  box-shadow: 0 0 50px rgba(0,0,0,0.9) inset;
   min-height: 97vh;
   display: flex;
   flex-direction: column;
@@ -149,6 +149,9 @@ filter: brightness(125%);
 }
 nav {
   height: 26px;
+  box-shadow: inset 0 0 1em 0.5em #000;
+}
+footer {
   box-shadow: inset 0 0 1em 0.5em #000;
 }
 li {
@@ -184,6 +187,8 @@ color: #00acff;
 }
 .dropdown-content img {
   width: 55%;
+   margin-top:1%;
+  margin-bottom:1%;
 }
 }
 
@@ -201,6 +206,8 @@ color: #00acff;
 }
 .dropdown-content img {
   width: 65%;
+  margin-top:2%;
+  margin-bottom:2%;
 }
 .dropdown-content a:hover {  
   border-radius:10px;
@@ -236,12 +243,7 @@ ul {
 	<div class="dropdown">
 		<button>&equiv;</button>
   		<div class="dropdown-content">
-						<br>
-			<br>
-			<br>
 			<a href="/"><img src="/Assets/msIcon.png" alt="Madsir Studio" style=display:block;margin-left:auto;margin-right:auto></a>
-			<br>
-			<br>
 			<p>GAMES</p>
   			<li><a href="/calculationboogey">CALCULATION BOOGEY</a></li>
 	 		<li><a href="/spacetoots">SPACE TOOTS</a></li>
