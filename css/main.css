@@ -31,45 +31,45 @@ a:hover {
 h1 {
     font-size: 2em;
     font-family: "Saira", sans-serif;
-    color: gray;
+    color: #425563;
     text-align: center;
 }
 h2 {
 
     font-size: 1.3em;
     font-family: "Saira", sans-serif;
-    color:	gray;
+   color: #425563;
     text-align: left;
 }
 h3 {
 
     font-size: 1.3em;
    font-family: "Saira", sans-serif;
-    color: gray;
+    color: #425563;
     text-align: right;
 }
 h4 {
 
     font-family: "Saira", sans-serif;
     font-size: 1.3em;
-    color: gray;
+   color: #425563;
     text-align: center;
 }
 h5 {
    font-family: "Saira", sans-serif;
     font-size: medium;
-    color: gray;
+   color: #425563;
     text-align: center;
 }
 h6 {
     font-family: "Saira", sans-serif;
     font-size: medium;
-    color: gray;
+   color: #425563;
     text-align: left;
 }
 p {
         font-size: medium;
-    color: gray;
+    color: #425563;
     font-family: "Saira", sans-serif;
     text-align: left;
 }
