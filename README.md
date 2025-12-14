@@ -1,4 +1,4 @@
-Madsir Studio
+Madsir Studio | Games, Digital Assets & Designs by H. B. Bird
 
 **GAMES**
 
@@ -12,8 +12,8 @@ Remote Agent | In production.
 <br>
 **DIGITAL ASSETS**
 
-Cutscheme  | Cutscene Maker: Easily create and control cutscenes. Infinite camera shots. Can control multiple cutscenes in one scene.<br><br>
-Utterer | Multi-Tool: Easily add dialogue and captions to any Unity game. Includes localization framework, dynamic string interpolation, and .csv/.txt import/export features.<br><br>
+Cutscheme  | Cutscene Maker: Create and control cinematic sequences in your Unity game. Direct any type of camera, customize all your camera shots, apply effects, manage audio, enable skipping, control objects in the scene, and much more.<br><br>
+Utterer | Add dialogue and captions to your Unity game. Includes localization framework, dynamic string interpolation, and .csv/.txt import/export features.<br><br>
 Earchestra | Sound Manager & Playlist Creator: Create and store infinite audio playlists. Access and command all of them from any script in the scene by using Earchestra's Maestro Methods.<br><br>
 <br>
 Copyright 2019 - 2025 Madsir Studio
