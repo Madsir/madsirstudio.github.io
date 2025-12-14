@@ -2,12 +2,14 @@ Madsir Studio
 
 **GAMES**
 
-Calculation Boogey | Finish the math problems before the sun sets or the boogeyman will get you.<br><br>
 Space Toots | Eat space jellies, get gas, and propel your way through the spacescapes. Beware the meteors and gravity effectors waiting to knock you off course!<br><br>
+Calculation Boogey | Finish the math problems before the sun sets or the boogeyman will get you.<br><br>
 Chinchilla Dance Party | These chins are so excited about math they decided to throw a dance party! Solve the math problems to keep their party going.<br><br>
 <br>
 <br>
 Remote Agent | In production.
+<br>
+<br>
 <br>
 <br>
 **DIGITAL ASSETS**
