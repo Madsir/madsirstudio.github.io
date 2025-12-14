@@ -1,4 +1,4 @@
-Madsir Studio | Games, Digital Assets & Designs by H. B. Bird
+Madsir Studio | Games, Digital Assets & Designs
 
 **GAMES**
 
