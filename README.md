@@ -16,4 +16,4 @@ Cutscheme  | Cutscene Maker: Create and control cinematic sequences in your Unit
 Utterer | Add dialogue and captions to your Unity game. Includes localization framework, dynamic string interpolation, and .csv/.txt import/export features.<br><br>
 Earchestra | Sound Manager & Playlist Creator: Create and store infinite audio playlists. Access and command all of them from any script in the scene by using Earchestra's Maestro Methods.<br><br>
 <br>
-Copyright 2019 - 2025 Madsir Studio
+Copyright 2019 - 2026 Madsir Studio
