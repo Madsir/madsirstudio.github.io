@@ -58,7 +58,7 @@ body {
   font-family: "Audiowide", sans-serif;
   font-size: 2.5em;
   user-select: none;
-  padding: 5px 15px;
+  padding-right: 15px;
  white-space: nowrap;
   overflow: hidden;
 	filter: brightness(100%);
@@ -141,6 +141,34 @@ margin-top: auto;
 position: relative;
 	z-index:999;
 }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content p{
+  font-family: "Audiowide", sans-serif;
+  font-size: 2em;
+	color: gray;
+	margin-left: 2%;
+}
+.dropdown-content a {
+  display: flex;
+  text-decoration: none;
+  font-size: 2em;
+  color: #00acff;
+	filter: brightness(100%);
+	  transition: filter 0.5s ease;
+	margin-left: 2%;
+}
+.dropdown-content img {
+  width: 50%;
+  margin-top:1%;
+  margin-bottom:1%;
+}
+.dropdown-content a:hover {  
+  border-radius:10px;
+  text-shadow: 0 0 2px 1px #5fb2ce;
+	filter: brightness(125%);
+}
 @media (max-width: 600px) {
   body {
   margin: 0;
@@ -151,7 +179,6 @@ position: relative;
   flex-direction: column;
 }
 .dropdown button {
-  padding:5px 2.5px;
   border:none;
   background-color: rgba(0, 0, 0, 0);
    font-family: "Saira", sans-serif;
@@ -176,64 +203,31 @@ h5 {
 }
 .right {
  font-size: 0.8em;
-  margin-right: 2%;
 }
 .dropdown-content p{
-  font-family: "Autowide", sans-serif;
+  font-family: "Audiowide", sans-serif;
   font-size: 1em;
-	color: gray;
+	margin-left: 15px;
 }
 .rightTitle{
   font-size: 1.1em;
 	font-style: bold;
-  margin-right: 1%;
-  padding-top: 12px;
-  padding-bottom: 0;
   filter: brightness(125%);
 }
 .dropdown-content li a {
-font-size: 2em;
+font-size: 1em;
+margin-left: 15px;
 filter: brightness(125%);
 color: #00acff;
 }
 .dropdown-content {
-	width: 800%;
 	box-shadow: inset 0 0 1em 0.5em #000;
 }
 .dropdown-content img {
-  width: 55%;
+  width: 44%;
    margin-top:1%;
   margin-bottom:1%;
 }
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.dropdown-content p{
-  font-family: "Autowide", sans-serif;
-  font-size: 2em;
-	color: gray;
-	margin-left: 1%;
-}
-.dropdown-content a {
-  display: flex;
-  text-decoration: none;
-  font-size: 2em;
-  color: #00acff;
-	filter: brightness(100%);
-	  transition: filter 0.5s ease;
-	margin-left: 1%;
-}
-.dropdown-content img {
-  width: 65%;
-  margin-top:2%;
-  margin-bottom:2%;
-}
-.dropdown-content a:hover {  
-  border-radius:10px;
-  text-shadow: 0 0 2px 1px #5fb2ce;
-	filter: brightness(125%);
 }
 
 ul {
