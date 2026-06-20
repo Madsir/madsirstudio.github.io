@@ -40,6 +40,7 @@ body {
   color: gray;
 	white-space: nowrap;
 	overflow: hidden;
+	align-items: center;
 }
 .rightTitle {
   margin-left: auto;
@@ -104,7 +105,7 @@ filter: brightness(125%);
 }
 
 .dropdown-content {
-  z-index:997;
+  z-index:2;
   display: none;
   position: absolute;
    font-family: "Audiowide", sans-serif;
@@ -112,7 +113,7 @@ filter: brightness(125%);
 	box-shadow: inset 0 0 2em 2em #0D0D2C;
 	height: calc(100vh - 50px);
 	width: 25vw;
- padding: 25px 25px 5px;
+ padding: 25px 50px 5px;
   list-style: none; 
 }
 nav{
@@ -122,15 +123,14 @@ nav{
 	box-shadow: inset 0 0 2.5em 1em #000;
  position: sticky;
   top: 0;
- z-index: 998;
+ z-index:4;
  height: 55px;
 }
 footer {
 	height: 55px;
   background-color: #0D0D2C;
 	box-shadow: inset 0 0 2.5em 1em #000;
-/*margin-top: auto;*/
-z-index:998;
+z-index:6;
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -144,6 +144,7 @@ z-index:998;
 .dropdown-content a {
 	font-family: "Saira", sans-serif;
   display: flex;
+	font-weight: bold;
   text-decoration: none;
   font-size: 2em;
   color: #00acff;
