@@ -19,10 +19,9 @@ nav
 }
 
 a {
-    text-decoration: none;
     font-size: medium;
     color: #5fb2ce;
-    font-family: "Saira", sans-serif;
+    font-family: "Audiowave", sans-serif;
 }
 a:hover {
     color: gray;
@@ -68,7 +67,7 @@ h6 {
     text-align: left;
 }
 p {
-        font-size: medium;
+    font-size: medium;
     color: #d6d4d3;
     font-family: "Saira", sans-serif;
     text-align: left;
