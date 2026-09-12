@@ -1,4 +1,4 @@
-Madsir Studio | Games, Digital Assets & Designs
+Madsir Studio presents
 
 **GAMES**
 
